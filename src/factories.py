@@ -1,5 +1,5 @@
-from models import Holding, ETF, OneItemInstrument
-from normalizers import normalize_ishares_csv_file, normalize_spdr_excel_file, normalize_vanguard_csv_file
+from src.models import Holding, ETF
+from src.file_normalizers import normalize_ishares_csv_file, normalize_spdr_excel_file, normalize_vanguard_csv_file
 import pandas as pd
 
 
@@ -10,8 +10,12 @@ def create_etf_from_vanguard(etf_name: str, path_to_file: str) -> ETF:
     data_frame = pd.read_csv(path_to_file)
     for index, pandas_holding in data_frame.iterrows():
         try:
-            weight = float(pandas_holding['% of funds'][2:-2])
-            valid_holding =  weight > 0.
+            weight = pandas_holding['% of funds']
+            if '=' in weight:
+                weight = float(weight[2:-2])
+            else:
+                weight = float(weight[0:-1])
+            valid_holding = weight > 0.
         except TypeError:
             valid_holding = False
 
@@ -23,6 +27,8 @@ def create_etf_from_vanguard(etf_name: str, path_to_file: str) -> ETF:
             etf.add_holding_weight(
                 holding, weight / 100
             )
+
+    etf.assert_holdings_summed_value()
 
     return etf
 
@@ -52,6 +58,8 @@ def create_etf_from_ishares_csv(etf_name: str, path_to_file: str) -> ETF:
                 holding, float(pandas_holding['Weight (%)']) / 100
             )
 
+    etf.assert_holdings_summed_value()
+
     return etf
 
 
@@ -79,6 +87,8 @@ def create_etf_from_spdr_excel(etf_name: str, path_to_file: str) -> ETF:
                 holding, float(pandas_holding['Percent Of Fund']) / 100
             )
 
+    etf.assert_holdings_summed_value()
+
     return etf
 
 
@@ -103,13 +113,6 @@ def create_etf_from_custom_csv(etf_name: str, path_to_file: str) -> ETF:
                 holding, float(pandas_holding['Actual Percentage (%)']) / 100
             )
 
+    etf.assert_holdings_summed_value()
+
     return etf
-
-
-def create_one_item_instrument(name: str):
-    one_item = OneItemInstrument(name)
-    holding = Holding(name=name)
-
-    one_item.add_holding_weight(holding, 1.)
-
-    return one_item
