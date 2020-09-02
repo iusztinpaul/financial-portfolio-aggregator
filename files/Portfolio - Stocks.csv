@@ -1,0 +1,17 @@
+Ticker,Company,Domain,Risk Level,Ideal Percentage (%),Ideal Value,Actual Percentage (%), Investment Value,Nr. Shares,Dividents,Region
+MPW,MPW,Reits,Low,0,0$,29.0162,$988.00,52,$1.02,U.S.
+GOOG,Alphabet C,Technology,Very Low,15,300$,7.1366,$243.00,0.1654,$0.00,U.S.
+GOOGL,Alphabet A,Technology,Very Low,15,300$,8.8987,$303.00,0.22767,$0.00,U.S.
+Virgin Galactic,Virgin Galactic,Technology,Very High,5,100$,4.4053,$150.00,6.06,$0.00,U.S.
+Dropbox,Dropbox,Technology,Medium,0,0$,8.8106,$300.00,0,$0.00,U.S.
+Aecom,Aecom,Technology,Very High,2.5,50$,0,$0.00,1,$0.00,U.S.
+Tesla,Tesla,Technology,Medium,10,200$,4.2291,$144.00,0.07,$0.00,U.S.
+APPL,Apple,Technology,Very Low,20,400$,1.4684,$50.00,0.1,$0.00,U.S.
+Xpeng,Xpeng,Finance,High,0,0$,6.7548,$230.00,0,$10.70,Germany
+Alibaba,Alibaba,eCommerce,Very Low,10,200$,11.7474,$400.00,1.7185,$0.00,China
+Shopify,Shopify,eCommerce,Low,0,0$,0,$0.00,0,$0.00,Canada
+NVDA,Nvidia,Chips,Low,15,300$,0,$0.00,0,$0.64,U.S.
+Intel,Intel,Chips,High,2.5,50$,1.4097,$48.00,1,$1.26,U.S.
+Nestle,Nestle,Consumer,Medium,0,0$,0,$0.00,0,$0.00,U.S.
+Beyond Meat,Beyond Meat,Consumer,Medium,5,100$,8.4581,$288.00,2.2,$0.00,U.S.
+KO,Coca-Cola,Consumer,Medium,0,0$,7.6652,$261.00,5.524,$1.60,U.S.
