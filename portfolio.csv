@@ -2,135 +2,135 @@ Name,Ticker,Weight,Country,Sector
 Cash,None,30.0,None,None
 Bonds,None,6.0,None,None
 Medical Properties Trust,MPW,3.96947,U.S.,Reits
-Apple Inc,None,3.068703,None,None
+Apple Inc,AAPL,3.068703,U.S.,Information Technology
 Mutual Fund,None,3.0,None,None
-Microsoft Corp,None,2.601489,None,None
-Amazon Com Inc,None,2.374814,None,None
-Alphabet Inc Class A,None,2.005427,None,None
-Alphabet Inc Class C,None,1.9590680000000003,None,None
-Alibaba Group Holding Ltd Sponsored Adr,None,1.1421931,China,Consumer Discretionary
+Microsoft Corp,MSFT,2.601489,U.S.,Information Technology
+Amazon Com Inc,AMZN,2.374814,U.S.,Consumer Discretionary
+Alphabet Inc Class A,GOOGL,2.005427,U.S.,Technology
+Alphabet Inc Class C,GOOG,1.9590680000000003,U.S.,Technology
+Intel,INTC,1.1908590000000001,U.S.,Chips
+Alibaba Group Holding Ltd Sponsored Adr,BABA,1.1421931,China,eCommerce
 Xpeng,XPEV,1.08477,China,Technology
-Facebook Inc Class A,None,1.042431,None,None
+Facebook Inc Class A,FB,1.042431,U.S.,Communication
 Tencent Holdings Ltd,None,0.6295446,China,Communication Services
 Taiwan Semiconductor Manufacturing Co Ltd,None,0.5685704,Taiwan,Information Technology
 Beyond Meat,BYND,0.5223,U.S.,Consumer
-Nvidia Corp,None,0.5052930000000001,None,None
+Nvidia Corp,NVDA,0.5052930000000001,U.S.,Information Technology
 Virgin Galactic,SPCE,0.50221,U.S.,Technology
 Bitcoin,None,0.5,None,None
-Samsung Electronics Co Ltd,None,0.4541464,None,None
-Paypal Holdings Inc,None,0.41893899999999995,None,None
-Adobe Inc,None,0.408354,None,None
-Netflix Inc,None,0.395892,None,None
-Tesla Inc,TSLA,0.3900350000000001,United States,Consumer Discretionary
+Paypal Holdings Inc,PYPL,0.41893899999999995,U.S.,Information Technology
+Adobe Inc,ADBE,0.408354,U.S.,Information Technology
+Netflix Inc,NFLX,0.395892,U.S.,Communication
+Samsung Electronics Co Ltd Pfd Non-voting,None,0.3957154,South Korea,Information Technology
+Tesla Inc,TSLA,0.3900350000000001,U.S.,Consumer Discretionary
 Johnson & Johnson,None,0.36852,None,None
-Intel,INTC,0.36723900000000004,U.S.,Chips
-Berkshire Hathaway Inc Class B,None,0.36565700000000007,None,None
-Comcast Corp Class A,None,0.354816,None,None
-Pepsico Inc,None,0.34125300000000003,None,None
-Cisco Systems Inc,None,0.3397180000000001,None,None
+Berkshire Hathaway Inc Class A,None,0.36565700000000007,None,None
+Comcast Corp Class A,CMCSA,0.354816,U.S.,Communication
+Pepsico Inc,PEP,0.34125300000000003,U.S.,Consumer Staples
+Cisco Systems Inc,CSCO,0.3397180000000001,U.S.,Information Technology
 Procter & Gamble Co,None,0.31080800000000003,None,None
 Visa Inc Class A,None,0.308834,None,None
 Jpmorgan Chase & Co,None,0.282598,None,None
 Unitedhealth Group Inc,None,0.275301,None,None
 Home Depot Inc,None,0.274237,None,None
-Costco Wholesale Corp,None,0.263743,None,None
+Costco Wholesale Corp,COST,0.263743,U.S.,Consumer Staples
 Mastercard Inc Class A,None,0.26149500000000003,None,None
-Amgen Inc,None,0.261456,None,None
-Broadcom Inc,None,0.23274199999999998,None,None
+Amgen Inc,AMGN,0.261456,U.S.,Health Care
+Broadcom Inc,AVGO,0.23274199999999998,U.S.,Information Technology
 Verizon Communications Inc,None,0.228051,None,None
-Qualcomm Inc,None,0.222262,None,None
+Qualcomm Inc,QCOM,0.222262,U.S.,Information Technology
 Li Auto,LI,0.21695000000000003,China,Technology
 Pfizer Inc,None,0.20515300000000003,None,None
 At&t Inc,None,0.202836,None,None
 Walt Disney Co,None,0.202808,None,None
 Meituan Dianping Class B,None,0.19784569999999999,China,Consumer Discretionary
 Merck & Co Inc,None,0.194951,None,None
-Charter Communications Inc Class A,None,0.18902900000000003,None,None
+Charter Communications Inc Class A,CHTR,0.18902900000000003,U.S.,Communication
 Bank Of America Corp,None,0.186439,None,None
 Coca-cola Co,None,0.175174,None,None
 Walmart Inc,None,0.17501500000000003,None,None
 Exxon Mobil Corp,None,0.170945,None,None
 Abbott Laboratories,None,0.169907,None,None
-Advanced Micro Devices Inc,None,0.16792300000000002,None,None
+Advanced Micro Devices Inc,AMD,0.16792300000000002,U.S.,Information Technology
 Salesforce Com Inc,None,0.167039,None,None
-Starbucks Corp,None,0.16703,None,None
-Jd Com Adr Representing Inc,JD,0.164592,China,Consumer Discretionary
+Starbucks Corp,SBUX,0.16703,U.S.,Consumer Discretionary
+Jd Com Inc Sponsored Adr Class A,JD,0.164592,China,Consumer Discretionary
 Abbvie Inc,None,0.160449,None,None
 Thermo Fisher Scientific Inc,None,0.157257,None,None
-Gilead Sciences Inc,None,0.15185900000000002,None,None
+Gilead Sciences Inc,GILD,0.15185900000000002,U.S.,Health Care
 Chevron Corp,None,0.150795,None,None
-Intuit Inc,None,0.150014,None,None
-Intuitive Surgical Inc,None,0.144459,None,None
-Mondelez International Inc Class A,None,0.143982,None,None
+Intuit Inc,INTU,0.150014,U.S.,Information Technology
+Intuitive Surgical Inc,ISRG,0.144459,U.S.,Health Care
+Mondelez International Inc Class A,MDLZ,0.143982,U.S.,Consumer Staples
 Mcdonald's Corp,None,0.138926,None,None
 Accenture Plc Class A,None,0.13711500000000001,None,None
 Naspers Limited Class N,None,0.13391139999999999,South Africa,Consumer Discretionary
 Nextera Energy Inc,None,0.131876,None,None
-Booking Holdings Inc,None,0.129532,None,None
+Booking Holdings Inc,BKNG,0.129532,U.S.,Consumer Discretionary
 Bristol-myers Squibb Co,None,0.127764,None,None
-Vertex Pharmaceuticals Inc,None,0.12565900000000002,None,None
+Vertex Pharmaceuticals Inc,VRTX,0.12565900000000002,U.S.,Health Care
 Reliance Industries Limited,None,0.1253006,India,Energy
 Medtronic Plc,None,0.12409699999999999,None,None
 Linde Plc,None,0.12402400000000001,None,None
 Danaher Corp,None,0.122696,None,None
 Eli Lilly And Co,None,0.12137600000000001,None,None
-China Construction Bank Corporation Class H,None,0.1190026,China,Financials
-T Mobile Us Inc,TMUS,0.11800000000000001,United States,Communication
+China Citic Bank Corporation Ltd Class A,None,0.11922120000000003,China,Financials
+T Mobile Us Inc,TMUS,0.11800000000000001,U.S.,Communication
 Nike Inc Class B,None,0.11549500000000001,None,None
 Philip Morris International Inc,None,0.11480100000000001,None,None
-Activision Blizzard Inc,None,0.11393000000000002,None,None
+Activision Blizzard Inc,ATVI,0.11393000000000002,U.S.,Communication
 Union Pacific Corp,None,0.113082,None,None
 Texas Instruments Inc,None,0.11267700000000003,None,None
-Regeneron Pharmaceuticals Inc,None,0.111607,None,None
+Regeneron Pharmaceuticals Inc,REGN,0.111607,U.S.,Health Care
 American Tower Corp,None,0.11114900000000001,None,None
-Oracle Corp,None,0.110553,None,None
-Fiserv Inc,None,0.109114,None,None
+Oracle Corp Japan,None,0.110553,None,None
+Fiserv Inc,FISV,0.109114,U.S.,Information Technology
 Lowe's Cos Inc,None,0.108069,None,None
-Ping An Insurance (group) Company Of China Ltd Class H,None,0.10704040000000001,China,Financials
-Texas Instrument Inc,TXN,0.10700000000000003,United States,Information Technology
-Automatic Data Processing Inc,None,0.10485900000000001,None,None
+Ping An Insurance (group) Company Of China Ltd Class A,None,0.10704040000000001,China,Financials
+Texas Instrument Inc,TXN,0.10700000000000003,U.S.,Information Technology
+Automatic Data Processing Inc,ADP,0.10485900000000001,U.S.,Information Technology
 International Business Machines Corp,None,0.10464000000000002,None,None
 Honeywell International Inc,None,0.101014,None,None
-Csx Corp,None,0.100577,None,None
+Csx Corp,CSX,0.100577,U.S.,Industrials
 Citigroup Inc,None,0.10016300000000002,None,None
-Illumina Inc,None,0.096869,None,None
+Illumina Inc,ILMN,0.096869,U.S.,Health Care
 United Parcel Service Inc Class B,None,0.096332,None,None
-Netease Adr Inc,NTES,0.09541110000000001,China,Communication
-Micron Technology Inc,None,0.094378,None,None
-Autodesk Inc,None,0.093773,None,None
-Lam Research Corp,None,0.093438,None,None
+Netease Inc Sponsored Adr,NTES,0.09541110000000001,China,Communication Services
+Micron Technology Inc,MU,0.094378,U.S.,Information Technology
+Autodesk Inc,ADSK,0.093773,U.S.,Information Technology
+Lam Research Corp,LRCX,0.093438,U.S.,Information Technology
 Lockheed Martin Corp,None,0.089857,None,None
 Wells Fargo & Co,None,0.08723300000000002,None,None
 Fidelity National Information Services Inc,None,0.086587,None,None
 Blackrock Inc,None,0.08403500000000001,None,None
 3m Co,None,0.082486,None,None
-Baidu Adr Reptg Inc Class A,BIDU,0.08241989999999999,China,Communication
+Baidu Inc Sponsored Adr Class A,BIDU,0.08241989999999999,China,Communication Services
 Boeing Co,None,0.08128500000000001,None,None
-Biogen Inc,None,0.08121800000000001,None,None
+Biogen Inc,BIIB,0.08121800000000001,U.S.,Health Care
 S&p Global Inc,None,0.081186,None,None
 Servicenow Inc,None,0.080362,None,None
 Raytheon Technologies Corp,None,0.079375,None,None
 Cvs Health Corp,None,0.07888400000000001,None,None
 Becton Dickinson And Co,None,0.078038,None,None
-Analog Devices Inc,None,0.07630700000000001,None,None
+Analog Devices Inc,ADI,0.07630700000000001,U.S.,Information Technology
 Nestle Sa,None,0.076087,None,None
 Prologis Inc,None,0.07471900000000001,None,None
 Altria Group Inc,None,0.07343200000000001,None,None
-Electronic Arts Inc,None,0.073369,None,None
-Dexcom Inc,None,0.07164000000000001,None,None
+Electronic Arts Inc,EA,0.073369,U.S.,Communication
+Dexcom Inc,DXCM,0.07164000000000001,U.S.,Health Care
 Infosys Limited,None,0.07142250000000001,India,Information Technology
 China Mobile Limited,None,0.0711672,China,Communication Services
 Caterpillar Inc,None,0.06924000000000001,None,None
 Zoetis Inc,None,0.069037,None,None
-Ebay Inc,None,0.068251,None,None
+Ebay Inc,EBAY,0.068251,U.S.,Consumer Discretionary
 Crown Castle International Corp,None,0.066679,None,None
 Equinix Inc,None,0.06667400000000001,None,None
-Sk Hynix Inc,None,0.06641219999999999,None,None
+Sk Hynix Inc,None,0.06641219999999999,South Korea,Information Technology
 Anthem Inc,None,0.066306,None,None
-Exelon Corp,None,0.06604800000000001,None,None
+Exelon Corp,EXC,0.06604800000000001,U.S.,Utilities
 Dominion Energy Inc,None,0.06532800000000001,None,None
-Xcel Energy Inc,None,0.064907,None,None
-Monster Beverage Corp,None,0.064484,None,None
+Xcel Energy Inc,XEL,0.064907,U.S.,Utilities
+Monster Beverage Corp,MNST,0.064484,U.S.,Consumer Staples
 Housing Development Finance Corporation Limited,None,0.0637278,India,Financials
 Colgate-palmolive Co,None,0.063131,None,None
 Vale S A,None,0.0618833,Brazil,Materials
@@ -138,31 +138,32 @@ Cigna Corp,None,0.061134999999999995,None,None
 Stryker Corp,None,0.060808,None,None
 Target Corp,None,0.060546,None,None
 Air Products & Chemicals Inc,None,0.060537999999999995,None,None
-Mercadolibre Inc,MELI,0.060487,United States,Consumer Discretionary
-Naver Corp,None,0.060369200000000005,None,None
+Mercadolibre Inc,MELI,0.060487,U.S.,Consumer Discretionary
+Naver Corp,None,0.060369200000000005,South Korea,Communication Services
 Goldman Sachs Group Inc,None,0.06004500000000001,None,None
 Tjx Cos Inc,None,0.05995000000000001,None,None
 Duke Energy Corp,None,0.05969599999999999,None,None
-Idexx Laboratories Inc,None,0.059506,None,None
+Idexx Laboratories Inc,IDXX,0.059506,U.S.,Health Care
+Samsung Fire & Marine Insurance Co Ltd Preference Shares,None,0.059474,None,None
 T-mobile Us Inc,None,0.05924600000000001,None,None
 American Express Co,None,0.05914900000000001,None,None
-Ross Stores Inc,None,0.057596,None,None
-Industrial And Commercial Bank Of China Limited Class H,None,0.05707850000000001,China,Financials
+Ross Stores Inc,ROST,0.057596,U.S.,Consumer Discretionary
+Industrial And Commercial Bank Of China Limited Class A,None,0.05707850000000001,China,Financials
 Cme Group Inc,None,0.056978,None,None
 Applied Materials Inc,None,0.056723,None,None
 Marsh & Mclennan Cos Inc,None,0.056692000000000006,None,None
-Kla Corp,None,0.055868999999999995,None,None
-Roche Holding Ag,None,0.055817,None,None
-Synopsys Inc,None,0.05577900000000001,None,None
+Kla Corp,KLAC,0.055868999999999995,U.S.,Information Technology
+Roche Holding Ag (bearer),None,0.055817,None,None
+Synopsys Inc,SNPS,0.05577900000000001,U.S.,Information Technology
 Southern Co,None,0.055364,None,None
 Chubb Ltd,None,0.055042000000000015,None,None
 Morgan Stanley,None,0.05494200000000001,None,None
-Cadence Design Systems Inc,None,0.054174,None,None
+Cadence Design Systems Inc,CDNS,0.054174,U.S.,Information Technology
 Newmont Corp,None,0.053516999999999995,None,None
-Paccar Inc,None,0.053075,None,None
+Paccar Inc,PCAR,0.053075,U.S.,Industrials
 Deere & Co,None,0.053065999999999995,None,None
 Hon Hai Precision Industry Co Ltd,None,0.052757500000000006,Taiwan,Information Technology
-Cintas Corp,None,0.052627,None,None
+Cintas Corp,CTAS,0.052627,U.S.,Industrials
 Boston Scientific Corp,None,0.052485,None,None
 Illinois Tool Works Inc,None,0.052431000000000005,None,None
 Global Payments Inc,None,0.051073999999999994,None,None
@@ -171,34 +172,33 @@ Intercontinental Exchange Inc,None,0.05088,None,None
 General Electric Co,None,0.05088,None,None
 Sherwin-williams Co,None,0.050614000000000006,None,None
 Progressive Corp,None,0.050584000000000004,None,None
-Lg Chem Ltd,None,0.0499449,None,None
 Humana Inc,None,0.049807,None,None
-Marriott International Inc /md Class A,None,0.049761,None,None
+Marriott International Inc /md Class A,MAR,0.049761,U.S.,Consumer Discretionary
 Kimberly-clark Corp,None,0.049724000000000004,None,None
 Northrop Grumman Corp,None,0.048718,None,None
-Ansys Inc,None,0.048576,None,None
+Ansys Inc,ANSS,0.048576,U.S.,Information Technology
 Us Bancorp,None,0.048387,None,None
 Truist Financial Corp,None,0.048269000000000006,None,None
 Norfolk Southern Corp,None,0.047319,None,None
-Applied Material Inc,AMAT,0.04699999999999999,United States,Information Technology
+Applied Material Inc,AMAT,0.04699999999999999,U.S.,Information Technology
 Edwards Lifesciences Corp,None,0.04673,None,None
-Lululemon Athletica Inc,LULU,0.046301,United States,Consumer Discretionary
-Xilinx Inc,None,0.046213,None,None
+Lululemon Athletica Inc,LULU,0.046301,U.S.,Consumer Discretionary
+Xilinx Inc,XLNX,0.046213,U.S.,Information Technology
 Xiaomi Corp Class B,None,0.0462022,China,Information Technology
 Oil Company Lukoil Pjsc,None,0.0461927,Russia,Energy
 Dollar General Corp,None,0.04609800000000001,None,None
 Tal Education Group Sponsored Adr Class A,None,0.0459769,China,Consumer Discretionary
-Microchip Technology Inc,None,0.045630000000000004,None,None
+Microchip Technology Inc,MCHP,0.045630000000000004,U.S.,Information Technology
 Aon Plc Class A,None,0.045609000000000004,None,None
 Tata Consultancy Services Limited,None,0.045354599999999995,India,Information Technology
-Celltrion Inc,None,0.04522760000000001,None,None
-China Life Insurance Co Ltd Class H,None,0.044906,China,Financials
-Paychex Inc,None,0.044905,None,None
+Celltrion Inc,None,0.04522760000000001,South Korea,Health Care
+China Life Insurance Co Ltd Class A,None,0.044906,China,Financials
+Paychex Inc,PAYX,0.044905,U.S.,Information Technology
 Mediatek Inc,None,0.0448059,Taiwan,Information Technology
-Bank Of China Limited Class H,None,0.044684499999999995,China,Financials
+Bank Of China Limited Class A,None,0.044684499999999995,China,Financials
 Ecolab Inc,None,0.044383000000000006,None,None
 Moody's Corp,None,0.043701000000000004,None,None
-Skyworks Solutions Inc,None,0.043534,None,None
+Skyworks Solutions Inc,SWKS,0.043534,U.S.,Information Technology
 Pnc Financial Services Group Inc,None,0.043488,None,None
 Roper Technologies Inc,None,0.043119000000000005,None,None
 Estee Lauder Cos Inc Class A,None,0.042464,None,None
@@ -207,66 +207,66 @@ Waste Management Inc,None,0.041618,None,None
 Gazprom Pjsc,None,0.0415323,Russia,Energy
 Digital Realty Trust Inc,None,0.041397,None,None
 American Electric Power Co Inc,None,0.041379000000000006,None,None
-Verisign Inc,None,0.040868,None,None
-Align Technology Inc,None,0.040708,None,None
-Alexion Pharmaceuticals Inc,None,0.040530000000000004,None,None
-Docusign Inc,DOCU,0.040421,United States,Information Technology
-Dollar Tree Inc,None,0.040024000000000004,None,None
-Samsung Sdi Co Ltd,None,0.04002130000000001,None,None
-Zoom Video Communications Inc Clas,ZM,0.04,United States,Information Technology
+Verisign Inc,VRSN,0.040868,U.S.,Information Technology
+Align Technology Inc,ALGN,0.040708,U.S.,Health Care
+Alexion Pharmaceuticals Inc,ALXN,0.040530000000000004,U.S.,Health Care
+Docusign Inc Class A,DOCU,0.040421,U.S.,Information Technology
+Dollar Tree Inc,DLTR,0.040024000000000004,U.S.,Consumer Discretionary
+Samsung Sdi Co Ltd,None,0.04002130000000001,South Korea,Information Technology
+Zoom Video Communications Inc Clas,ZM,0.04,U.S.,Information Technology
 Novartis Ag,None,0.03971600000000001,None,None
 Hindustan Unilever Limited,None,0.039577600000000004,India,Consumer Staples
 Sap Se,None,0.039473,None,None
 Conocophillips,None,0.03878200000000001,None,None
 Fedex Corp,None,0.03863,None,None
-Cerner Corp,None,0.038528,None,None
-Copart Inc,None,0.038329999999999996,None,None
+Cerner Corp,CERN,0.038528,U.S.,Health Care
+Copart Inc,CPRT,0.038329999999999996,U.S.,Industrials
 Qatar National Bank Qpsc,None,0.038296800000000006,Qatar,Financials
-China Tower Corp Ltd Class H,None,0.038035,China,Communication Services
-Workday Inc Class A,WDAY,0.037938,United States,Information Technology
+China Railway Signal & Communication Corp Ltd Class H,None,0.038035,China,Information Technology
+Workday Inc Class A,WDAY,0.037938,U.S.,Information Technology
 Dupont De Nemours Inc,None,0.037732,None,None
-China Merchants Bank Co Ltd Class H,None,0.037081100000000006,China,Financials
+China Everbright Bank Co Ltd Class H,None,0.037081100000000006,China,Financials
 Pt Bank Central Asia Tbk,None,0.0370529,Indonesia,Financials
 B3 Sa - Brasil Bolsa Balcao,None,0.03704230000000001,Brazil,Financials
 General Mills Inc,None,0.036846,None,None
 Icici Bank Limited,None,0.0366149,India,Financials
 Charles Schwab Corp,None,0.036536,None,None
-Nxp Semiconductors Nv,NXPI,0.036308,United States,Information Technology
+Nxp Semiconductors Nv,NXPI,0.036308,U.S.,Information Technology
 Centene Corp,None,0.036238000000000006,None,None
 Wuxi Biologics (cayman) Inc,None,0.0360409,China,Health Care
 Eaton Corp Plc,None,0.035880999999999996,None,None
 Emerson Electric Co,None,0.035665,None,None
 Cognizant Technology Solutions Corp Class A,None,0.035599,None,None
-Splunk Inc,SPLK,0.03538,United States,Information Technology
+Splunk Inc,SPLK,0.03538,U.S.,Information Technology
 L3harris Technologies Inc,None,0.035134,None,None
 Al Rajhi Bank,None,0.0350923,Saudi Arabia,Financials
-Trip Com Group Adr Ltd,TCOM,0.0349585,China,Consumer Discretionary
+Trip Com Group Ltd Sponsored Adr,TCOM,0.0349585,China,Consumer Discretionary
 Sempra Energy,None,0.034913,None,None
-Incyte Corp,None,0.034071000000000004,None,None
+Incyte Corp,INCY,0.034071000000000004,U.S.,Health Care
 O'reilly Automotive Inc,None,0.03398,None,None
-Yum China Holdings Inc,None,0.0336897,None,None
+Yum China Holdings Inc,None,0.0336897,China,Consumer Discretionary
 America Movil Sab De Cv Class L,None,0.0336521,Mexico,Communication Services
 General Dynamics Corp,None,0.033572000000000005,None,None
-Maxim Integrated Products Inc,None,0.03351200000000001,None,None
+Maxim Integrated Products Inc,MXIM,0.03351200000000001,U.S.,Information Technology
 Hyundai Motor Company,None,0.033448000000000006,South Korea,Consumer Discretionary
 Itau Unibanco Holding Sa Pfd,None,0.033409,Brazil,Financials
 New Oriental Education & Technology Group Inc Sponsored Adr,None,0.033403699999999995,China,Consumer Discretionary
 Sba Communications Corp Class A,None,0.033376,None,None
-Kakao Corp,None,0.0332075,None,None
+Kakao Corp,None,0.0332075,South Korea,Communication Services
 Cnooc Limited,None,0.0327688,China,Energy
 Astrazeneca Plc,None,0.032638,None,None
 Pinduoduo Inc Sponsored Adr Class A,None,0.03244980000000001,China,Consumer Discretionary
 Toyota Motor Corp,None,0.032093,None,None
 Hca Healthcare Inc,None,0.032046,None,None
-Cognizant Technology Solutions Cor,CTSH,0.031,United States,Information Technology
+Cognizant Technology Solutions Cor,CTSH,0.031,U.S.,Information Technology
 Saudi Basic Industries Corp,None,0.030794700000000005,Saudi Arabia,Materials
 Ihs Markit Ltd,None,0.030787000000000002,None,None
 Msci Inc Class A,None,0.030373,None,None
 T Rowe Price Group Inc,None,0.030292000000000003,None,None
-Citrix Systems Inc,None,0.030059000000000006,None,None
+Citrix Systems Inc,CTXS,0.030059000000000006,U.S.,Information Technology
 General Motors Co,None,0.030042999999999997,None,None
 Amphenol Corp Class A,None,0.029902000000000005,None,None
-Country Garden Holdings Co Ltd,None,0.0298997,China,Real Estate
+Country Garden Services Holdings Co Ltd,None,0.0298997,China,Industrials
 Verisk Analytics Inc Class A,None,0.029384,None,None
 Eversource Energy,None,0.029106999999999997,None,None
 Dow Inc,None,0.029064,None,None
@@ -282,10 +282,10 @@ Constellation Brands Inc Class A,None,0.02837,None,None
 Clorox Co,None,0.028352,None,None
 Metlife Inc,None,0.028108,None,None
 Resmed Inc,None,0.028096999999999997,None,None
-Walgreen Boots Alliance Inc,WBA,0.028000000000000004,United States,Consumer Staples
-Oreilly Automotive Inc,ORLY,0.028000000000000004,United States,Consumer Discretionary
+Walgreen Boots Alliance Inc,WBA,0.028000000000000004,U.S.,Consumer Staples
+Oreilly Automotive Inc,ORLY,0.028000000000000004,U.S.,Consumer Discretionary
 Travelers Cos Inc,None,0.027922,None,None
-Pt Bank Rakyat Indonesia (persero) Tbk Class B,None,0.027900400000000002,Indonesia,Financials
+Pt Bank Negara Indonesia (persero) Tbk Class B,None,0.027900400000000002,Indonesia,Financials
 Bank Of New York Mellon Corp,None,0.027879,None,None
 Capital One Financial Corp,None,0.02786,None,None
 Bharti Airtel Limited,None,0.027772400000000003,India,Communication Services
@@ -299,7 +299,7 @@ American International Group Inc,None,0.026767000000000003,None,None
 Zimmer Biomet Holdings Inc,None,0.026671000000000004,None,None
 Banco Bradesco Sa Pfd,None,0.0266451,Brazil,Financials
 Petroleo Brasileiro Sa Pfd,None,0.026554400000000006,Brazil,Energy
-Seattle Genetics Inc,SGEN,0.026548000000000002,United States,Health Care
+Seattle Genetics Inc,SGEN,0.026548000000000002,U.S.,Health Care
 Yum! Brands Inc,None,0.026350000000000002,None,None
 Kroger Co,None,0.026345000000000004,None,None
 Mmc Norilsk Nickel Pjsc,None,0.026308800000000004,Russia,Materials
@@ -307,16 +307,16 @@ Eog Resources Inc,None,0.026235,None,None
 Kinder Morgan Inc,None,0.026188000000000003,None,None
 Phillips 66,None,0.026027,None,None
 Fastenal Co,None,0.025761000000000003,None,None
+China Huarong Asset Management Co Ltd Class H,None,0.0257479,China,Financials
 Willis Towers Watson Plc,None,0.025735,None,None
 American Water Works Co Inc,None,0.025656,None,None
 Trane Technologies Plc,None,0.025525,None,None
 Sysco Corp,None,0.025429000000000007,None,None
 Sanofi,None,0.025352000000000003,None,None
-Posco,None,0.0253269,None,None
-Royal Dutch Shell Plc Class A,None,0.025213,None,None
-Verisk Analytics Inc,VRSK,0.025,United States,Industrials
+Royal Dutch Shell Plc Class B,None,0.025213,None,None
+Verisk Analytics Inc,VRSK,0.025,U.S.,Industrials
 Otis Worldwide Corp,None,0.024777,None,None
-China Mengniu Dairy Co Ltd,None,0.0247622,None,None
+China Mengniu Dairy Co Ltd,None,0.0247622,China,Consumer Staples
 Ford Motor Co,None,0.024727000000000002,None,None
 Aflac Inc,None,0.024629,None,None
 Consolidated Edison Inc,None,0.024585999999999997,None,None
@@ -328,60 +328,60 @@ Hp Inc,None,0.024259000000000003,None,None
 Ptt Public Co Ltd (alien Mkt),None,0.0241676,Thailand,Energy
 Prudential Financial Inc,None,0.024161000000000002,None,None
 Rockwell Automation Inc,None,0.024040000000000002,None,None
-Asml Holding Nv,None,0.023999999999999997,None,None
+Asml Holding Adr Representing Nv,ASML,0.023999999999999997,Netherlands,Information Technology
 Lvmh Moet Hennessy Louis Vuitton Se,None,0.023999999999999997,None,None
 Shopify Inc Class A,None,0.023822000000000003,None,None
 Chunghwa Telecom Co Ltd,None,0.023816200000000003,Taiwan,Communication Services
 Marathon Petroleum Corp,None,0.023769000000000005,None,None
 Novo Nordisk A/s Class B,None,0.023674,None,None
-Sirius Xm Holdings Inc,SIRI,0.023464000000000006,United States,Communication
-Siemens Ag,None,0.023218,None,None
+Sirius Xm Holdings Inc,SIRI,0.023464000000000006,U.S.,Communication
+Siemens Healthineers Ag,None,0.023218,None,None
 Mckesson Corp,None,0.023205,None,None
-Nio Inc,NIO,0.0231199,China,Technology
+Nio Inc Sponsored Adr Class A,None,0.0231199,China,Consumer Discretionary
 Mccormick & Co Inc /md,None,0.023053,None,None
-Fastenal,FAST,0.023,United States,Industrials
+Fastenal,FAST,0.023,U.S.,Industrials
 Ball Corp,None,0.022956,None,None
-Kb Financial Group Inc,None,0.0229455,None,None
+Kb Financial Group Inc,None,0.0229455,South Korea,Financials
 Archer-daniels-midland Co,None,0.022869,None,None
 Motorola Solutions Inc,None,0.022827000000000004,None,None
-Lg Household & Health Care Ltd,None,0.0226699,None,None
 Church & Dwight Co Inc,None,0.022596000000000005,None,None
-Hyundai Mobis Co Ltd,None,0.022595599999999997,None,None
+Hyundai Mobis Co Ltd,None,0.022595599999999997,South Korea,Consumer Discretionary
 Corning Inc,None,0.02257,None,None
 Stanley Black & Decker Inc,None,0.022515000000000004,None,None
 Softbank Group Corp,None,0.022457,None,None
+Posco Chemical Co Ltd,None,0.0224529,South Korea,Materials
 Williams Cos Inc,None,0.022312000000000002,None,None
 Saudi Telecom Co,None,0.0223041,Saudi Arabia,Communication Services
 Shenzhou International Group Holdings Limited,None,0.0220267,China,Consumer Discretionary
 Parker-hannifin Corp,None,0.022014000000000006,None,None
-Moderna Inc,MRNA,0.022000000000000002,United States,Health Care
+Moderna Inc,MRNA,0.022000000000000002,U.S.,Health Care
 Valero Energy Corp,None,0.021980000000000003,None,None
 Novatek Jsc Sponsored Gdr Regs,None,0.0219704,Russia,Energy
 Glaxosmithkline Plc,None,0.021960000000000004,None,None
 Royal Bank Of Canada,None,0.021896,None,None
-Shinhan Financial Group Co Ltd,None,0.021857200000000004,None,None
+Shinhan Financial Group Co Ltd,None,0.021857200000000004,South Korea,Financials
 Axis Bank Limited,None,0.021739200000000004,India,Financials
 State Street Corp,None,0.021714,None,None
 Best Buy Co Inc,None,0.021704,None,None
 Mettler-toledo International Inc,None,0.021570000000000002,None,None
-Expedia Group Inc,None,0.021553000000000003,None,None
+Expedia Group Inc,EXPE,0.021553000000000003,U.S.,Consumer Discretionary
 Carrier Global Corp,None,0.021537,None,None
 Alexandria Real Estate Equities Inc,None,0.021489,None,None
 Welltower Inc,None,0.021455000000000005,None,None
-Ulta Beauty Inc,None,0.021409,None,None
+Ulta Beauty Inc,ULTA,0.021409,U.S.,Consumer Discretionary
 Delta Electronics Inc,None,0.0213401,Taiwan,Information Technology
 Dte Energy Co,None,0.021269,None,None
-Gold,None,0.021244799999999998,None,None
+Gold Fields Limited,None,0.021244799999999998,South Africa,Materials
 Wal-mart De Mexico Sab De Cv,None,0.021225400000000002,Mexico,Consumer Staples
-Semiconductor Manufacturing International Corp,None,0.021194699999999997,None,None
-Western Digital Corp,None,0.021182000000000003,None,None
+Semiconductor Manufacturing International Corp,None,0.021194699999999997,China,Information Technology
+Western Digital Corp,WDC,0.021182000000000003,U.S.,Information Technology
 Dr Horton Inc,None,0.021143,None,None
 Transdigm Group Inc,None,0.020919999999999998,None,None
 National Commercial Bank Cjsc,None,0.020894000000000003,Saudi Arabia,Financials
-Samsung Biologics Co Ltd,None,0.020846100000000003,None,None
+Samsung Biologics Co Ltd,None,0.020846100000000003,South Korea,Health Care
 China Resources Land Limited,None,0.0208236,China,Real Estate
 Fleetcor Technologies Inc,None,0.020775999999999996,None,None
-Kraft Heinz,KHC,0.020726,United States,Consumer Staples
+Kraft Heinz Co,None,0.020726,None,None
 Avalonbay Communities Inc,None,0.020725000000000004,None,None
 Sony Corp,None,0.020706000000000002,None,None
 Hershey Co,None,0.020571,None,None
@@ -408,10 +408,10 @@ Anta Sports Products Ltd,None,0.0196531,China,Consumer Discretionary
 Total Se,None,0.01963,None,None
 China Overseas Land & Investment Limited,None,0.019588400000000002,China,Real Estate
 Csl Ltd,None,0.019552,None,None
-China Petroleum & Chemical Corporation Class H,None,0.0195408,China,Energy
+China Petroleum & Chemical Corporation Class A,None,0.0195408,China,Energy
 Cp All Public Co Ltd (alien Mkt),None,0.0193921,Thailand,Consumer Staples
 Mega Financial Holding Co Ltd,None,0.0193792,Taiwan,Financials
-Agricultural Bank Of China Limited Class H,None,0.0193487,China,Financials
+Agricultural Bank Of China Limited Class A,None,0.0193487,China,Financials
 Allianz Se,None,0.019332,None,None
 Lennar Corp Class A,None,0.019239000000000003,None,None
 Unilever Nv,None,0.019151,None,None
@@ -422,7 +422,7 @@ Equifax Inc,None,0.018808000000000002,None,None
 Diageo Plc,None,0.018772,None,None
 E Sun Financial Holding Co Ltd,None,0.0187109,Taiwan,Financials
 Nan Ya Plastics Corporation,None,0.018705700000000002,Taiwan,Materials
-Anhui Conch Cement Company Limited Class H,None,0.0186836,China,Materials
+Anhui Conch Cement Company Limited Class A,None,0.0186836,China,Materials
 Marketaxess Holdings Inc,None,0.018629,None,None
 Hcl Technologies Limited,None,0.018607900000000004,India,Information Technology
 Vf Corp,None,0.018557,None,None
@@ -431,12 +431,12 @@ Sunny Optical Technology (group) Co Ltd,None,0.018409800000000004,China,Informat
 Uni-president Enterprises Corp,None,0.018396500000000003,Taiwan,Consumer Staples
 Simon Property Group Inc,None,0.01831,None,None
 Anglogold Ashanti Limited,None,0.0182864,South Africa,Materials
-Grupo Financiero Banorte Sab De Cv Class O,None,0.018269,Mexico,Financials
+Grupo Financiero Inbursa Sab De Cv Class O,None,0.018269,Mexico,Financials
 Equity Residential,None,0.018222,None,None
 First Republic Bank/ca,None,0.018154,None,None
 Ameriprise Financial Inc,None,0.018102,None,None
 Tatneft Pjsc,None,0.018099300000000002,Russia,Energy
-Check Point Software Technologies,CHKP,0.01803,Israel,Information Technology
+Check Point Software Technologies Ltd,CHKP,0.01803,Israel,Information Technology
 Laboratory Corp Of America Holdings,None,0.017981999999999998,None,None
 Keysight Technologies Inc,None,0.017980000000000003,None,None
 Fortinet Inc,None,0.017955,None,None
@@ -456,43 +456,44 @@ Tyson Foods Inc Class A,None,0.01722,None,None
 China Resources Beer (holdings) Co Ltd,None,0.017121400000000002,China,Consumer Staples
 Pt Telekomunikasi Indonesia (persero) Tbk Class B,None,0.017081,Indonesia,Communication Services
 Keyence Corp,None,0.017033,None,None
-Air Liquide Sa,None,0.017017,None,None
+Air Liquide Sa Pf 2022 Common Stock,None,0.017017,None,None
 Cathay Financial Holdings Co Ltd,None,0.0170103,Taiwan,Financials
 Iberdrola Sa,None,0.016805,None,None
 British American Tobacco Plc,None,0.016794999999999997,None,None
-Fox Corp Class A,None,0.016755,None,None
+Fox Corp Class A,FOXA,0.016755,U.S.,Communication
 Old Dominion Freight Line Inc,None,0.016741,None,None
 Magazine Luiza S A,None,0.016662700000000003,Brazil,Consumer Discretionary
 Largan Precision Co Ltd,None,0.0166616,Taiwan,Information Technology
 Teleflex Inc,None,0.016564,None,None
 Kellogg Co,None,0.016498000000000002,None,None
+Bank Of Jiangsu Co Ltd Class A,None,0.016348700000000004,China,Financials
 Saudi Arabian Oil Company (saudi Aramco),None,0.0162583,Saudi Arabia,Energy
 Quest Diagnostics Inc,None,0.016247,None,None
 Fubon Financial Holding Co Ltd,None,0.016231400000000003,Taiwan,Financials
 Bp Plc,None,0.016006,None,None
-Take Two Interactive Software Inc,TTWO,0.016,United States,Communication
+Take Two Interactive Software Inc,TTWO,0.016,U.S.,Communication
 Tractor Supply Co,None,0.015905,None,None
-Lg Corp,None,0.0158651,None,None
+Lg Uplus Corp,None,0.0158651,South Korea,Communication Services
 Cdw Corp /de,None,0.015839,None,None
 Kansas City Southern,None,0.015837,None,None
 Sunac China Holdings Ltd,None,0.0158127,China,Real Estate
 Amcor Plc,None,0.015793,None,None
-Biomarin Pharmaceutical Inc,BMRN,0.015770000000000003,United States,Health Care
+Biomarin Pharmaceutical Inc,BMRN,0.015770000000000003,U.S.,Health Care
 Enel Spa,None,0.015754000000000004,None,None
 Formosa Plastics Corporation,None,0.0157169,Taiwan,Materials
 Kia Motors Corporation,None,0.0156262,South Korea,Consumer Discretionary
 Northern Trust Corp,None,0.015613999999999998,None,None
-Credicorp Ltd,None,0.015537100000000002,None,None
+Credicorp Ltd,None,0.015537100000000002,Peru,Financials
 Canadian National Railway Co,None,0.015419000000000002,None,None
 Lyondellbasell Industries Nv Class A,None,0.015346000000000002,None,None
 Pioneer Natural Resources Co,None,0.015273000000000002,None,None
 Grupo Mexico S A B De C V Class B,None,0.015239800000000001,Mexico,Materials
 Carmax Inc,None,0.015238,None,None
-Lg Electronics Inc,None,0.0152251,None,None
 Alibaba Health Information Technology Ltd,None,0.0152215,China,Health Care
+China Communications Construction Co Ltd Class A,None,0.015200400000000001,China,Industrials
 Cardinal Health Inc,None,0.015198,None,None
 Firstenergy Corp,None,0.015101,None,None
-Samsung C&t Corp,None,0.0150086,None,None
+Samsung C&t Corp,None,0.0150086,South Korea,Industrials
 Itc Limited,None,0.014892,India,Consumer Staples
 Vulcan Materials Co,None,0.014883000000000002,None,None
 United Microelectronics Corp,None,0.014819099999999998,Taiwan,Information Technology
@@ -501,6 +502,7 @@ West Pharmaceutical Services Inc,None,0.014668000000000002,None,None
 Broadridge Financial Solutions Inc,None,0.014663000000000002,None,None
 Hartford Financial Services Group Inc,None,0.014629000000000001,None,None
 Masco Corp,None,0.014628000000000002,None,None
+Samsung Life Insurance Co Ltd,None,0.014624400000000003,South Korea,Financials
 Bayer Ag,None,0.014599,None,None
 First Abu Dhabi Bank P J S C,None,0.0145868,UAE,Financials
 Emirates Telecommunications Group Company Pjsc,None,0.014561200000000002,UAE,Communication Services
@@ -524,15 +526,15 @@ Healthpeak Properties Inc,None,0.01405,None,None
 Evergy Inc,None,0.014041000000000001,None,None
 First Financial Holding Co Ltd,None,0.014035500000000003,Taiwan,Financials
 Las Vegas Sands Corp,None,0.014035000000000002,None,None
-Cdw Corp,CDW,0.014000000000000002,United States,Information Technology
+Cdw Corp,CDW,0.014000000000000002,U.S.,Information Technology
 Essex Property Trust Inc,None,0.013982,None,None
 Cbre Group Inc Class A,None,0.013942000000000001,None,None
 Taiwan Cement Corp,None,0.013941600000000004,Taiwan,Materials
 Li Ning Company Limited,None,0.013858200000000003,China,Consumer Discretionary
-Liberty Global Plc Class C,LBTYK,0.013852000000000001,United States,Communication
+Liberty Global Plc Class A,LBTYA,0.013852000000000001,U.S.,Communication
 Longfor Group Holdings Ltd,None,0.0137988,China,Real Estate
 Garmin Ltd,None,0.013784,None,None
-Hana Financial Group Inc,None,0.013758999999999999,None,None
+Hana Financial Group Inc,None,0.013758999999999999,South Korea,Financials
 Expeditors International Of Washington Inc,None,0.013719,None,None
 Hormel Foods Corp,None,0.013689,None,None
 Quanta Computer Inc,None,0.013671500000000001,Taiwan,Information Technology
@@ -540,7 +542,7 @@ Arista Networks Inc,None,0.013667000000000004,None,None
 Ventas Inc,None,0.013662,None,None
 Schneider Electric Se,None,0.013614000000000001,None,None
 Standard Bank Group Limited,None,0.013597300000000003,South Africa,Financials
-Sk Innovation Co Ltd,None,0.0135625,None,None
+Sk Innovation Co Ltd,None,0.0135625,South Korea,Energy
 Bajaj Finance Limited,None,0.0135599,India,Financials
 Fifth Third Bancorp,None,0.013540000000000002,None,None
 Pt Bank Mandiri (persero) Tbk,None,0.013463200000000002,Indonesia,Financials
@@ -568,7 +570,7 @@ Formosa Chemicals & Fibre Corporation,None,0.012813600000000001,Taiwan,Materials
 International Flavors & Fragrances Inc,None,0.012809000000000003,None,None
 Waters Corp,None,0.012783000000000003,None,None
 Boston Properties Inc,None,0.012752999999999999,None,None
-Byd Company Limited Class H,None,0.0126962,China,Consumer Discretionary
+Byd Company Limited Class A,None,0.0126962,China,Consumer Discretionary
 Itausa - Investimentos Itau Sa Pfd,None,0.0126582,Brazil,Financials
 Dr Reddy's Laboratories Ltd,None,0.012647,India,Health Care
 Extra Space Storage Inc,None,0.012639,None,None
@@ -576,6 +578,7 @@ Xylem Inc /ny,None,0.012627999999999999,None,None
 Yihai International Holding Ltd,None,0.0125247,China,Consumer Staples
 Airports Of Thailand Public Co Ltd (alien Mkt),None,0.012504399999999999,Thailand,Industrials
 Otp Bank Nyrt,None,0.012472,Hungary,Financials
+Wuxi Lead Intelligent Equipment Co Ltd Class A,None,0.0124593,China,Information Technology
 Daiichi Sankyo Co Ltd,None,0.012410000000000001,None,None
 Hess Corp,None,0.012377,None,None
 Varian Medical Systems Inc,None,0.012355000000000001,None,None
@@ -597,16 +600,15 @@ Asian Paints Ltd,None,0.0120086,India,Materials
 Ch Robinson Worldwide Inc,None,0.011956999999999999,None,None
 J M Smucker Co,None,0.011947,None,None
 Idex Corp,None,0.01191,None,None
-Sk Holdings Co Ltd,None,0.011905,None,None
+Sk Holdings Co Ltd,None,0.011905,South Korea,Industrials
 Halliburton Co,None,0.011883999999999999,None,None
-Petrochina Company Limited Class H,None,0.011809000000000002,China,Energy
-Samsung Electro-mechanics Co Ltd,None,0.0117954,None,None
+Petrochina Company Limited Class A,None,0.011809000000000002,China,Energy
+Samsung Electro-mechanics Co Ltd,None,0.0117954,South Korea,Information Technology
 Pt Astra International Tbk,None,0.0117852,Indonesia,Consumer Discretionary
 Oneok Inc,None,0.011719,None,None
 Adidas Ag,None,0.011715,None,None
-Citic Securities Co Ltd Class H,None,0.0117047,China,Financials
+Citic Securities Co Ltd Class A,None,0.0117047,China,Financials
 China Gas Holdings Limited,None,0.011672700000000001,China,Utilities
-Wuxi Apptec Co Ltd Class H,None,0.0116451,China,Health Care
 Kddi Corp,None,0.011599,None,None
 Realtek Semiconductor Corp,None,0.0115812,Taiwan,Information Technology
 Synchrony Financial,None,0.011564,None,None
@@ -632,12 +634,13 @@ United Rentals Inc,None,0.010695,None,None
 Jacobs Engineering Group Inc,None,0.010673000000000002,None,None
 Hua Nan Financial Holdings Co Ltd,None,0.010645000000000002,Taiwan,Financials
 Pultegroup Inc,None,0.010639000000000001,None,None
-Telefonica Sa,None,0.010627900000000001,None,None
+Telefonica Brasil Sa Pfd,None,0.010627900000000001,Brazil,Communication Services
 Principal Financial Group Inc,None,0.010625,None,None
 Jb Hunt Transport Services Inc,None,0.010573000000000003,None,None
 Teledyne Technologies Inc,None,0.010570999999999999,None,None
 Koninklijke Philips Nv,None,0.010561,None,None
 Gartner Inc,None,0.010533000000000002,None,None
+China National Building Material Co Ltd Class H,None,0.010528200000000001,China,Materials
 Shimao Group Holdings Limited,None,0.010521899999999999,China,Real Estate
 Daikin Industries Ltd,None,0.010518,None,None
 Mtn Group Limited,None,0.010510600000000002,South Africa,Communication Services
@@ -650,13 +653,11 @@ Mitsubishi Ufj Financial Group Inc,None,0.01039,None,None
 Square Inc,None,0.01035,None,None
 Udr Inc,None,0.010308000000000003,None,None
 Citizens Financial Group Inc,None,0.010271000000000002,None,None
-Bangkok Dusit Medical Services Public Co Ltd (alien Mkt),None,0.010255899999999998,Thailand,Health Care
-Hyundai Motor Co,None,0.010254800000000001,None,None
+Bangkok Dusit Medical Services Public Co Ltd Nvdr,None,0.010255899999999998,Thailand,Health Care
 Bid Corporation Limited,None,0.0102238,South Africa,Consumer Staples
 Shin-etsu Chemical Co Ltd,None,0.010213,None,None
 Lonza Group Ag,None,0.010203,None,None
 Seagate Technology Plc,None,0.010166000000000001,None,None
-Bank Of Communications Co Ltd Class H,None,0.0101387,China,Financials
 Rumo Sa,None,0.0101038,Brazil,Industrials
 Fortune Brands Home & Security Inc,None,0.010093999999999999,None,None
 Jack Henry & Associates Inc,None,0.010092,None,None
@@ -668,19 +669,19 @@ Nintendo Co Ltd,None,0.010017,None,None
 Brookfield Asset Management Inc Class A,None,0.010009,None,None
 Regions Financial Corp,None,0.010007,None,None
 Globant Sa,None,0.010006300000000001,Argentina,Information Technology
-China Vanke Co Ltd Class H,None,0.0099789,China,Real Estate
+China Shenhua Energy Co Ltd Class A,None,0.0099789,China,Energy
 Abb Ltd,None,0.009964,None,None
 Rosneft Oil Co Sponsored Gdr Regs,None,0.009962300000000002,Russia,Energy
 Bhp Group Plc,None,0.009962,None,None
 Westpac Banking Corp,None,0.009931,None,None
 Adyen Nv,None,0.009881000000000001,None,None
 Magnit Pjsc Sponsored Gdr Regs,None,0.009879400000000002,Russia,Consumer Staples
-Powszechna Kasa Oszczednosci Bank Polski Sa,None,0.009851400000000001,None,None
+Powszechna Kasa Oszczednosci Bank Polski Sa,None,0.009851400000000001,Poland,Financials
 Whirlpool Corp,None,0.009825000000000002,None,None
 Advance Auto Parts Inc,None,0.009800000000000001,None,None
 Baker Hughes Co Class A,None,0.009752,None,None
 Western Union Co,None,0.009749,None,None
-Fox Corp Class B,None,0.009746000000000001,None,None
+Fox Corp Class B,FOX,0.009746000000000001,U.S.,Communication
 Centerpoint Energy Inc,None,0.009739000000000001,None,None
 Eastman Chemical Co,None,0.009736,None,None
 Polyus Pjsc Sponsored Gdr Class S,None,0.0097285,Russia,Materials
@@ -692,18 +693,19 @@ Aes Corp,None,0.009600000000000001,None,None
 Commercial International Bank (egypt) Sae,None,0.009569,Egypt,Financials
 Dentsply Sirona Inc,None,0.009482,None,None
 Enel Americas S A,None,0.0094819,Chile,Utilities
-Atlas Copco Ab Class A,None,0.009473,None,None
+Atlas Copco Ab Class B,None,0.009473,None,None
+China Gezhouba Group Company Limited Class A,None,0.009471300000000002,China,Industrials
 Kering Sa,None,0.009465999999999999,None,None
 Sanlam Limited,None,0.0094643,South Africa,Financials
 Tencent Music Entertainment Group Sponsored Adr Class A,None,0.009463300000000001,China,Communication Services
-China Everbright Limited,None,0.0094461,China,Financials
+China Everbright International Limited,None,0.0094461,China,Industrials
 Impala Platinum Holdings Limited,None,0.0094205,South Africa,Materials
-Grupo Aeroportuario Del Pacifico Sab De Cv Class B,None,0.0094161,Mexico,Industrials
+Grupo Aeroportuario Del Sureste Sa De Cv Class B,None,0.0094161,Mexico,Industrials
 Tc Energy Corp,None,0.009411000000000001,None,None
 Darden Restaurants Inc,None,0.009404000000000001,None,None
 Netapp Inc,None,0.00939,None,None
 Masraf Al-rayan Qsc,None,0.0093877,Qatar,Financials
-Polymetal International Plc,None,0.0093799,None,None
+Polymetal International Plc,None,0.0093799,United Kingdom,Materials
 Centurylink Inc,None,0.009364,None,None
 Prosus Nv,None,0.009358000000000002,None,None
 Picc Property & Casualty Co Ltd Class H,None,0.009351500000000002,China,Financials
@@ -713,23 +715,21 @@ Cboe Global Markets Inc,None,0.009234,None,None
 Uber Technologies Inc,None,0.009221000000000002,None,None
 Citic Limited,None,0.009207799999999999,China,Industrials
 Guangdong Investment Limited,None,0.009191100000000002,China,Utilities
-Amorepacific Corp,None,0.0091755,None,None
-Aac Technologies Holdings Inc,None,0.009157100000000001,None,None
+Aac Technologies Holdings Inc,None,0.009157100000000001,China,Information Technology
 Qatar Islamic Bank,None,0.009118900000000001,Qatar,Financials
 Kghm Polska Miedz S A,None,0.0091141,Poland,Materials
 Vodafone Group Plc,None,0.009108,None,None
-Samsung Fire & Marine Insurance Co Ltd,None,0.009100400000000003,None,None
 National Australia Bank Ltd,None,0.009097000000000001,None,None
 Haier Electronics Group Co Ltd,None,0.009089700000000001,China,Consumer Discretionary
 Titan Company Limited,None,0.0090363,India,Consumer Discretionary
 Sm Prime Holdings Inc,None,0.009017,Philippines,Real Estate
 Huntington Bancshares Inc /oh,None,0.009011000000000002,None,None
-Usd Cash,USD,0.009000000000000001,United States,Cash and/or Derivatives
+Usd Cash,USD,0.009000000000000001,U.S.,Cash and/or Derivatives
 Airbus Se,None,0.008996,None,None
 Avery Dennison Corp,None,0.008990000000000001,None,None
 Honda Motor Co Ltd,None,0.008983,None,None
 Sibanye Stillwater Limited,None,0.008978600000000002,South Africa,Materials
-Weichai Power Co Ltd Class H,None,0.0089568,China,Industrials
+Weichai Power Co Ltd Class A,None,0.0089568,China,Industrials
 Tenaga Nasional Bhd,None,0.0089268,Malaysia,Utilities
 Hasbro Inc,None,0.008914,None,None
 Nisource Inc,None,0.008894,None,None
@@ -748,7 +748,7 @@ Relx Plc,None,0.008764,None,None
 Deutsche Post Ag,None,0.008735,None,None
 Lojas Americanas S A Pfd,None,0.008711800000000002,Brazil,Consumer Discretionary
 Recruit Holdings Co Ltd,None,0.008711000000000002,None,None
-Fresenius Se & Co Kgaa,None,0.008693,None,None
+Fresenius Medical Care Ag & Co Kgaa,None,0.008693,None,None
 Packaging Corp Of America,None,0.008664000000000002,None,None
 Nestle India Ltd,None,0.0086428,India,Consumer Staples
 Essilorluxottica Sa,None,0.0086,None,None
@@ -762,7 +762,7 @@ Shandong Weigao Group Medical Polymer Co Ltd Class H,None,0.0084728,China,Health
 Notre Dame Intermedica Participacoes Sa,None,0.0084618,Brazil,Health Care
 Lamb Weston Holdings Inc,None,0.008447000000000001,None,None
 Axa Sa,None,0.008440000000000001,None,None
-Samsung Sds Co Ltd,None,0.008435100000000001,None,None
+Samsung Sds Co Ltd,None,0.008435100000000001,South Korea,Information Technology
 Albemarle Corp,None,0.008405,None,None
 Nidec Corp,None,0.008388,None,None
 Prudential Plc,None,0.008368,None,None
@@ -789,13 +789,14 @@ Nrg Energy Inc,None,0.00808,None,None
 Tech Mahindra Limited,None,0.008079600000000001,India,Information Technology
 Banque Saudi Fransi,None,0.008072500000000002,Saudi Arabia,Financials
 Royal Caribbean Cruises Ltd,None,0.008044,None,None
-New China Life Insurance Co Ltd Class H,None,0.008037400000000002,China,Financials
+New China Life Insurance Co Ltd Class A,None,0.008037400000000002,China,Financials
 Mylan Nv,None,0.008037,None,None
 Campbell Soup Co,None,0.008011,None,None
 Ingersoll Rand Inc,None,0.008,None,None
 Australia & New Zealand Banking Group Ltd,None,0.007998,None,None
+Mitsubishi Logistics Corp,None,0.007979,None,None
 Suzano S A,None,0.007974100000000001,Brazil,Materials
-Polski Koncern Naftowy Orlen Sa,None,0.0079655,None,None
+Polski Koncern Naftowy Orlen S A,None,0.0079655,Poland,Energy
 Powszechny Zaklad Ubezpieczen Spolka Akcyjna,None,0.007945,Poland,Financials
 Murata Manufacturing Co Ltd,None,0.007943,None,None
 Daimler Ag,None,0.007914000000000001,None,None
@@ -812,17 +813,18 @@ Vonovia Se,None,0.007837,None,None
 Iron Mountain Inc,None,0.007829000000000001,None,None
 Woolworths Group Ltd,None,0.007813,None,None
 China Evergrande Group,None,0.0077813,China,Real Estate
+Lg Household & Health Care Ltd Preference Shares,None,0.007761,None,None
 Dish Network Corp Class A,None,0.007759000000000001,None,None
 Bank Of Montreal,None,0.0077420000000000015,None,None
-Hitachi Ltd,None,0.0077399999999999995,None,None
+Hitachi Transport System Ltd,None,0.0077399999999999995,None,None
 Banco Santander Sa,None,0.007739,None,None
 Chang Hwa Commercial Bank Ltd,None,0.007737,Taiwan,Financials
 Industries Of Qatar Co,None,0.007727500000000001,Qatar,Industrials
 Sumitomo Mitsui Financial Group Inc,None,0.0077220000000000006,None,None
-Telefonaktiebolaget Lm Ericsson Class B,None,0.007721,None,None
+Telefonaktiebolaget Lm Ericsson Class A,None,0.007721,None,None
 Cez As,None,0.007697500000000001,Czech Republic,Utilities
 Catcher Technology Co Ltd,None,0.007695100000000002,Taiwan,Information Technology
-Coway Co Ltd,None,0.007692899999999999,None,None
+Coway Co Ltd,None,0.007692899999999999,South Korea,Consumer Discretionary
 Central Pattana Public Co Ltd (alien Mkt),None,0.007676100000000001,Thailand,Real Estate
 Globe Life Inc,None,0.007652000000000001,None,None
 Mgm Resorts International,None,0.0076370000000000006,None,None
@@ -842,21 +844,21 @@ Spotify Technology Sa,None,0.007463000000000001,None,None
 Cipla Limited,None,0.0074432000000000005,India,Health Care
 Deutsche Boerse Ag,None,0.007442000000000001,None,None
 Cimb Group Holdings Bhd,None,0.0074418,Malaysia,Financials
-Genting Bhd,None,0.0074394000000000005,Malaysia,Consumer Discretionary
+Genting Malaysia Bhd,None,0.0074394000000000005,Malaysia,Consumer Discretionary
 Bim Birlesik Magazalar A S,None,0.0074369000000000015,Turkey,Consumer Staples
 Raia Drogasil S A,None,0.0074335,Brazil,Consumer Staples
 Host Hotels & Resorts Inc,None,0.007428,None,None
 Abu Dhabi Commercial Bank,None,0.0073679999999999995,UAE,Financials
 Fanuc Corp,None,0.007365,None,None
 Huazhu Group Ltd Sponsored Adr,None,0.0073531,China,Consumer Discretionary
-Itochu Corp,None,0.007345999999999999,None,None
+Itochu Techno-solutions Corp,None,0.007345999999999999,None,None
 Gsx Techedu Inc Sponsored Adr Class A,None,0.0073336,China,Consumer Discretionary
 China Unicom (hong Kong) Limited,None,0.0073334,China,Communication Services
 Joyy Inc Sponsored Adr Class A,None,0.007330000000000001,China,Communication Services
 Bancolombia Sa Bancolombia Pfd,None,0.0073213,Colombia,Financials
 Alinma Bank,None,0.0073112,Saudi Arabia,Financials
 Saudi Arabian Mining Co,None,0.007294299999999999,Saudi Arabia,Materials
-Xinyi Solar Holdings Ltd,None,0.0072835999999999994,None,None
+Xinyi Solar Holdings Ltd,None,0.0072835999999999994,China,Information Technology
 Borgwarner Inc,None,0.007281,None,None
 Power Grid Corporation Of India Limited,None,0.0072217,India,Utilities
 Pt Unilever Indonesia Tbk,None,0.0072205,Indonesia,Consumer Staples
@@ -864,11 +866,11 @@ Rollins Inc,None,0.007213000000000001,None,None
 Costar Group Inc,None,0.0072120000000000005,None,None
 Far Eastone Telecommunications Co Ltd,None,0.007206400000000001,Taiwan,Communication Services
 Infineon Technologies Ag,None,0.007194000000000001,None,None
-Haitong Securities Co Ltd Class H,None,0.0071858,China,Financials
-Celltrion Healthcare Co Ltd,None,0.0071753,None,None
+Haitong Securities Co Ltd Class A,None,0.0071858,China,Financials
+Celltrion Healthcare Co Ltd,None,0.0071753,South Korea,Health Care
 Postal Savings Bank Of China Co Ltd Class H,None,0.0071695,China,Financials
-Zijin Mining Group Co Ltd Class H,None,0.0071587000000000005,China,Materials
-China Jinmao Holdings Group Limited,None,0.0071468,China,Real Estate
+Zijin Mining Group Co Ltd Class A,None,0.0071587000000000005,China,Materials
+China Lesso Group Holdings Limited,None,0.0071468,China,Industrials
 Cabot Oil & Gas Corp,None,0.007133,None,None
 Korea Electric Power Corporation,None,0.0071269,South Korea,Utilities
 Davita Inc,None,0.007121000000000001,None,None
@@ -879,7 +881,7 @@ Cie Financiere Richemont Sa,None,0.007087,None,None
 Koninklijke Ahold Delhaize Nv,None,0.007083000000000001,None,None
 Gds Holdings Ltd Sponsored Adr Class A,None,0.0070757,China,Information Technology
 Kingsoft Corp Ltd,None,0.0070726,China,Information Technology
-Heineken Nv,None,0.007067,None,None
+Heineken Holding Nv,None,0.007067,None,None
 Digi Com Bhd,None,0.007013900000000002,Malaysia,Communication Services
 Jbs S A,None,0.0069998000000000005,Brazil,Consumer Staples
 Jg Summit Holdings Inc,None,0.0069991,Philippines,Industrials
@@ -897,7 +899,7 @@ Sika Ag,None,0.00675,None,None
 Pentair Plc,None,0.006748999999999999,None,None
 Interpublic Group Of Cos Inc,None,0.006739,None,None
 Molson Coors Beverage Co Class B,None,0.006736000000000001,None,None
-Sun Art Retail Group Ltd,None,0.006727200000000002,None,None
+Sun Art Retail Group Limited,None,0.006727200000000002,China,Consumer Staples
 Anglo American Plc,None,0.006711,None,None
 Clicks Group Limited,None,0.0066993,South Africa,Consumer Staples
 Regency Centers Corp,None,0.0066890000000000005,None,None
@@ -906,16 +908,15 @@ Empresas Copec S A,None,0.0066543,Chile,Energy
 Franco-nevada Corp,None,0.006642000000000002,None,None
 Ptt Global Chemical Plc(alien Mkt),None,0.0066185,Thailand,Materials
 Jsw Steel Limited,None,0.006613099999999999,India,Materials
-Korea Zinc Co Ltd,None,0.0066106,None,None
+Korea Zinc Co Ltd,None,0.0066106,South Korea,Materials
 Wynn Resorts Ltd,None,0.006608,None,None
 Upl Limited,None,0.006601700000000001,India,Materials
-Samsung Life Insurance Co Ltd,None,0.006567,None,None
 Klabin Sa Ctf De Deposito De Acoes Cons Of 1 Sh + 4 Pfd Shs,None,0.006566800000000001,Brazil,Materials
 Bharat Petroleum Corporation Limited,None,0.006554900000000001,India,Energy
 Ihh Healthcare Bhd,None,0.0065481,Malaysia,Health Care
 Bajaj Finserv Limited,None,0.006533,India,Financials
 Astellas Pharma Inc,None,0.006483,None,None
-Tsingtao Brewery Co Ltd Class H,None,0.0064825,China,Consumer Staples
+Tsingtao Brewery Co Ltd Class A,None,0.0064825,China,Consumer Staples
 Petronas Chemicals Group Bhd,None,0.006471399999999999,Malaysia,Materials
 Cf Industries Holdings Inc,None,0.006426000000000001,None,None
 Chugai Pharmaceutical Co Ltd,None,0.006421000000000001,None,None
@@ -933,10 +934,10 @@ Godrej Consumer Products Limited,None,0.006288100000000001,India,Consumer Staple
 Hanwha Solutions Corporation,None,0.006282200000000002,South Korea,Materials
 United Airlines Holdings Inc,None,0.006281999999999999,None,None
 Advantech Co Ltd,None,0.0062733,Taiwan,Information Technology
+Hyundai Motor Co Ltd Pfd Shs 2,None,0.006259800000000001,South Korea,Consumer Discretionary
 Autohome Inc Sponsored Adr Class A,None,0.0062582,China,Communication Services
 Alcon Inc,None,0.006213000000000001,None,None
 Kasikornbank Public Co Ltd (alien Mkt),None,0.006211400000000001,Thailand,Financials
-Bank Of Beijing Co Ltd Class A,None,0.00621,China,Financials
 Aurobindo Pharma Ltd,None,0.0062066,India,Health Care
 Carnival Corp,None,0.006201000000000001,None,None
 Industria De Diseno Textil Sa,None,0.006186,None,None
@@ -948,7 +949,7 @@ Kuala Lumpur Kepong Bhd,None,0.0061617,Malaysia,Consumer Staples
 Shree Cement Limited,None,0.0061555,India,Materials
 Ipg Photonics Corp,None,0.006143,None,None
 Ing Groep Nv,None,0.006141000000000001,None,None
-Woori Financial Group Inc,None,0.006119799999999999,None,None
+Woori Financial Group Inc,None,0.006119799999999999,South Korea,Financials
 Hindalco Industries Limited,None,0.0060905,India,Materials
 Tokio Marine Holdings Inc,None,0.006083,None,None
 Yanbu National Petrochemical Co,None,0.006082900000000001,Saudi Arabia,Materials
@@ -961,7 +962,7 @@ Orsted A/s,None,0.00604,None,None
 Silergy Corp,None,0.006019300000000001,Taiwan,Information Technology
 Investor Ab Class B,None,0.0060090000000000005,None,None
 Saudi British Bank,None,0.0060058,Saudi Arabia,Financials
-Sk Telecom Co Ltd,None,0.005995,None,None
+Sk Telecom Co Ltd Sponsored Adr,None,0.005995,South Korea,Communication Services
 Bdo Unibank Inc,None,0.005975899999999999,Philippines,Financials
 Nokia Oyj,None,0.005967,None,None
 Gerdau Sa Pfd,None,0.005963,Brazil,Materials
@@ -969,11 +970,11 @@ Jiangsu Hengrui Medicine Co Ltd Class A,None,0.005962200000000001,China,Health C
 Rio Tinto Ltd,None,0.005955,None,None
 Waste Connections Inc,None,0.0059499999999999996,None,None
 Transurban Group,None,0.0059429999999999995,None,None
-Fujitsu Ltd,None,0.005937,None,None
+Fujitsu General Ltd,None,0.005937,None,None
 Shin Kong Financial Holding Co Ltd,None,0.0059080999999999995,Taiwan,Financials
 Newell Brands Inc,None,0.005902999999999999,None,None
 Synnex Technology International Corp,None,0.005894099999999999,Taiwan,Information Technology
-Turkiye Garanti Bankasi Anonim Sirketi,None,0.005880200000000001,Turkey,Financials
+Turkiye Is Bankasi Anonim Sirketi Class C,None,0.005880200000000001,Turkey,Financials
 Ntpc Limited,None,0.0058742,India,Utilities
 Koninklijke Dsm Nv,None,0.005859,None,None
 Volkswagen Ag Preference Shares,None,0.005847000000000001,None,None
@@ -983,7 +984,7 @@ Manulife Financial Corp,None,0.005757000000000001,None,None
 Credit Suisse Group Ag,None,0.005738,None,None
 Dbs Group Holdings Ltd,None,0.005731000000000001,None,None
 Sime Darby Plantation Bhd,None,0.0057308,Malaysia,Consumer Staples
-Huatai Securities Co Ltd Class H,None,0.0057272,China,Financials
+Huatai Securities Co Ltd Class A,None,0.0057272,China,Financials
 Saudi Electricity Co,None,0.005710300000000001,Saudi Arabia,Utilities
 Sociedad Quimica Y Minera De Chile Sa Pfd Series B,None,0.005689099999999999,Chile,Materials
 Asia Cement Corporation,None,0.0056748,Taiwan,Materials
@@ -993,18 +994,19 @@ Companhia De Saneamento Basico Do Estado De Sao Paulo Sabesp,None,0.005666500000
 Southern Copper Corporation,None,0.005659400000000001,Peru,Materials
 Okta Inc,None,0.005655,None,None
 Franklin Resources Inc,None,0.005646000000000001,None,None
-Netmarble Corp,None,0.0056223,None,None
-Mitsubishi Corp,None,0.005617,None,None
+Netmarble Corp,None,0.0056223,South Korea,Communication Services
+Mitsubishi Electric Corp,None,0.005617,None,None
 Savola Group,None,0.005616,Saudi Arabia,Consumer Staples
 Au Optronics Corp,None,0.0056129000000000005,Taiwan,Information Technology
 Tata Motors Limited,None,0.0056052,India,Consumer Discretionary
 Palo Alto Networks Inc,None,0.005599000000000001,None,None
 Lupin Limited,None,0.0055875000000000005,India,Health Care
 Bb Seguridade Participacoes Sa,None,0.0055869000000000005,Brazil,Financials
-Korea Shipbuilding & Offshore Engineering Co Ltd,None,0.005586700000000001,None,None
+Korea Shipbuilding & Offshore Engineering Co Ltd,None,0.005586700000000001,South Korea,Industrials
 Nordea Bank Abp,None,0.005580999999999999,None,None
 Robert Half International Inc,None,0.00558,None,None
 Howmet Aerospace Inc,None,0.005577,None,None
+Zhejiang Wanfeng Auto Wheel Co Ltd Class A,None,0.0055549,China,Consumer Discretionary
 Apache Corp,None,0.005547,None,None
 China Resources Gas Group Limited,None,0.0055469,China,Utilities
 Shanghai Commercial & Savings Bank Ltd,None,0.0055433,Taiwan,Financials
@@ -1012,7 +1014,7 @@ Compass Group Plc,None,0.005543,None,None
 Glencore Plc,None,0.005528999999999999,None,None
 Terumo Corp,None,0.005512,None,None
 Grupo Bimbo Sab De Cv Class A,None,0.005510000000000001,Mexico,Consumer Staples
-Mitsui & Co Ltd,None,0.005505,None,None
+Mitsui Mining & Smelting Co Ltd,None,0.005505,None,None
 Old Mutual Ltd,None,0.005496,South Africa,Financials
 Hermes International,None,0.0054859999999999996,None,None
 Softbank Corp,None,0.0054730000000000004,None,None
@@ -1022,10 +1024,9 @@ Formosa Petrochemical Corp,None,0.0054624,Taiwan,Energy
 Lloyds Banking Group Plc,None,0.005446,None,None
 News Corp Class A,None,0.005445000000000001,None,None
 Sinopharm Group Co Ltd Class H,None,0.005439900000000001,China,Health Care
-Lg Display Co Ltd,None,0.005437,None,None
+Lg Display Co Ltd,None,0.005437,South Korea,Information Technology
 Wheaton Precious Metals Corp,None,0.005432,None,None
-China Railway Group Limited Class H,None,0.0054141,China,Industrials
-Polskie Gornictwo Naftowe I Gazownictwo Sa,None,0.0053891,None,None
+Polskie Gornictwo Naftowe I Gazownictwo Sa,None,0.0053891,Poland,Energy
 Shoprite Holdings Limited,None,0.005359599999999999,South Africa,Consumer Staples
 Sealed Air Corp,None,0.005353000000000001,None,None
 Marvell Technology Group Ltd,None,0.005335,None,None
@@ -1040,11 +1041,11 @@ Seven & I Holdings Co Ltd,None,0.005286,None,None
 Luxshare Precision Industry Co Ltd Class A,None,0.005265000000000001,China,Information Technology
 Vornado Realty Trust,None,0.005263,None,None
 Pt Charoen Pokphand Indonesia Tbk,None,0.005252100000000001,Indonesia,Consumer Staples
-Bayerische Motoren Werke Ag,None,0.005241,None,None
+Bayerische Motoren Werke Ag Preference Shares,None,0.005241,None,None
 Aspen Pharmacare Holdings Limited,None,0.0052212000000000005,South Africa,Health Care
 Cencosud S A,None,0.0052209000000000005,Chile,Consumer Staples
 Emaar Properties (p J S C),None,0.0052147,UAE,Real Estate
-Cosco Shipping Holdings Co Ltd Class A,None,0.0052091,China,Industrials
+Cosco Shipping Energy Transportation Co Ltd Class A,None,0.0052091,China,Energy
 Grasim Industries Ltd,None,0.0052012000000000004,India,Materials
 Federal Realty Investment Trust,None,0.005201,None,None
 Surgutneftegas Pjsc Pfd,None,0.0051963,Russia,Energy
@@ -1060,9 +1061,9 @@ Empresas Cmpc S A,None,0.0050752,Chile,Materials
 Home Product Center Public Co Ltd Nvdr,None,0.0050639,Thailand,Consumer Discretionary
 Coloplast A/s Class B,None,0.005059,None,None
 Constellation Software Inc /canada,None,0.0050290000000000005,None,None
-Lotte Chemical Corp,None,0.0050287000000000005,None,None
+Lotte Chemical Corp,None,0.0050287000000000005,South Korea,Materials
 Orange Sa,None,0.005013999999999999,None,None
-Engie Sa,None,0.005003,None,None
+Engie Sa Common Stock,None,0.005003,None,None
 Discovery Limited,None,0.004988800000000001,South Africa,Financials
 Almarai Co Ltd,None,0.0049775,Saudi Arabia,Consumer Staples
 Leggett & Platt Inc,None,0.004977,None,None
@@ -1071,17 +1072,19 @@ Sun Life Financial Inc,None,0.004975,None,None
 Oversea-chinese Banking Corp Ltd,None,0.004973,None,None
 Eni Spa,None,0.004967,None,None
 Zte Corporation Class H,None,0.004964500000000001,China,Information Technology
+Svenska Cellulosa Ab Sca Class B,None,0.004961,None,None
 Surgutneftegas Pjsc Sponsored Adr,None,0.0049361000000000006,Russia,Energy
 Falabella S A,None,0.004935000000000001,Chile,Consumer Discretionary
-Bank Polska Kasa Opieki Sa,None,0.0049329000000000005,None,None
+Bank Polska Kasa Opieki Sa,None,0.0049329000000000005,Poland,Financials
 Ringcentral Inc Class A,None,0.004932000000000001,None,None
+Avic Capital Co Ltd Class A,None,0.0049067,China,Financials
 Guangzhou Automobile Group Co Ltd Class H,None,0.004899900000000001,China,Consumer Discretionary
 Match Group Inc,None,0.004897,None,None
 Central Japan Railway Co,None,0.004894,None,None
 Hartalega Holdings Bhd,None,0.0048923000000000005,Malaysia,Health Care
 Siam Commercial Bank Public Company Limited(alien Mkt),None,0.0048872,Thailand,Financials
 People's Insurance Co (group) Of China Ltd Class H,None,0.0048806000000000006,China,Financials
-Daelim Industrial Co Ltd,None,0.0048775,None,None
+Daelim Industrial Co Ltd,None,0.0048775,South Korea,Industrials
 Atlassian Corp Plc Class A,None,0.0048720000000000005,None,None
 Goodman Group,None,0.004864,None,None
 Foxconn Technology Co Ltd,None,0.004856200000000001,Taiwan,Information Technology
@@ -1134,7 +1137,7 @@ Sandvik Ab,None,0.0044800000000000005,None,None
 Severstal Pao,None,0.0044797,Russia,Materials
 Ferguson Plc,None,0.004476000000000001,None,None
 Essity Ab Class B,None,0.004476000000000001,None,None
-Kangwon Land Inc,None,0.004471,None,None
+Kangwon Land Inc,None,0.004471,South Korea,Consumer Discretionary
 Assa Abloy Ab Class B,None,0.004462000000000001,None,None
 American Airlines Group Inc,None,0.004459000000000001,None,None
 Arca Continental Sab De Cv,None,0.0044582,Mexico,Consumer Staples
@@ -1146,7 +1149,7 @@ Geberit Ag,None,0.004406000000000001,None,None
 Universal Robina Corp,None,0.004404600000000001,Philippines,Consumer Staples
 Unicredit Spa,None,0.0044020000000000005,None,None
 Fosun International Limited,None,0.0043986,China,Industrials
-Hyundai Glovis Co Ltd,None,0.0043878,None,None
+Hyundai Glovis Co Ltd,None,0.0043878,South Korea,Industrials
 Fortescue Metals Group Ltd,None,0.004378000000000001,None,None
 People's United Financial Inc,None,0.0043690000000000005,None,None
 Dino Polska S A,None,0.0043657,Poland,Consumer Staples
@@ -1164,27 +1167,27 @@ Fortis Inc /canada,None,0.0042450000000000005,None,None
 Great Wall Motor Co Ltd Class H,None,0.0042433,China,Consumer Discretionary
 United Overseas Bank Ltd,None,0.0042380000000000004,None,None
 Assicurazioni Generali Spa,None,0.004236,None,None
-Pt Indofood Sukses Makmur Tbk,None,0.0042334,Indonesia,Consumer Staples
+Pt Indofood Cbp Sukses Makmur Tbk,None,0.0042334,Indonesia,Consumer Staples
 Nutrien Ltd,None,0.004227000000000001,None,None
 Marathon Oil Corp,None,0.004216,None,None
-Industrial Bank Of Korea,None,0.0042091,None,None
+Industrial Bank Of Korea,None,0.0042091,South Korea,Financials
 Foshan Haitian Flavouring & Food Co Ltd Class A,None,0.0042084,China,Consumer Staples
 Pt Kalbe Farma Tbk,None,0.004204299999999999,Indonesia,Health Care
 Olympus Corp,None,0.004203,None,None
 Multichoice Group Ltd,None,0.0041953,South Africa,Communication Services
-Jiangxi Copper Company Limited Class H,None,0.0041774,China,Materials
+Jiangxi Copper Company Limited Class A,None,0.0041774,China,Materials
 Globalwafers Co Ltd,None,0.004163,Taiwan,Information Technology
 L Brands Inc,None,0.004162,None,None
 Industrias Penoles Sab De Cv,None,0.0041614,Mexico,Materials
 Petrobras Distribuidora Sa,None,0.004160700000000001,Brazil,Consumer Discretionary
-Aeon Co Ltd,None,0.004159,None,None
+Aeon Financial Service Co Ltd,None,0.004159,None,None
 Novolipetsk Steel Sponsored Gdr Regs,None,0.0041581000000000005,Russia,Materials
 National Oilwell Varco Inc,None,0.004158,None,None
-Hankook Tire & Technology Co Ltd,None,0.0041567,None,None
-China Spacesat Co Ltd Class A,None,0.0041548999999999996,China,Industrials
-Samsung Securities Co Ltd,None,0.0041502,None,None
+Hankook Tire & Technology Co Ltd,None,0.0041567,South Korea,Consumer Discretionary
+China National Nuclear Power Co Ltd Class A,None,0.0041548999999999996,China,Utilities
+Samsung Securities Co Ltd,None,0.0041502,South Korea,Financials
 Bilibili Inc Sponsored Adr Class Z,None,0.0041468,China,Communication Services
-Hyundai Engineering & Construction Co Ltd,None,0.00414,None,None
+Hyundai Engineering & Construction Co Ltd,None,0.00414,South Korea,Industrials
 Alibaba Pictures Group Limited,None,0.0041383999999999995,China,Communication Services
 Deutsche Bank Ag,None,0.0041329999999999995,None,None
 Cgn Power Co Ltd Class H,None,0.0041329,China,Utilities
@@ -1198,23 +1201,24 @@ Axiata Group Bhd,None,0.004048899999999999,Malaysia,Communication Services
 Sbi Life Insurance Co Ltd,None,0.0040485,India,Financials
 Komatsu Ltd,None,0.004043000000000001,None,None
 Cie De Saint-gobain,None,0.004032000000000001,None,None
-Samsung Heavy Industries Co Ltd,None,0.004031000000000001,None,None
+Samsung Heavy Industries Co Ltd,None,0.004031000000000001,South Korea,Industrials
 Flir Systems Inc,None,0.0040219999999999995,None,None
 Sampo Oyj Class A,None,0.004014,None,None
 Flutter Entertainment Plc,None,0.004012000000000001,None,None
 Coal India Ltd,None,0.0040117,India,Energy
-Kingboard Holdings Limited,None,0.0039992000000000005,China,Information Technology
+Kingboard Laminates Holdings Limited,None,0.0039992000000000005,China,Information Technology
 Cie Generale Des Etablissements Michelin Sca,None,0.003996,None,None
+Hyundai Motor Co 2nd Preference Shares,None,0.003995,None,None
 Bidvest Group Limited,None,0.0039897000000000005,South Africa,Industrials
-Liberty Broadband Corp,None,0.003983,None,None
-Cyfrowy Polsat Sa,None,0.0039816,None,None
+Liberty Broadband Corp Class A,None,0.003983,None,None
+Cyfrowy Polsat Sa,None,0.0039816,Poland,Communication Services
 Compania De Minas Buenaventura Saa Sponsored Adr,None,0.0039811000000000004,Peru,Materials
 Zai Lab Ltd Sponsored Adr,None,0.003979600000000001,China,Health Care
 Reinet Investments S C A,None,0.0039754,South Africa,Financials
 Deutsche Wohnen Se,None,0.0039640000000000005,None,None
 Panasonic Corp,None,0.003952,None,None
 Aboitiz Equity Ventures Inc,None,0.0039492,Philippines,Industrials
-Crrc Corporation Limited Class H,None,0.003948800000000001,China,Industrials
+Crrc Corporation Limited Class A,None,0.003948800000000001,China,Industrials
 Hollyfrontier Corp,None,0.003946000000000001,None,None
 Henkel Ag & Co Kgaa Preference Shares,None,0.003936,None,None
 Smith & Nephew Plc,None,0.003926000000000001,None,None
@@ -1245,18 +1249,18 @@ Secom Co Ltd,None,0.003778000000000001,None,None
 Qatar Electricity & Water Co,None,0.003777300000000001,Qatar,Utilities
 Alnylam Pharmaceuticals Inc,None,0.0037710000000000005,None,None
 Teleperformance,None,0.003744,None,None
-Canon Inc,None,0.0037420000000000005,None,None
+Canon Marketing Japan Inc,None,0.0037420000000000005,None,None
 Etihad Etisalat Co,None,0.0037386000000000003,Saudi Arabia,Communication Services
 Piramal Enterprises Ltd,None,0.0037331000000000005,India,Health Care
 Exxaro Resources Limited,None,0.0037292000000000002,South Africa,Energy
 Restaurant Brands International Inc,None,0.0037270000000000003,None,None
-Under Armour Inc Class A,None,0.0036990000000000005,None,None
+Under Armour Inc Class C,None,0.0036990000000000005,None,None
 Engie Brasil Energia S A,None,0.0036922000000000005,Brazil,Utilities
 Yandex Nv Class A,None,0.0036870000000000006,None,None
 Invitation Homes Inc,None,0.0036830000000000005,None,None
 Mesaieed Petrochemical Holding Company Q S C,None,0.0036814000000000005,Qatar,Materials
-E-mart Inc,None,0.0036794,None,None
-Hyundai Heavy Industries Holdings Co Ltd,None,0.003677,None,None
+E-mart Inc,None,0.0036794,South Korea,Consumer Staples
+Hyundai Heavy Industries Holdings Co Ltd,None,0.003677,South Korea,Industrials
 Coles Group Ltd,None,0.003671,None,None
 Spar Group Limited,None,0.0036706000000000004,South Africa,Consumer Staples
 Vanguard International Semiconductor Co,None,0.003669200000000001,Taiwan,Information Technology
@@ -1265,9 +1269,9 @@ Hexagon Ab Class B,None,0.0036589999999999995,None,None
 Alfa S A B De C V Class A,None,0.0036513,Mexico,Industrials
 Banco Santander (brasil) S A Units Cons Of 1 Sh + 1 Pfd Sh,None,0.0036422999999999994,Brazil,Financials
 Cgi Inc,None,0.0036409999999999997,None,None
-Shanghai Fosun Pharmaceutical (group) Co Ltd Class A,None,0.0036365,China,Health Care
+Shanghai Fosun Pharmaceutical (group) Co Ltd Class H,None,0.0036365,China,Health Care
 Denso Corp,None,0.003635,None,None
-Kumho Petrochemical Co Ltd,None,0.0036308999999999994,None,None
+Kumho Petrochemical Co Ltd,None,0.0036308999999999994,South Korea,Materials
 Jarir Marketing Co,None,0.0036266000000000002,Saudi Arabia,Consumer Discretionary
 Bridgestone Corp,None,0.0036229999999999995,None,None
 Commercial Bank (q S C ),None,0.0036202000000000005,Qatar,Financials
@@ -1296,7 +1300,7 @@ Hindustan Petroleum Corporation Limited,None,0.0035437,India,Energy
 Chocoladefabriken Lindt & Spruengli Ag,None,0.00354,None,None
 Swedbank Ab Class A,None,0.003533,None,None
 Kbc Group Nv,None,0.003533,None,None
-Zoomlion Heavy Industry Science & Technology Co Ltd Class A,None,0.0035231000000000004,China,Industrials
+Zoomlion Heavy Industry Science & Technology Co Ltd Class H,None,0.0035231000000000004,China,Industrials
 Kubota Corp,None,0.0035210000000000003,None,None
 Norwegian Cruise Line Holdings Ltd,None,0.003519,None,None
 Banco De Chile,None,0.0035104000000000008,Chile,Financials
@@ -1304,10 +1308,9 @@ Tapestry Inc,None,0.003507,None,None
 Partners Group Holding Ag,None,0.003503,None,None
 Sl Green Realty Corp,None,0.0034990000000000004,None,None
 Invesco Ltd,None,0.0034960000000000004,None,None
-Nomura Holdings Inc,None,0.0034819999999999994,None,None
+Nomura Real Estate Holdings Inc,None,0.0034819999999999994,None,None
 Hdfc Life Insurance Co Ltd,None,0.0034818000000000006,India,Financials
 Link Reit,None,0.003477000000000001,None,None
-Svenska Handelsbanken Ab Class A,None,0.003477,None,None
 Dongfeng Motor Group Co Ltd Class H,None,0.0034733,China,Consumer Discretionary
 National Bank Of Canada,None,0.003473,None,None
 Ck Asset Holdings Ltd,None,0.003472,None,None
@@ -1331,7 +1334,7 @@ Companhia Siderurgica Nacional,None,0.0033748000000000003,Brazil,Materials
 Chongqing Zhifei Biological Products Co Ltd Class A,None,0.0033612000000000004,China,Health Care
 Industrial Bank Co Ltd Class A,None,0.0033564,China,Financials
 Equinor Asa,None,0.0033559999999999996,None,None
-Toshiba Corp,None,0.0033550000000000003,None,None
+Toshiba Tec Corp,None,0.0033550000000000003,None,None
 Nepi Rockcastle Plc,None,0.0033447,South Africa,Real Estate
 Promotora Y Operadora De Infraestructura Sa,None,0.003332700000000001,Mexico,Industrials
 Bank Albilad,None,0.0033252,Saudi Arabia,Financials
@@ -1342,15 +1345,15 @@ Enel Chile Sa,None,0.0032917000000000003,Chile,Utilities
 Carlsberg As Class B,None,0.003291,None,None
 Hyundai Steel Company,None,0.0032904,South Korea,Materials
 Airtac International Group,None,0.0032890000000000007,Taiwan,Industrials
-Japan Post Holdings Co Ltd,None,0.003275,None,None
-Schindler Holding Ag,None,0.0032709999999999996,None,None
+Japan Post Insurance Co Ltd,None,0.003275,None,None
+Schindler Holding Ag (registered),None,0.0032709999999999996,None,None
 Micro-star International Co Ltd,None,0.0032701000000000006,Taiwan,Information Technology
 Daiwa House Industry Co Ltd,None,0.0032700000000000003,None,None
 Torrent Pharmaceuticals Ltd,None,0.0032624,India,Health Care
 Exact Sciences Corp,None,0.00326,None,None
 Kirin Holdings Co Ltd,None,0.0032590000000000006,None,None
 Sysmex Corp,None,0.0032570000000000003,None,None
-Huaneng Power International Inc Class H,None,0.0032551,China,Utilities
+Huaneng Power International Inc Class A,None,0.0032551,China,Utilities
 Hangzhou Hikvision Digital Technology Co Ltd Class A,None,0.0032548,China,Information Technology
 Siam Cement Public Co Ltd Nvdr,None,0.0032548,Thailand,Materials
 Rogers Communications Inc Class B,None,0.003244,None,None
@@ -1362,7 +1365,7 @@ Galaxy Entertainment Group Ltd,None,0.003219,None,None
 Suzuki Motor Corp,None,0.0032099999999999993,None,None
 Pvh Corp,None,0.0032080000000000003,None,None
 Nanya Technology Corporation,None,0.0032071000000000005,Taiwan,Information Technology
-Korea Investment Holdings Co Ltd,None,0.0032015999999999998,None,None
+Korea Investment Holdings Co Ltd,None,0.0032015999999999998,South Korea,Financials
 Centrais Eletricas Brasileiras Sa-eletrobras Pfd B,None,0.0032005999999999996,Brazil,Utilities
 Ashtead Group Plc,None,0.0031980000000000003,None,None
 Kwg Group Holdings Limited,None,0.0031912999999999998,China,Real Estate
@@ -1376,7 +1379,6 @@ Agile Group Holdings Limited,None,0.0031512,China,Real Estate
 Sun Communities Inc,None,0.003151,None,None
 Mitsui Fudosan Co Ltd,None,0.003149,None,None
 Thai Oil Public Co Ltd (alien Mkt),None,0.0031481,Thailand,Energy
-China Tourism Group Duty Free Corporation Limited Class A,None,0.0031429,China,Consumer Discretionary
 Discovery Inc Class A,None,0.0031420000000000007,None,None
 Arab National Bank,None,0.003139200000000001,Saudi Arabia,Financials
 Technipfmc Plc,None,0.003137,None,None
@@ -1386,7 +1388,7 @@ Woodside Petroleum Ltd,None,0.003117,None,None
 Singapore Telecommunications Ltd,None,0.003117,None,None
 Minor International Public Co Ltd Nvdr,None,0.0031103999999999997,Thailand,Consumer Discretionary
 Gamuda Bhd,None,0.0030970999999999998,Malaysia,Industrials
-Fila Holdings Corp,None,0.0030947,None,None
+Fila Holdings Corp,None,0.0030947,South Korea,Consumer Discretionary
 Fibra Uno Administracion Sa De Cv,None,0.0030917999999999996,Mexico,Real Estate
 Hero Motocorp Limited,None,0.0030894,India,Consumer Discretionary
 Nec Corp,None,0.0030859999999999998,None,None
@@ -1394,17 +1396,17 @@ Weibo Corp Sponsored Adr Class A,None,0.0030663,China,Communication Services
 Xerox Holdings Corp,None,0.003065,None,None
 Infraestructura Energetica Nova Sab De Cv,None,0.0030474000000000005,Mexico,Utilities
 Z Holdings Corp,None,0.003047,None,None
-Skandinaviska Enskilda Banken Ab Class A,None,0.003036,None,None
+Skandinaviska Enskilda Banken Ab Class C,None,0.003036,None,None
 Fisher & Paykel Healthcare Corp Ltd,None,0.0030280000000000003,None,None
 Omron Corp,None,0.0030170000000000006,None,None
 Aier Eye Hospital Group Co Ltd Class A,None,0.0030170000000000006,China,Health Care
-Jiangsu King's Luck Brewery Joint-stock Co Ltd Class A,None,0.0030124000000000006,China,Consumer Staples
-Anhui Gujing Distillery Co Ltd Class A,None,0.0029991999999999996,China,Consumer Staples
+Jiangsu Yanghe Brewery Joint-stock Co Ltd Class A,None,0.0030124000000000006,China,Consumer Staples
+Anhui Kouzi Distillery Co Ltd Class A,None,0.0029991999999999996,China,Consumer Staples
 Byd Electronic (international) Co Ltd,None,0.0029898000000000004,China,Information Technology
 Standard Chartered Plc,None,0.002981,None,None
 Techtronic Industries Co Ltd,None,0.002978,None,None
 Sartorius Ag Preference Shares,None,0.0029770000000000005,None,None
-Zillow Group Inc Class C,None,0.0029769999999999996,None,None
+Zillow Group Inc Class A,None,0.0029769999999999996,None,None
 Ambuja Cements Limited,None,0.0029745,India,Materials
 Swisscom Ag,None,0.0029490000000000002,None,None
 Ioi Corp Bhd,None,0.002945400000000001,Malaysia,Consumer Staples
@@ -1414,7 +1416,7 @@ Orix Corp,None,0.002941,None,None
 Electricity Generating Public Co Ltd Nvdr,None,0.0029303000000000003,Thailand,Utilities
 Pembina Pipeline Corp,None,0.002924,None,None
 Goertek Inc Class A,None,0.002922,China,Information Technology
-Santander Bank Polska Sa,None,0.0029118,None,None
+Santander Bank Polska Sa,None,0.0029118,Poland,Financials
 Shanghai Pudong Development Bank Co Ltd Class A,None,0.0029093,China,Financials
 United Spirits Limited,None,0.0029051000000000003,India,Consumer Staples
 Longi Green Energy Technology Co Ltd Class A,None,0.0029046999999999996,China,Information Technology
@@ -1424,31 +1426,32 @@ Pt Indah Kiat Pulp & Paper Tbk,None,0.0028907,Indonesia,Materials
 Ss&c Technologies Holdings Inc,None,0.0028840000000000003,None,None
 Br Malls Participacoes S A,None,0.002882,Brazil,Real Estate
 Tdk Corp,None,0.002879,None,None
-Just Eat Takeaway,None,0.0028710000000000003,None,None
+Posco International Corp,None,0.002874,None,None
+Just Eat Takeaway Com Nv,None,0.0028710000000000003,None,None
 China State Construction International Holdings Limited,None,0.0028691999999999997,China,Industrials
 Dai-ichi Life Holdings Inc,None,0.0028620000000000004,None,None
 Worldline Sa/france,None,0.0028590000000000004,None,None
-Gf Securities Co Ltd Class H,None,0.0028528000000000004,China,Financials
+Gf Securities Co Ltd Class A,None,0.0028528000000000004,China,Financials
 Shenzhen Kangtai Biological Products Co Ltd Class A,None,0.002852,China,Health Care
 Magna International Inc,None,0.002851,None,None
 Nice Ltd,None,0.00285,None,None
 Sumitomo Corp,None,0.002848,None,None
 Logan Group Co Ltd,None,0.0028478,China,Real Estate
 Kohl's Corp,None,0.002836,None,None
-Ap Moller - Maersk A/s Class B,None,0.0028290000000000004,None,None
+Ap Moller - Maersk A/s Class A,None,0.0028290000000000004,None,None
 Advanced Petrochemical Co,None,0.0028259,Saudi Arabia,Materials
 Ovctek China Inc Class A,None,0.0028223000000000002,China,Health Care
 Edp - Energias De Portugal Sa,None,0.0028190000000000003,None,None
 Turkcell Iletisim Hizmetleri A S,None,0.0028183,Turkey,Communication Services
-Obic Co Ltd,None,0.0028129999999999995,None,None
+Obic Business Consultants Co Ltd,None,0.0028129999999999995,None,None
 Beijing Enterprises Holdings Limited,None,0.0028123,China,Utilities
-Db Insurance Co Ltd,None,0.0028035,None,None
+Db Insurance Co Ltd,None,0.0028035,South Korea,Financials
 Changchun High & New Technology Industry (group) Inc Class A,None,0.0027974000000000002,China,Health Care
 Eclat Textile Co Ltd,None,0.0027973,Taiwan,Consumer Discretionary
 Ocado Group Plc,None,0.0027890000000000002,None,None
 Chongqing Rural Commercial Bank Co Ltd Class H,None,0.002785,China,Financials
 Bce Inc,None,0.0027779999999999997,None,None
-Guotai Junan Securities Co Ltd Class H,None,0.0027755,China,Financials
+Guotai Junan Securities Co Ltd Class A,None,0.0027755,China,Financials
 Japan Exchange Group Inc,None,0.0027730000000000003,None,None
 Edenred,None,0.002746,None,None
 Aristocrat Leisure Ltd,None,0.002742,None,None
@@ -1463,7 +1466,7 @@ Icici Lombard General Insurance Co Ltd,None,0.002719,India,Financials
 Sany Heavy Industry Co Ltd Class A,None,0.0027178000000000003,China,Industrials
 Vtb Bank Pjsc,None,0.0027135,Russia,Financials
 Sonova Holding Ag,None,0.0027099999999999997,None,None
-Samsung Engineering Co Ltd,None,0.0027077,None,None
+Samsung Engineering Co Ltd,None,0.0027077,South Korea,Industrials
 Asahi Group Holdings Ltd,None,0.002706,None,None
 Motherson Sumi Systems Limited,None,0.0027014,India,Consumer Discretionary
 Ono Pharmaceutical Co Ltd,None,0.0026939999999999998,None,None
@@ -1476,7 +1479,7 @@ Sime Darby Bhd,None,0.0026820000000000004,Malaysia,Industrials
 Snam Spa,None,0.0026790000000000004,None,None
 Chr Hansen Holding A/s,None,0.002676,None,None
 Northam Platinum Limited,None,0.0026733,South Africa,Materials
-Shenzhen Inovance Technology Co Ltd Class A,None,0.0026728000000000003,China,Industrials
+Shenzhen Goodix Technology Co Ltd Class A,None,0.0026728000000000003,China,Information Technology
 Societe Generale Sa,None,0.0026720000000000003,None,None
 Godaddy Inc Class A,None,0.0026720000000000003,None,None
 Swiss Life Holding Ag,None,0.002671,None,None
@@ -1499,11 +1502,10 @@ Hang Seng Bank Ltd,None,0.0025880000000000005,None,None
 Wiwynn Corp,None,0.0025843000000000003,Taiwan,Information Technology
 Haci Omer Sabanci Holding A S,None,0.0025824000000000003,Turkey,Financials
 Aboitiz Power Corp,None,0.0025807,Philippines,Utilities
-Bnk Financial Group Inc,None,0.0025805000000000003,None,None
+Bnk Financial Group Inc,None,0.0025805000000000003,South Korea,Financials
 Kasikornbank Public Co Ltd Nvdr,None,0.0025666000000000005,Thailand,Financials
 Credit Agricole Sa,None,0.0025640000000000003,None,None
 Ferrovial Sa,None,0.002561,None,None
-Avic Shenyang Aircraft Co Ltd Class A,None,0.0025557,China,Industrials
 Pan Pacific International Holdings Corp,None,0.002555,None,None
 Ncsoft Corp,None,0.0025510000000000003,None,None
 Veolia Environnement Sa,None,0.0025489999999999996,None,None
@@ -1519,9 +1521,10 @@ Walsin Technology Corporation,None,0.0024856,Taiwan,Information Technology
 Cosan S A,None,0.0024776,Brazil,Energy
 Continental Ag,None,0.002468,None,None
 Metro Inc /cn,None,0.002468,None,None
-Hanon Systems,None,0.0024671000000000003,None,None
+Hanon Systems,None,0.0024671000000000003,South Korea,Consumer Discretionary
 Trimble Inc,None,0.0024660000000000003,None,None
 Subaru Corp,None,0.002458,None,None
+Shanghai 2345 Network Holding Group Co Ltd Class A,None,0.0024566,China,Information Technology
 Hutchison China Meditech Ltd Sponsored Adr,None,0.0024521,China,Health Care
 Sompo Holdings Inc,None,0.0024490000000000002,None,None
 Fiat Chrysler Automobiles Nv,None,0.002448,None,None
@@ -1543,7 +1546,7 @@ Wuhan Guide Infrared Co Ltd Class A,None,0.0023871,China,Information Technology
 Page Industries Limited,None,0.0023846,India,Consumer Discretionary
 Slack Technologies Inc Class A,None,0.0023840000000000003,None,None
 Halma Plc,None,0.002378,None,None
-Hotel Shilla Co Ltd,None,0.0023676,None,None
+Hotel Shilla Co Ltd,None,0.0023676,South Korea,Consumer Discretionary
 Interglobe Aviation Ltd,None,0.0023598,India,Industrials
 Logitech International Sa,None,0.0023580000000000003,None,None
 Nexon Co Ltd,None,0.002356,None,None
@@ -1556,15 +1559,15 @@ Sekisui House Ltd,None,0.002335,None,None
 Bandai Namco Holdings Inc,None,0.002332,None,None
 China Merchants Port Holdings Co Ltd,None,0.0023255000000000003,China,Industrials
 Sumitomo Realty & Development Co Ltd,None,0.002321,None,None
-Heico Corp,None,0.00232,None,None
+Heico Corp Class A,None,0.00232,None,None
 Kingspan Group Plc,None,0.0023160000000000004,None,None
 Lpp S A,None,0.0023104,Poland,Consumer Discretionary
 Land & Houses Public Co Ltd Nvdr,None,0.0023035,Thailand,Real Estate
-Gs Holdings Corp,None,0.0023026,None,None
+Gs Holdings Corp,None,0.0023026,South Korea,Energy
 Yonyou Network Technology Co Ltd Class A,None,0.0023004,China,Information Technology
 Nine Dragons Paper Holdings Ltd,None,0.0023002000000000005,China,Materials
 Afterpay Ltd,None,0.0022990000000000003,None,None
-Amorepacific Group,None,0.0022849000000000003,None,None
+Amorepacific Group Inc,None,0.0022849000000000003,South Korea,Consumer Staples
 Komercni Banka A S,None,0.0022843,Czech Republic,Financials
 Dollarama Inc,None,0.002278,None,None
 Telstra Corp Ltd,None,0.002277,None,None
@@ -1584,7 +1587,7 @@ Pldt Inc,None,0.0022376,Philippines,Communication Services
 Danske Bank A/s,None,0.0022320000000000005,None,None
 Repsol Sa,None,0.00223,None,None
 Misc Bhd,None,0.0022255000000000005,Malaysia,Industrials
-Uni-president China Holdings Ltd,None,0.0022245,None,None
+Uni-president China Holdings Ltd,None,0.0022245,China,Consumer Staples
 Walvax Biotechnology Co Ltd Class A,None,0.0022213,China,Health Care
 Liaoning Cheng Da Co Ltd Class A,None,0.0022191000000000003,China,Consumer Discretionary
 Kumba Iron Ore Limited,None,0.0022179,South Africa,Materials
@@ -1595,9 +1598,9 @@ Iac/interactivecorp,None,0.002196,None,None
 Sands China Ltd,None,0.002194,None,None
 Ping An Bank Co Ltd Class A,None,0.0021833000000000004,China,Financials
 Brenntag Ag,None,0.002182,None,None
-Aluminum Corporation Of China Limited Class H,None,0.0021811,China,Materials
+Aluminum Corporation Of China Limited Class A,None,0.0021811,China,Materials
 Bunzl Plc,None,0.0021809999999999998,None,None
-Sichuan Swellfun Co Ltd Class A,None,0.0021792000000000005,China,Consumer Staples
+Sichuan Kelun Pharmaceutical Co Ltd Class A,None,0.0021792000000000005,China,Health Care
 Makita Corp,None,0.002176,None,None
 Gulf Energy Development Public Company Limited Nvdr,None,0.002173,Thailand,Utilities
 Leg Immobilien Ag,None,0.002166,None,None
@@ -1611,7 +1614,7 @@ Saudi Industrial Investment Group,None,0.0021422,Saudi Arabia,Materials
 Epiroc Ab Class A,None,0.002141,None,None
 Pt Adaro Energy Tbk,None,0.0021379,Indonesia,Energy
 Seazen Group Ltd,None,0.0021356000000000005,China,Real Estate
-Grifols Sa,None,0.002132,None,None
+Grifols Sa Preference Shares,None,0.002132,None,None
 Kia Motors Corp,None,0.0021300000000000004,None,None
 Sumitomo Mitsui Trust Holdings Inc,None,0.0021300000000000004,None,None
 L Oreal Prim De Fid Common Stock,None,0.0021260000000000003,None,None
@@ -1626,14 +1629,14 @@ China Hongqiao Group Ltd,None,0.0021062000000000003,China,Materials
 Telia Co Ab,None,0.0021060000000000002,None,None
 Mondi Plc,None,0.002105,None,None
 Next Plc,None,0.002094,None,None
-Helixmith Co Ltd,None,0.0020918,None,None
-Sinopec Shanghai Petrochemical Co Ltd Class H,None,0.0020894000000000004,China,Materials
+Helixmith Co Ltd,None,0.0020918,South Korea,Health Care
+Sinopec Shanghai Petrochemical Co Ltd Class A,None,0.0020894000000000004,China,Materials
 Eve Energy Co Ltd Class A,None,0.0020875000000000004,China,Industrials
 Sul America Sa Ctf De Deposito De Acoes Cons Of 1 Sh + 2 Pfd Shs,None,0.0020785,Brazil,Financials
 H&r Block Inc,None,0.002076,None,None
 Loblaw Cos Ltd,None,0.002071,None,None
 Endesa Sa,None,0.002071,None,None
-Yanzhou Coal Mining Co Ltd Class H,None,0.0020659000000000003,China,Energy
+Yanzhou Coal Mining Co Ltd Class A,None,0.0020659000000000003,China,Energy
 Tokyo Gas Co Ltd,None,0.0020620000000000005,None,None
 Aena Sme Sa,None,0.002061,None,None
 Shriram Transport Finance Co Ltd,None,0.0020563000000000005,India,Financials
@@ -1642,9 +1645,9 @@ Maxscend Microelectronics Company Limited Class A,None,0.0020518999999999997,Chi
 Peugeot Sa,None,0.0020469999999999998,None,None
 Finecobank Banca Fineco Spa,None,0.0020469999999999998,None,None
 51job Inc Sponsored Adr,None,0.0020455000000000004,China,Industrials
-Air China Limited Class H,None,0.0020388999999999997,China,Industrials
+Air China Limited Class A,None,0.0020388999999999997,China,Industrials
 Ptc Inc,None,0.0020380000000000003,None,None
-Liberty Media Corp-liberty Siriusxm Class C,None,0.002036,None,None
+Liberty Media Corp-liberty Siriusxm Class A,None,0.002036,None,None
 Cochlear Ltd,None,0.0020250000000000003,None,None
 Asahi Kasei Corp,None,0.0020160000000000004,None,None
 Porsche Automobil Holding Se Preference Shares,None,0.002014,None,None
@@ -1677,8 +1680,7 @@ Fairfax Financial Holdings Ltd,None,0.001945,None,None
 Yuexiu Property Co Ltd,None,0.0019437999999999999,China,Real Estate
 Temenos Ag,None,0.0019410000000000002,None,None
 Pg&e Corp,None,0.00194,None,None
-Shenzhen Energy Group Co Ltd Class A,None,0.00194,China,Utilities
-Shanghai Pharmaceuticals Holding Co Ltd Class H,None,0.0019387000000000002,China,Health Care
+Shenzhen Hepalink Pharmaceutical Group Co Ltd Class A,None,0.00194,China,Health Care
 Ajinomoto Co Inc,None,0.001936,None,None
 A-living Services Co Ltd Class H,None,0.0019268000000000002,China,Industrials
 Huya Inc Sponsored Adr Class A,None,0.0019257000000000002,China,Communication Services
@@ -1690,7 +1692,7 @@ Altice Usa Inc Class A,None,0.001921,None,None
 Shanghai Lujiazui Finance & Trade Zone Development Co Ltd Class B,None,0.0019181,China,Real Estate
 Shaw Communications Inc Class B,None,0.0019180000000000002,None,None
 Amdocs Ltd,None,0.001917,None,None
-China Southern Airlines Company Limited Class H,None,0.0019132000000000003,China,Industrials
+China Southern Airlines Company Limited Class A,None,0.0019132000000000003,China,Industrials
 Yamato Holdings Co Ltd,None,0.00191,None,None
 S F Holding Co Ltd Class A,None,0.0019082,China,Industrials
 Shenzhen Mindray Bio-medical Electronics Co Ltd Class A,None,0.0019050000000000002,China,Health Care
@@ -1718,13 +1720,13 @@ Qatar Fuel Q S C (woqod),None,0.0018577,Qatar,Energy
 Cielo,None,0.0018541999999999999,Brazil,Information Technology
 Kuehne + Nagel International Ag,None,0.0018540000000000002,None,None
 Dcc Plc,None,0.0018540000000000002,None,None
-Fuyao Glass Industry Group Co Ltd Class H,None,0.001853,China,Consumer Discretionary
+Fuyao Glass Industry Group Co Ltd Class A,None,0.001853,China,Consumer Discretionary
 United Utilities Group Plc,None,0.001851,None,None
 Wuhu Sanqi Interactive Entertainment Network Technology Group Co Ltd Class A,None,0.0018499,China,Communication Services
 Sg Holdings Co Ltd,None,0.0018479999999999998,None,None
-Irb Brasil Resseguros Sa,None,0.0018468,Brazil,Financials
+Irb Brasil Resseguros Sa Temp,None,0.0018468,Brazil,Financials
 Lens Technology Co Ltd Class A,None,0.0018245000000000002,China,Information Technology
-Tokyu Corp,None,0.0018239999999999999,None,None
+Tokyu Fudosan Holdings Corp,None,0.0018239999999999999,None,None
 Saudi Airlines Catering Co,None,0.0018212,Saudi Arabia,Consumer Discretionary
 China Resources Pharmaceutical Group Ltd,None,0.0018191,China,Health Care
 Genscript Biotech Corporation,None,0.0018188,China,Health Care
@@ -1737,7 +1739,7 @@ Gn Store Nord A/s,None,0.0018070000000000002,None,None
 Ubisoft Entertainment Sa,None,0.0018010000000000003,None,None
 Evergreen Marine Corp (taiwan) Ltd,None,0.0017997999999999998,Taiwan,Industrials
 Chubu Electric Power Co Inc,None,0.0017980000000000001,None,None
-Xinjiang Goldwind Science & Technology Co Ltd Class A,None,0.0017978,China,Industrials
+Xinjiang Goldwind Science & Technology Co Ltd Class H,None,0.0017978,China,Industrials
 Northern Star Resources Ltd,None,0.0017970000000000002,None,None
 Coca-cola European Partners Plc,None,0.001795,None,None
 Hargreaves Lansdown Plc,None,0.0017930000000000003,None,None
@@ -1752,6 +1754,7 @@ Eurofins Scientific Se,None,0.0017649999999999999,None,None
 Vail Resorts Inc,None,0.001764,None,None
 Atlantia Spa,None,0.0017630000000000002,None,None
 Kt&g Corp,None,0.0017630000000000002,None,None
+Lg Electronics Inc Preference Shares,None,0.0017559999999999997,None,None
 Momentum Metropolitan Holdings Limited,None,0.0017512,South Africa,Financials
 Lg Innotek Co Ltd,None,0.0017501,South Korea,Information Technology
 Far East Horizon Limited,None,0.0017461,China,Financials
@@ -1788,7 +1791,7 @@ Dexus,None,0.0016870000000000003,None,None
 Metropolitan Bank & Trust Co,None,0.0016863000000000002,Philippines,Financials
 Shanghai M&g Stationery Inc,None,0.0016837000000000002,China,Industrials
 Asm International Nv,None,0.0016830000000000003,None,None
-Hyundai Department Store Co Ltd,None,0.0016822,None,None
+Hyundai Department Store Co Ltd,None,0.0016822,South Korea,Consumer Discretionary
 Boliden Ab,None,0.0016779999999999998,None,None
 Power Assets Holdings Ltd,None,0.0016779999999999998,None,None
 Covestro Ag,None,0.0016760000000000002,None,None
@@ -1801,7 +1804,7 @@ Noah Holdings Ltd Sponsored Adr Class A,None,0.0016585,China,Financials
 Adecco Group Ag,None,0.0016580000000000004,None,None
 Dali Foods Group Co Ltd,None,0.0016528000000000003,China,Consumer Staples
 Osaka Gas Co Ltd,None,0.001647,None,None
-Shanghai Electric Group Company Limited Class A,None,0.0016449000000000001,China,Industrials
+Shanghai Electric Group Company Limited Class H,None,0.0016449000000000001,China,Industrials
 Highwealth Construction Corp,None,0.0016433,Taiwan,Real Estate
 Hundsun Technologies Inc Class A,None,0.0016427,China,Information Technology
 Bank Aljazira,None,0.0016424999999999999,Saudi Arabia,Financials
@@ -1829,7 +1832,7 @@ Unibail-rodamco-westfield,None,0.001602,None,None
 Pidilite Industries Limited,None,0.0016017000000000002,India,Materials
 Ascendas Reit,None,0.001601,None,None
 Unigroup Guoxin Microelectronics Co Ltd Class A,None,0.0016009,China,Information Technology
-Chongqing Brewery Co Ltd Class A,None,0.0016005,China,Consumer Staples
+Chongqing Fuling Zhacai Group Co Ltd Class A,None,0.0016005,China,Consumer Staples
 Nissan Motor Co Ltd,None,0.001596,None,None
 Sumitomo Metal Mining Co Ltd,None,0.0015930000000000002,None,None
 Swiss Prime Site Ag,None,0.0015869999999999999,None,None
@@ -1854,9 +1857,9 @@ Tcl Technology Group Corporation Class A,None,0.0015505000000000002,China,Consum
 Hydro One Ltd,None,0.0015480000000000001,None,None
 Biomerieux,None,0.0015440000000000002,None,None
 Gecina Sa,None,0.0015440000000000002,None,None
-Pge Polska Grupa Energetyczna Sa,None,0.0015418,None,None
+Pge Polska Grupa Energetyczna S A,None,0.0015418,Poland,Utilities
 Nippon Steel Corp,None,0.001538,None,None
-Korea Aerospace Industries Ltd,None,0.0015379,None,None
+Korea Aerospace Industries Ltd,None,0.0015379,South Korea,Industrials
 Icici Prudential Life Insurance Co Ltd,None,0.0015363000000000002,India,Financials
 Wen's Foodstuff Group Co Ltd Class A,None,0.0015351999999999998,China,Consumer Staples
 Nissan Chemical Corp,None,0.0015339999999999998,None,None
@@ -1878,15 +1881,14 @@ Mtr Corp Ltd,None,0.001497,None,None
 Hithink Royalflush Information Network Co Ltd Class A,None,0.0014926,China,Financials
 Shandong Sinocera Functional Material Co Ltd Class A,None,0.0014887000000000001,China,Materials
 Yara International Asa,None,0.0014880000000000002,None,None
-Svenska Cellulosa Ab Sca Class B,None,0.001484,None,None
 Jumbo S A,None,0.0014838000000000002,Greece,Consumer Discretionary
 Yealink Network Technology Co Ltd Class A,None,0.0014838000000000002,China,Information Technology
-Hyundai Marine & Fire Insurance Co Ltd,None,0.0014819000000000002,None,None
+Hyundai Marine & Fire Insurance Co Ltd,None,0.0014819000000000002,South Korea,Financials
 Marubeni Corp,None,0.0014800000000000002,None,None
 Admiral Group Plc,None,0.001478,None,None
 Erste Group Bank Ag,None,0.0014770000000000002,None,None
 Jafron Biomedical Co Ltd Class A,None,0.0014747,China,Health Care
-Cheil Worldwide Inc,None,0.0014731999999999998,None,None
+Cheil Worldwide Inc,None,0.0014731999999999998,South Korea,Communication Services
 Auto Trader Group Plc,None,0.001471,None,None
 Enagas Sa,None,0.001469,None,None
 Acer Incorporated,None,0.0014678,Taiwan,Information Technology
@@ -1900,7 +1902,7 @@ Ageas Sa/nv,None,0.001461,None,None
 Rightmove Plc,None,0.0014600000000000001,None,None
 Daiwa Securities Group Inc,None,0.0014579999999999999,None,None
 Teamviewer Ag,None,0.0014579999999999999,None,None
-Korean Air Lines Co Ltd,None,0.0014546,None,None
+Korean Air Lines Co Ltd,None,0.0014546,South Korea,Industrials
 China Eastern Airlines Corporation Limited Class A,None,0.0014537,China,Industrials
 Shandong Gold Mining Co Ltd Class A,None,0.0014517,China,Materials
 Santos Ltd,None,0.00145,None,None
@@ -1911,10 +1913,10 @@ Zhaojin Mining Industry Co Ltd Class H,None,0.0014466,China,Materials
 Shinsegae Co Ltd,None,0.0014427,South Korea,Consumer Discretionary
 Sodexo Sa,None,0.0014420000000000001,None,None
 Hankyu Hanshin Holdings Inc,None,0.00144,None,None
-Daewoo Shipbuilding & Marine Engineering Co Ltd,None,0.0014399,None,None
+Daewoo Shipbuilding & Marine Engineering Co Ltd,None,0.0014399,South Korea,Industrials
 Baloise Holding Ag,None,0.0014390000000000002,None,None
 Glodon Company Limited Class A,None,0.0014383,China,Information Technology
-Gs Engineering & Construction Corp,None,0.0014369,None,None
+Gs Engineering & Construction Corp,None,0.0014369,South Korea,Industrials
 Berger Paints India Limited,None,0.0014367,India,Materials
 Gree Electric Appliances Inc Of Zhuhai Class A,None,0.0014319,China,Consumer Discretionary
 Hua Hong Semiconductor Ltd,None,0.0014312,China,Information Technology
@@ -1943,7 +1945,7 @@ Gigadevice Semiconductor (beijing) Inc Class A,None,0.0013869,China,Information 
 Poly Developments & Holdings Group Co Ltd Class A,None,0.0013866,China,Real Estate
 Shenzhen Sunway Communication Co Ltd Class A,None,0.0013805,China,Information Technology
 Keio Corp,None,0.001373,None,None
-Sdic Capital Co Ltd Class A,None,0.0013724000000000002,China,Financials
+Sdic Power Holdings Co Ltd Class A,None,0.0013724000000000002,China,Utilities
 Lear Corp,None,0.0013720000000000002,None,None
 Kesko Oyj Class B,None,0.0013720000000000002,None,None
 Kingfisher Plc,None,0.0013720000000000002,None,None
@@ -1974,6 +1976,7 @@ Bharti Infratel Ltd,None,0.0013197999999999999,India,Communication Services
 Saputo Inc,None,0.0013180000000000002,None,None
 Sei Investments Co,None,0.0013180000000000002,None,None
 Ambu A/s Class B,None,0.001317,None,None
+Zhejiang Dingli Machinery Co Ltd Class A,None,0.0013166999999999999,China,Industrials
 Shennan Circuit Co Ltd Class A,None,0.0013160000000000001,China,Information Technology
 Nissin Foods Holdings Co Ltd,None,0.0013150000000000002,None,None
 Guangdong Haid Group Co Limited Class A,None,0.0013127000000000002,China,Consumer Staples
@@ -1991,7 +1994,7 @@ Galp Energia Sgps Sa,None,0.0012940000000000002,None,None
 Gea Group Ag,None,0.0012940000000000002,None,None
 G-bits Network Technology (xiamen) Co Ltd Class A,None,0.0012932000000000002,China,Communication Services
 Robinsons Land Corp,None,0.0012929999999999999,Philippines,Real Estate
-Cj Enm Co Ltd,None,0.0012886000000000002,None,None
+Cj Enm Co Ltd,None,0.0012886000000000002,South Korea,Consumer Discretionary
 Volkswagen Ag,None,0.0012880000000000003,None,None
 Toyo Suisan Kaisha Ltd,None,0.0012820000000000002,None,None
 Shengyi Technology Co Ltd Class A,None,0.0012775,China,Information Technology
@@ -2013,10 +2016,11 @@ Solvay Sa Class A,None,0.0012520000000000003,None,None
 Tianjin Zhonghuan Semiconductor Co Ltd Class A,None,0.0012502,China,Information Technology
 Lendlease Corp Ltd,None,0.001247,None,None
 Malaysia Airports Holdings Bhd,None,0.0012448,Malaysia,Industrials
-Shanghai International Airport Co Ltd Class A,None,0.0012403000000000004,China,Industrials
+Zhejiang Sanhua Intelligent Controls Co Ltd Class A,None,0.0012434999999999998,China,Industrials
+Shanghai Jin Jiang International Hotels Co Ltd Class A,None,0.0012403000000000004,China,Consumer Discretionary
 Lingyi Itech (guangdong) Company Class A,None,0.0012399000000000002,China,Information Technology
 Ingredion Inc,None,0.001239,None,None
-Lotte Shopping Co Ltd,None,0.0012385,None,None
+Lotte Shopping Co Ltd,None,0.0012385,South Korea,Consumer Discretionary
 Sensata Technologies Holding Plc,None,0.001237,None,None
 Dai Nippon Printing Co Ltd,None,0.001237,None,None
 Aegon Nv,None,0.001237,None,None
@@ -2040,17 +2044,17 @@ Mirvac Group,None,0.001204,None,None
 Swatch Group Ag (bearer),None,0.001201,None,None
 Keppel Corp Ltd,None,0.0012000000000000001,None,None
 Bausch Health Cos Inc,None,0.0012000000000000001,None,None
-Inner Mongolia Yili Industrial Group Co Ltd Class A,None,0.0011985000000000001,China,Consumer Staples
+Inner Mongolia Junzheng Energy & Chemical Group Co Ltd Class A,None,0.0011985000000000001,China,Materials
 Pennon Group Plc,None,0.001198,None,None
 Hamamatsu Photonics Kk,None,0.001194,None,None
 Pick N Pay Stores Limited,None,0.0011939000000000001,South Africa,Consumer Staples
 Yifeng Pharmacy Chain Co Ltd Class A,None,0.0011914,China,Consumer Staples
 Metallurgical Corporation Of China Ltd Class A,None,0.0011902,China,Industrials
-Electrolux Ab Class B,None,0.0011899999999999999,None,None
+Electrolux Professional Ab Class B,None,0.0011899999999999999,None,None
 Toyota Tsusho Corp,None,0.0011880000000000003,None,None
 Suez Sa,None,0.0011880000000000003,None,None
 Coca-cola Hbc Ag,None,0.001183,None,None
-Samsung Card Co Ltd,None,0.0011821000000000002,None,None
+Samsung Card Co Ltd,None,0.0011821000000000002,South Korea,Financials
 Gpt Group,None,0.001182,None,None
 Bosideng International Holdings Limited,None,0.0011815,China,Consumer Discretionary
 Asahi Intecc Co Ltd,None,0.001181,None,None
@@ -2071,8 +2075,9 @@ Cdk Global Inc,None,0.001162,None,None
 Hang Lung Properties Ltd,None,0.001159,None,None
 Rabigh Refining & Petrochemical Co,None,0.0011556000000000001,Saudi Arabia,Energy
 Kobayashi Pharmaceutical Co Ltd,None,0.001154,None,None
-Mbank Sa,None,0.0011472000000000001,None,None
+Mbank Sa,None,0.0011472000000000001,Poland,Financials
 Asr Nederland Nv,None,0.001147,None,None
+Beijing Shunxin Agriculture Co Ltd Class A,None,0.0011459,China,Consumer Staples
 Medibank Pvt Ltd,None,0.001145,None,None
 Sumitomo Chemical Co Ltd,None,0.001144,None,None
 Inspur Electronic Information Industry Co Ltd Class A,None,0.0011412,China,Information Technology
@@ -2080,6 +2085,7 @@ Georg Fischer Ag,None,0.001139,None,None
 Melrose Industries Plc,None,0.0011310000000000003,None,None
 George Weston Ltd,None,0.0011310000000000003,None,None
 Rohm Co Ltd,None,0.00113,None,None
+Zhejiang Conba Pharmaceutical Co Ltd Class A,None,0.0011295,China,Health Care
 Baic Motor Corporation Limited Class H,None,0.0011291,China,Consumer Discretionary
 Familymart Co Ltd,None,0.001129,None,None
 Land Securities Group Plc,None,0.001127,None,None
@@ -2131,6 +2137,7 @@ Old Republic International Corp,None,0.001056,None,None
 Hikari Tsushin Inc,None,0.0010540000000000002,None,None
 Sbi Holdings Inc /japan,None,0.0010540000000000002,None,None
 Rec Limited,None,0.0010538000000000001,India,Financials
+Cj Logistics Corp,None,0.0010522,South Korea,Industrials
 Avicopter Plc Class A,None,0.0010504,China,Industrials
 Sofina Sa,None,0.0010500000000000002,None,None
 Diasorin Spa,None,0.001049,None,None
@@ -2142,6 +2149,7 @@ Evonik Industries Ag,None,0.0010410000000000003,None,None
 Amundi Sa,None,0.0010400000000000001,None,None
 Derwent London Plc,None,0.001038,None,None
 China Shipbuilding Industry Company Limited Class A,None,0.0010364,China,Industrials
+Amorepacific Corp Preference Shares,None,0.0010350000000000001,None,None
 Avast Plc,None,0.0010340000000000002,None,None
 British Land Co Plc,None,0.0010310000000000002,None,None
 Mosaic Co,None,0.0010290000000000002,None,None
@@ -2152,7 +2160,6 @@ Spring Airlines Co Ltd Class A,None,0.001021,China,Industrials
 Daito Trust Construction Co Ltd,None,0.0010200000000000003,None,None
 Powertech Technology Inc,None,0.001018,Taiwan,Information Technology
 Yunda Holding Co Ltd Class A,None,0.0010148000000000002,China,Industrials
-Avic Electromechanical Systems Co Ltd Class A,None,0.0010104,China,Industrials
 Megaworld Corp,None,0.0010098000000000002,Philippines,Real Estate
 Winning Health Technology Group Co Ltd Class A,None,0.0010062,China,Health Care
 Jiangsu Yuyue Medical Equipment & Supply Co Ltd Class A,None,0.0010053,China,Health Care
@@ -2200,11 +2207,11 @@ Hangzhou Robam Appliances Co Ltd Class A,None,0.0009442000000000002,China,Consum
 Ds Smith Plc,None,0.0009420000000000001,None,None
 Lenovo Group Ltd,None,0.0009420000000000001,None,None
 Kyushu Electric Power Co Inc,None,0.0009400000000000002,None,None
-Seb Sa,None,0.000939,None,None
+Seb Sa Common Stock Npv,None,0.000939,None,None
 Elia Group Sa/nv,None,0.000936,None,None
 Huhtamaki Oyj,None,0.000934,None,None
 Bluescope Steel Ltd,None,0.000933,None,None
-S-1 Corp,None,0.0009326,None,None
+S-1 Corp,None,0.0009326,South Korea,Industrials
 Zhongan Online P&c Insurance Co Ltd Class H,None,0.0009312000000000002,China,Financials
 Canopy Growth Corp,None,0.0009310000000000001,None,None
 Ganfeng Lithium Co Ltd Class A,None,0.0009269,China,Materials
@@ -2212,7 +2219,7 @@ Nh Foods Ltd,None,0.000926,None,None
 Hongkong Land Holdings Ltd,None,0.000926,None,None
 Bellway Plc,None,0.0009239999999999999,None,None
 Keihan Holdings Co Ltd,None,0.0009230000000000001,None,None
-Mapletree Commercial Trust,None,0.000923,None,None
+Mapletree North Asia Commercial Trust,None,0.000923,None,None
 Capitaland Commercial Trust,None,0.0009209999999999999,None,None
 Carl Zeiss Meditec Ag,None,0.00092,None,None
 Centrica Plc,None,0.00092,None,None
@@ -2220,11 +2227,10 @@ Azbil Corp,None,0.000919,None,None
 Aselsan Elektronik Sanayi Ve Ticaret A S Class B,None,0.0009170000000000001,Turkey,Industrials
 Norsk Hydro Asa,None,0.000916,None,None
 Ricoh Co Ltd,None,0.000915,None,None
-China Enterprise Company Limited Class A,None,0.0009143000000000002,China,Real Estate
 Sino-ocean Group Holding Ltd,None,0.0009143,China,Real Estate
 Isuzu Motors Ltd,None,0.0009140000000000001,None,None
 Chugoku Electric Power Co Inc,None,0.0009130000000000001,None,None
-Swire Pacific Ltd Class B,None,0.0009119999999999999,None,None
+Swire Pacific Ltd Class A,None,0.0009119999999999999,None,None
 Winbond Electronics Corp,None,0.0009101,Taiwan,Information Technology
 Rheinmetall Ag,None,0.0009069999999999999,None,None
 Orion Oyj Class B,None,0.0009069999999999999,None,None
@@ -2232,7 +2238,7 @@ Manila Electric Co,None,0.0009051999999999999,Philippines,Utilities
 Electricite De France Sa,None,0.0009029999999999999,None,None
 Beijing Capital International Airport Co Ltd Class H,None,0.0009020999999999999,China,Industrials
 Jb Hi-fi Ltd,None,0.000902,None,None
-Zhejiang Nhu Co Ltd Class A,None,0.0009003,China,Health Care
+Zhejiang Wolwo Bio-pharmaceutical Co Ltd Class A,None,0.0009003,China,Health Care
 Trelleborg Ab Class B,None,0.0008990000000000001,None,None
 China Reinsurance (group) Corp Class H,None,0.0008990000000000001,China,Financials
 Swedish Orphan Biovitrum Ab,None,0.0008970000000000002,None,None
@@ -2245,16 +2251,16 @@ Rubis Sca,None,0.000891,None,None
 Lepu Medical Technology (beijing) Co Ltd Class A,None,0.0008901,China,Health Care
 Zhejiang Expressway Co Ltd Class H,None,0.0008895999999999999,China,Industrials
 Verbund Ag,None,0.0008890000000000001,None,None
-Avic Jonhon Optronic Technology Co Ltd Class A,None,0.0008889000000000001,China,Information Technology
 Lundin Energy Ab,None,0.0008880000000000001,None,None
 Uniper Se,None,0.0008880000000000001,None,None
 Tryg A/s,None,0.000885,None,None
-China National Medicines Corporation Ltd Class A,None,0.0008840000000000001,China,Health Care
+China National Accord Medicines Corporation Ltd Class A,None,0.0008840000000000001,China,Health Care
 Betta Pharmaceuticals Co Ltd Class A,None,0.000883,China,Health Care
+Shanxi Taigang Stainless Steel Co Ltd Class A,None,0.000883,China,Materials
 Focus Media Information Technology Co Ltd Class A,None,0.0008824000000000001,China,Communication Services
 Mdu Resources Group Inc,None,0.0008800000000000002,None,None
 Nabtesco Corp,None,0.000879,None,None
-Doosan Bobcat Inc,None,0.0008779999999999999,None,None
+Doosan Bobcat Inc,None,0.0008779999999999999,South Korea,Industrials
 Nippon Shinyaku Co Ltd,None,0.0008770000000000001,None,None
 Yamaha Motor Co Ltd,None,0.0008750000000000001,None,None
 Husqvarna Ab,None,0.0008720000000000002,None,None
@@ -2277,7 +2283,7 @@ Miura Co Ltd,None,0.0008550000000000001,None,None
 Jfe Holdings Inc,None,0.0008540000000000002,None,None
 Sydney Airport,None,0.0008529999999999999,None,None
 Globe Telecom Inc,None,0.0008527,Philippines,Communication Services
-Bgf Retail Co Ltd,None,0.0008523000000000002,None,None
+Bgf Retail Co Ltd,None,0.0008523000000000002,South Korea,Consumer Staples
 Meinian Onehealth Healthcare Holdings Co Ltd Class A,None,0.0008518,China,Health Care
 Budweiser Brewing Co Apac Ltd,None,0.0008510000000000002,None,None
 Nippon Express Co Ltd,None,0.000849,None,None
@@ -2306,7 +2312,6 @@ Net One Systems Co Ltd,None,0.0008200000000000001,None,None
 Ipsen Sa,None,0.0008179999999999999,None,None
 Barwa Real Estate Co,None,0.0008155,Qatar,Real Estate
 Shimizu Corp,None,0.000815,None,None
-Wuxi Lead Intelligent Equipment Co Ltd Class A,None,0.0008142000000000001,China,Information Technology
 Domino's Pizza Enterprises Ltd,None,0.000814,None,None
 Kansai Paint Co Ltd,None,0.000813,None,None
 Anritsu Corp,None,0.000813,None,None
@@ -2405,9 +2410,9 @@ Huaxi Securities Co Ltd Class A,None,0.0006983000000000001,China,Financials
 Stanley Electric Co Ltd,None,0.000698,None,None
 Itv Plc,None,0.000698,None,None
 Schibsted Asa Class A,None,0.000697,None,None
-Cj Corp,None,0.0006960000000000001,None,None
+Cj Cheiljedang Corp Preference Shares,None,0.0006960000000000001,None,None
 L E Lundbergforetagen Ab Class B,None,0.000696,None,None
-Shanxi Securities Co Ltd Class A,None,0.0006907,China,Financials
+Shanxi Lu'an Environmental Energy Development Co Ltd Class A,None,0.0006907,China,Energy
 Tenaris Sa,None,0.00069,None,None
 Haseko Corp,None,0.000689,None,None
 Ngk Insulators Ltd,None,0.0006850000000000001,None,None
@@ -2440,7 +2445,7 @@ Adevinta Asa Class B,None,0.000662,None,None
 Klepierre Sa,None,0.000662,None,None
 China Minsheng Banking Corp Ltd Class A,None,0.0006608000000000001,China,Financials
 Dino Polska Sa,None,0.0006600000000000001,None,None
-Lotte Corp,None,0.0006566,None,None
+Lotte Corp,None,0.0006566,South Korea,Industrials
 Quilter Plc,None,0.000656,None,None
 Kose Corp,None,0.000653,None,None
 Grandjoy Holdings Group Co Ltd Class A,None,0.0006519,China,Real Estate
@@ -2457,6 +2462,7 @@ Hisamitsu Pharmaceutical Co Inc,None,0.000639,None,None
 Koei Tecmo Holdings Co Ltd,None,0.000639,None,None
 Hubei Kaile Technology Co Ltd Class A,None,0.0006377,China,Information Technology
 Covivio,None,0.0006360000000000001,None,None
+Beijing Enlight Media Co Ltd Class A,None,0.0006357,China,Communication Services
 Iss A/s,None,0.000633,None,None
 Emaar Malls Pjsc,None,0.0006324999999999999,UAE,Real Estate
 Pan Ocean Co Ltd,None,0.0006288000000000001,South Korea,Industrials
@@ -2493,7 +2499,7 @@ Navinfo Co Ltd Class A,None,0.0005899,China,Consumer Discretionary
 Jointown Pharmaceutical Group Co Ltd Class A,None,0.0005894,China,Health Care
 Air Water Inc,None,0.000589,None,None
 Turk Hava Yollari A O,None,0.000589,Turkey,Industrials
-Hubei Biocause Pharmaceutical Co Ltd Class A,None,0.0005881,China,Financials
+Hubei Jumpcan Pharmaceutical Co Ltd Class A,None,0.0005881,China,Health Care
 El Sewedy Electric Company,None,0.0005870000000000001,Egypt,Industrials
 Meggitt Plc,None,0.0005859999999999999,None,None
 Italgas Spa,None,0.0005859999999999999,None,None
@@ -2503,7 +2509,7 @@ Shandong Linglong Tyre Co Ltd Class A,None,0.0005809000000000001,China,Consumer 
 Helvetia Holding Ag,None,0.0005790000000000001,None,None
 Luye Pharma Group Ltd,None,0.0005785,China,Health Care
 Financial Street Holdings Co Ltd Class A,None,0.0005784000000000001,China,Real Estate
-Beijing Tongrentang Co Ltd Class A,None,0.0005773,China,Health Care
+Beijing Shiji Information Technology Co Ltd Class A,None,0.0005773,China,Information Technology
 Jde Peet's Bv,None,0.000577,None,None
 Iida Group Holdings Co Ltd,None,0.000577,None,None
 Daqin Railway Co Ltd Class A,None,0.0005750000000000001,China,Industrials
@@ -2563,7 +2569,6 @@ Topchoice Medical Corp Class A,None,0.0005189000000000001,China,Health Care
 Yamazaki Baking Co Ltd,None,0.000518,None,None
 Yaoko Co Ltd,None,0.000518,None,None
 Ashmore Group Plc,None,0.000518,None,None
-Shanghai 2345 Network Holding Group Co Ltd Class A,None,0.0005179,China,Information Technology
 Central Retail Corporation Public Company Limited Nvdr,None,0.0005149999999999999,Thailand,Consumer Discretionary
 Fancl Corp,None,0.000514,None,None
 Sjm Holdings Ltd,None,0.000514,None,None
@@ -2629,7 +2634,7 @@ Prada Spa,None,0.000465,None,None
 Tpg Telecom Ltd,None,0.00046400000000000006,None,None
 Wendel Se,None,0.000463,None,None
 Westlake Chemical Corp,None,0.00046199999999999995,None,None
-Orion Corp,None,0.00046,South Korea,Consumer Staples
+Orion Corp /republic Of Korea,None,0.00046,None,None
 Taisho Pharmaceutical Holdings Co Ltd,None,0.00046,None,None
 Comfortdelgro Corp Ltd,None,0.00046,None,None
 B Grimm Power Public Company Ltd Nvdr,None,0.0004598,Thailand,Utilities
@@ -2643,7 +2648,6 @@ Toly Bread Co Ltd Class A,None,0.00045430000000000004,China,Consumer Staples
 Dongxing Securities Co Ltd,None,0.000454,China,Financials
 Tokyo Tatemono Co Ltd,None,0.00045300000000000006,None,None
 Shimamura Co Ltd,None,0.000452,None,None
-Avic Capital Co Ltd Class A,None,0.00045170000000000003,China,Financials
 Inner Mongolia Baotou Steel Union Co Ltd Class A,None,0.0004512,China,Materials
 Cnp Assurances,None,0.000449,None,None
 Jiangsu Changshu Rural Commercial Bank Co Ltd Class A,None,0.0004481,China,Financials
@@ -2796,13 +2800,13 @@ Hubei Energy Group Co Ltd Class A,None,0.0003422,China,Utilities
 Xiamen Tungsten Co Ltd Class A,None,0.0003413,China,Materials
 Hugo Boss Ag,None,0.000339,None,None
 Sulzer Ag,None,0.00033800000000000003,None,None
-Shandong Sunpaper Co Ltd Class A,None,0.00033790000000000003,China,Materials
+Shandong Nanshan Aluminium Co Ltd Class A,None,0.00033790000000000003,China,Materials
 Bank Of Ireland Group Plc,None,0.000337,None,None
 Jardine Cycle & Carriage Ltd,None,0.000335,None,None
 Transfar Zhilian Co Ltd Class A,None,0.00033470000000000006,China,Materials
 Fangda Carbon New Material Co Ltd Class A,None,0.0003333,China,Industrials
 Seven Bank Ltd,None,0.000333,None,None
-Mirae Asset Daewoo Co Ltd,None,0.00033200000000000005,None,None
+Mirae Asset Daewoo Co Ltd Preference Shares,None,0.00033200000000000005,None,None
 Rational Ag,None,0.000331,None,None
 Zhongjin Gold Corp Ltd Class A,None,0.0003282,China,Materials
 Park24 Co Ltd,None,0.000328,None,None
@@ -2842,7 +2846,7 @@ Carnival Plc,None,0.00030900000000000003,None,None
 Maruichi Steel Tube Ltd,None,0.00030700000000000004,None,None
 Ariake Japan Co Ltd,None,0.000304,None,None
 Kusuri No Aoki Holdings Co Ltd,None,0.000304,None,None
-Hanwha Corp,None,0.000304,None,None
+Hanwha Corp Preference Shares,None,0.000304,None,None
 Oceanwide Holdings Co Ltd Class A,None,0.00030320000000000005,China,Real Estate
 Toyo Tire Corp,None,0.00030300000000000005,None,None
 Tokuyama Corp,None,0.000302,None,None
@@ -2886,7 +2890,7 @@ Continental Resources Inc /ok,None,0.000263,None,None
 Telekom Austria Ag Class A,None,0.000263,None,None
 Heilongjiang Agriculture Company Limited Class A,None,0.00026240000000000004,China,Consumer Staples
 Guangdong Hec Technology Holding Co Ltd Class A,None,0.0002616,China,Materials
-Gs Retail Co Ltd,None,0.0002615,None,None
+Gs Retail Co Ltd,None,0.0002615,South Korea,Consumer Staples
 Nagase & Co Ltd,None,0.000261,None,None
 Skycity Entertainment Group Ltd,None,0.000261,None,None
 Pacific Securities Co Ltd Class A,None,0.00026010000000000003,China,Financials
@@ -3076,7 +3080,6 @@ Fuji Seal International Inc,None,0.00011600000000000001,None,None
 Shenzhen Airport Co Ltd Class A,None,0.00011600000000000001,China,Industrials
 Mgm China Holdings Ltd,None,0.00011399999999999999,None,None
 Bohai Leasing Co Ltd Class A,None,0.00011399999999999999,China,Industrials
-China Railway Construction Corporation Limited Class A,None,0.00011360000000000002,China,Industrials
 Sansteel Minguang Co Ltd Fujian Class A,None,0.0001134,China,Materials
 Zhenro Properties Group Limited,None,0.0001128,China,Real Estate
 Melisron Ltd,None,0.00011000000000000003,None,None
@@ -3090,7 +3093,6 @@ Shufersal Ltd,None,0.000107,None,None
 Colgate-palmolive (india) Limited,None,0.00010669999999999999,India,Consumer Staples
 Topcon Corp,None,0.000106,None,None
 Medytox Inc,None,0.000106,None,None
-China Citic Bank Corporation Ltd Class A,None,0.00010499999999999999,China,Financials
 Shougang Fushan Resources Group Ltd,None,0.000104,None,None
 Hua Xia Bank Co Limited Class A,None,0.00010339999999999999,China,Financials
 Kcc Corp,None,0.00010300000000000001,None,None

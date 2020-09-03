@@ -25,3 +25,10 @@ def flatten(items: Iterable):
     _flatten(items)
 
     return flattened_list
+
+
+def normalize_country(country: str):
+    if country == 'United States':
+        country = 'U.S.'
+
+    return country

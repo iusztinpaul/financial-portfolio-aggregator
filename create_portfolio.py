@@ -1,15 +1,17 @@
 from src.factories import create_etf_from_ishares_csv, create_etf_from_spdr_excel, create_etf_from_vanguard, \
     create_etf_from_custom_csv
+from src.market import MarketHub
 from src.models import MultipleItemsFinancialInstrument, OneItemFinancialInstrument
 
-# TODO: Change holding aggregation algorithm, make the dictionary like: [holding] = { 'weight', 'holding' }
+# TODO: Try to fill in missing data. ( before change vanguards etfs.)
 # TODO: Validate weight calculating logic.
-# TODO: Create statistics by region & sector.
 # TODO: Add docs.
 # TODO: Add args for more generic purposes.
 
 
 if __name__ == '__main__':
+    # market_hub = MarketHub()
+
     cndx_etf = create_etf_from_ishares_csv(
         'CNDX',
         'files/CNDX_holdings.csv'
@@ -57,3 +59,5 @@ if __name__ == '__main__':
         ]
     )
     portfolio.export_to_csv()
+    portfolio.statistics_country()
+    portfolio.statistics_sector()
