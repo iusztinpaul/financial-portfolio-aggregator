@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 
 from collections import Counter
@@ -11,7 +13,7 @@ from collections import Counter
 
 
 def normalize_vanguard_csv_file(path_to_file: str) -> str:
-    return normalize_file_by_cutting_lines(path_to_file, 2, 'csv')
+    return normalize_file_by_cutting_lines(path_to_file, 6, 'csv')
 
 
 def normalize_ishares_csv_file(path_to_file: str) -> str:
@@ -33,12 +35,14 @@ def normalize_file_by_cutting_lines(path_to_file: str, lines_to_cut: int, extens
         lines = f.readlines()
         normalized_lines = lines[lines_to_cut:]
 
-    path_without_extension = path_to_file.split(f".{extension}")[0]
-    normalized_file_name = f'{path_without_extension}_normalized.{extension}'
-    with open(normalized_file_name, 'w') as f:
+    # TODO: Delete this line after downloading VANGUARD dinamically from site.
+    if '(' in path_to_file and ')' in path_to_file:
+        path_to_file = f'{path_to_file.split(".csv")[0]}_normalized.csv'
+
+    with open(path_to_file, 'w') as f:
         f.writelines(normalized_lines)
 
-    return normalized_file_name
+    return path_to_file
 
 
 # TODO: Try to create a generic csv normalizing function.

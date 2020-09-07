@@ -1,14 +1,26 @@
+import os
 from collections import Iterable
+from pathlib import Path
+
+from requests import get
 
 
-def normalize_name(name):
-    name_items = name.upper().strip('\n ').split(' ')
-    name_items = [item.strip(' ').split('.') for item in name_items]
-    name_items = flatten(name_items)
+class DownloadManager:
+    def __init__(self, url: str, file_name: str):
+        self.url = url
+        self.file_name = file_name
 
-    name_items = [item.strip('. ').capitalize() for item in name_items]
+    def __enter__(self):
+        return self
 
-    return ' '.join(name_items)
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if Path(self.file_name).exists():
+            os.remove(self.file_name)
+
+    def download(self):
+        with open(self.file_name, "wb") as file:
+            response = get(self.url)
+            file.write(response.content)
 
 
 def flatten(items: Iterable):
@@ -25,10 +37,3 @@ def flatten(items: Iterable):
     _flatten(items)
 
     return flattened_list
-
-
-def normalize_country(country: str):
-    if country == 'United States':
-        country = 'U.S.'
-
-    return country

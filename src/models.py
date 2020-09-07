@@ -3,7 +3,7 @@ from typing import List, Tuple
 
 import tqdm
 
-from src.utils import normalize_name, normalize_country
+from src.attribute_normalizers import normalize_name, normalize_country
 
 
 class Holding:
@@ -32,12 +32,12 @@ class Holding:
 
         return f'{self.normalized_name}'
 
-    def __eq__(self, other, name_words_iou_threshold=0.75):
+    def __eq__(self, other, name_words_iou_threshold=0.5):
         if not isinstance(other, Holding):
             return False
 
-        if other.ticker and self.ticker and other.ticker.upper() == self.ticker.upper():
-            return True
+        if other.ticker and self.ticker:
+            return other.ticker.upper() == self.ticker.upper()
 
         if other.first_normalized_name_word() != self.first_normalized_name_word():
             return False
@@ -46,10 +46,18 @@ class Holding:
         self_name_set = set(self.normalized_name.split(' '))
         common_name_words = other_name_set.intersection(self_name_set)
 
+        other_name_set_len = len(other_name_set)
+        self_name_set_len = len(self_name_set)
+
         name_words_iou = len(common_name_words) / len(self_name_set)
         assert name_words_iou <= 1
 
-        return name_words_iou > name_words_iou_threshold
+        threshold = \
+            name_words_iou_threshold * \
+            max(other_name_set_len, self_name_set_len) / \
+            min(other_name_set_len, self_name_set_len)
+
+        return name_words_iou > threshold
 
     def first_normalized_name_word(self):
         return self.normalized_name.split(' ')[0]
@@ -59,6 +67,12 @@ class Holding:
         def aggregate_attribute(h1, h2, attribute: str):
             return getattr(h1, attribute) or getattr(h2, attribute)
 
+        if holding_1 is None:
+            return holding_2
+
+        if holding_2 is None:
+            return holding_1
+
         holding_1.ticker = aggregate_attribute(holding_1, holding_2, 'ticker')
         holding_1.country = aggregate_attribute(holding_1, holding_2, 'country')
         holding_1.sector = aggregate_attribute(holding_1, holding_2, 'sector')
@@ -67,6 +81,18 @@ class Holding:
         holding_1.exchange = aggregate_attribute(holding_1, holding_2, 'exchange')
 
         return holding_1
+
+    @classmethod
+    def aggregate_with_hub(cls, holding_1, holding_2):
+        from src.market import MarketHub
+
+        market_hub = MarketHub.get()
+        holding_from_hub = market_hub.query(holding_1 or holding_2)
+
+        holding = Holding.aggregate(holding_1, holding_2)
+        holding = Holding.aggregate(holding, holding_from_hub)
+
+        return holding
 
     def __hash__(self):
         return self.normalized_name.split(' ')[0].__hash__()
@@ -94,10 +120,10 @@ class FinancialInstrument:
 
 
 class OneItemFinancialInstrument(FinancialInstrument):
-    def __init__(self, name):
+    def __init__(self, name, **kwargs):
         super().__init__(name)
 
-        holding = Holding(name)
+        holding = Holding(name, **kwargs)
         self.holding = holding
 
         self.holdings[holding] = {
@@ -113,6 +139,8 @@ class OneItemFinancialInstrument(FinancialInstrument):
 
 
 class MultipleItemsFinancialInstrument(FinancialInstrument):
+    SUMMED_WEIGHTS_THRESHOLD = 0.985
+
     def __init__(self, name):
         super().__init__(name)
         self.holdings = OrderedDict()
@@ -122,12 +150,10 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
 
         old_weight = self.get_holding_weight(holding)
         old_holding = self.get_holding(holding.name, holding.ticker)
-        if old_holding:
-            holding = Holding.aggregate(holding, old_holding)
 
         self.holdings[holding] = {
             'weight': old_weight + weight,
-            'holding': holding
+            'holding': Holding.aggregate_with_hub(old_holding, holding)
         }
 
     def get_holding_weight(self, holding: Holding) -> float:
@@ -138,28 +164,29 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
 
         return self.holdings.get(holding, {'holding': None})['holding']
 
-    @staticmethod
-    def aggregate(etfs: List[Tuple[float, FinancialInstrument]]):
+    @classmethod
+    def aggregate(cls, financial_instruments: List[Tuple[float, FinancialInstrument]]):
         aggregated_etfs = MultipleItemsFinancialInstrument('Aggregated ETF')
 
-        assert sum([etf[0] for etf in etfs]) == 1, 'Your etf holdings should sum up to 1.'
+        assert sum([etf[0] for etf in financial_instruments]) > cls.SUMMED_WEIGHTS_THRESHOLD, \
+            'Your etf holdings should sum up to 1.'
 
         print('Aggregating financial instruments...')
-        for etf_weight, etf in tqdm.tqdm(etfs):
-            for holding, weight in etf.get_values():
-                new_weight = etf_weight * weight
+        for financial_instrument_weight, financial_instrument in tqdm.tqdm(financial_instruments):
+            for holding, weight in financial_instrument.get_values():
+                new_weight = financial_instrument_weight * weight
                 aggregated_etfs.add_holding_weight(holding, new_weight)
 
-        aggregated_etfs.assert_holdings_summed_value()
         aggregated_etfs.sort_holdings()
+        aggregated_etfs.assert_holdings_summed_value()
 
         return aggregated_etfs
 
     def sort_holdings(self):
-        self.holdings = {k: v for k, v in sorted(self.holdings.items(), key=lambda item: -item[1]['weight'])}
+        self.holdings = OrderedDict(sorted(self.holdings.items(), key=lambda item: -item[1]['weight']))
 
     def assert_holdings_summed_value(self):
-        assert sum(self.get_weights()) > 0.985, 'Your holdings should sum up to around ~1.'
+        assert sum(self.get_weights()) > self.SUMMED_WEIGHTS_THRESHOLD, 'Your holdings should sum up to around ~1.'
 
     def export_to_csv(self, file_path='portfolio.csv') -> str:
         self.sort_holdings()
@@ -168,7 +195,8 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
         with open(file_path, 'w') as f:
             f.write(f'Name,Ticker,Weight,Country,Sector\n')
             for holding, weight in tqdm.tqdm(self.get_values()):
-                f.write(f'{holding.normalized_name},{holding.ticker},{weight*100},{holding.country},{holding.sector}\n')
+                f.write(
+                    f'{holding.normalized_name},{holding.ticker},{weight * 100},{holding.country},{holding.sector}\n')
 
         return file_path
 
@@ -196,7 +224,7 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
 
         print(f'Statistics {attribute_key}')
         for item, value in counter.items():
-            print(f'\t{item}: {value*100}%')
+            print(f'\t{item}: {value * 100}%')
 
 
 class ETF(MultipleItemsFinancialInstrument):

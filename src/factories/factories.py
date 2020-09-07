@@ -1,27 +1,40 @@
+import os
+from pathlib import Path
+
 from src.models import Holding, ETF
 from src.file_normalizers import normalize_ishares_csv_file, normalize_spdr_excel_file, normalize_vanguard_csv_file
 import pandas as pd
 
 
+def get_factory(source: str):
+    return {
+        'vanguard': create_etf_from_vanguard,
+        'ishares': create_etf_from_ishares_csv,
+        'spdr': create_etf_from_spdr_excel,
+        'custom': create_etf_from_custom_csv
+    }[source]
+
+
 def create_etf_from_vanguard(etf_name: str, path_to_file: str) -> ETF:
+    def extract_from_field(field: str):
+        if '=' in field:
+            return field[2:-2]
+        else:
+            return field
+
     path_to_file = normalize_vanguard_csv_file(path_to_file)
 
     etf = ETF(etf_name)
     data_frame = pd.read_csv(path_to_file)
     for index, pandas_holding in data_frame.iterrows():
         try:
-            weight = pandas_holding['% of funds']
-            if '=' in weight:
-                weight = float(weight[2:-2])
-            else:
-                weight = float(weight[0:-1])
-            valid_holding = weight > 0.
+            weight = float(extract_from_field(pandas_holding['% of funds']))
         except TypeError:
-            valid_holding = False
+            weight = -1
 
-        if valid_holding:
+        if weight > 0:
             holding = Holding(
-                name=pandas_holding['Holding name'],
+                name=extract_from_field(pandas_holding['Holding name']),
             )
 
             etf.add_holding_weight(
@@ -29,6 +42,8 @@ def create_etf_from_vanguard(etf_name: str, path_to_file: str) -> ETF:
             )
 
     etf.assert_holdings_summed_value()
+    if Path(path_to_file).exists():
+        os.remove(path_to_file)
 
     return etf
 
@@ -59,6 +74,8 @@ def create_etf_from_ishares_csv(etf_name: str, path_to_file: str) -> ETF:
             )
 
     etf.assert_holdings_summed_value()
+    if Path(path_to_file).exists():
+        os.remove(path_to_file)
 
     return etf
 
@@ -88,6 +105,8 @@ def create_etf_from_spdr_excel(etf_name: str, path_to_file: str) -> ETF:
             )
 
     etf.assert_holdings_summed_value()
+    if Path(path_to_file).exists():
+        os.remove(path_to_file)
 
     return etf
 
