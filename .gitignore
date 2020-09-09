@@ -136,3 +136,7 @@ dmypy.json
 *.sqlite
 *.csv
 *.xls;xlsx;csv
+
+# Credentials
+**/credentials/*
+credentials.json

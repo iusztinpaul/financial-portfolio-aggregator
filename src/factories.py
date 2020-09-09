@@ -1,9 +1,12 @@
 import os
 from pathlib import Path
+from typing import List
 
-from src.models import Holding, ETF
-from src.file_normalizers import normalize_ishares_csv_file, normalize_spdr_excel_file, normalize_vanguard_csv_file
+from src.models import Holding, ETF, MultipleItemsFinancialInstrument
+from src.normalizers.file import normalize_ishares_csv_file, normalize_spdr_excel_file, normalize_vanguard_csv_file
 import pandas as pd
+
+from src.normalizers.structures import normalize_google_sheets_list
 
 
 def get_factory(source: str):
@@ -135,3 +138,31 @@ def create_etf_from_custom_csv(etf_name: str, path_to_file: str) -> ETF:
     etf.assert_holdings_summed_value()
 
     return etf
+
+
+def create_stocks_portfolio_google_sheets(name: str, data: List[list]) -> MultipleItemsFinancialInstrument:
+    data = normalize_google_sheets_list(data)
+
+    financial_instrument = MultipleItemsFinancialInstrument(name)
+    data_frame = pd.DataFrame(data[1:], columns=data[0])
+    for _, pandas_holding in data_frame.iterrows():
+        try:
+            weight = float(pandas_holding['Percentage']) / 100
+        except ValueError:
+            try:
+                weight = float(pandas_holding['Percentage'][:-1]) / 100
+            except ValueError:
+                weight = 0
+
+        is_valid = weight > 0
+
+        if is_valid:
+            holding = Holding(
+                name=pandas_holding['Name'],
+                ticker=pandas_holding.get('Ticker'),
+            )
+
+            financial_instrument.add_holding_weight(holding, weight)
+
+    return financial_instrument
+

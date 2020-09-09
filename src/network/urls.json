@@ -1,5 +1,7 @@
 {
   "funds": {
+    "vanguard": {
+    },
     "ishares": {
       "CNDX": "https://www.ishares.com/uk/individual/en/products/253741/ishares-nasdaq-100-ucits-etf/1506575576011.ajax?fileType=csv&fileName=CNDX_holdings&dataType=fund",
       "CSPX": "https://www.ishares.com/uk/individual/en/products/253743/ishares-sp-500-b-ucits-etf-acc-fund/1506575576011.ajax?fileType=csv&fileName=CSPX_holdings&dataType=fund",
@@ -8,5 +10,10 @@
     "spdr": {
       "WCOS": "https://www.ssga.com/de/en_gb/intermediary/etfs/library-content/products/fund-data/etfs/emea/holdings-daily-emea-en-wcos-na.xlsx"
     }
+  },
+  "markets": {
+    "NYSE": [
+      "http://eoddata.com/Data/symbollist.aspx?e=NYSE"
+    ]
   }
 }

@@ -1,9 +1,11 @@
 from collections import OrderedDict
-from typing import List, Tuple
+from typing import List, Tuple, Union
 
 import tqdm
 
-from src.attribute_normalizers import normalize_name, normalize_country
+from src.network.managers import GoogleSheetsManager
+from src.normalizers.attribute import normalize_name, normalize_country
+from src.settings import SPREAD_SHEET_ID
 
 
 class Holding:
@@ -32,7 +34,7 @@ class Holding:
 
         return f'{self.normalized_name}'
 
-    def __eq__(self, other, name_words_iou_threshold=0.5):
+    def __eq__(self, other, name_words_iou_threshold=0.6):
         if not isinstance(other, Holding):
             return False
 
@@ -44,20 +46,27 @@ class Holding:
 
         other_name_set = set(other.normalized_name.split(' '))
         self_name_set = set(self.normalized_name.split(' '))
-        common_name_words = other_name_set.intersection(self_name_set)
 
-        other_name_set_len = len(other_name_set)
-        self_name_set_len = len(self_name_set)
+        intersections_name_words = other_name_set.intersection(self_name_set)
+        reunion_name_words = other_name_set.union(self_name_set)
+        iou = len(intersections_name_words) / len(reunion_name_words)
 
-        name_words_iou = len(common_name_words) / len(self_name_set)
-        assert name_words_iou <= 1
+        assert iou <= 1.
 
-        threshold = \
-            name_words_iou_threshold * \
-            max(other_name_set_len, self_name_set_len) / \
-            min(other_name_set_len, self_name_set_len)
+        return iou >= name_words_iou_threshold
 
-        return name_words_iou > threshold
+        # other_name_set_len = len(other_name_set)
+        # self_name_set_len = len(self_name_set)
+        #
+        # name_words_iou = len(intersections_name_words) / len(self_name_set)
+        # assert name_words_iou <= 1
+        #
+        # threshold = \
+        #     name_words_iou_threshold * \
+        #     max(other_name_set_len, self_name_set_len) / \
+        #     min(other_name_set_len, self_name_set_len)
+        #
+        # return name_words_iou > threshold
 
     def first_normalized_name_word(self):
         return self.normalized_name.split(' ')[0]
@@ -156,7 +165,10 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
             'holding': Holding.aggregate_with_hub(old_holding, holding)
         }
 
-    def get_holding_weight(self, holding: Holding) -> float:
+    def get_holding_weight(self, holding: Union[Holding, str], ticker=None) -> float:
+        if isinstance(holding, str):
+            holding = Holding(name=holding, ticker=ticker)
+
         return self.holdings.get(holding, {'weight': 0.})['weight']
 
     def get_holding(self, name, ticker=None) -> Holding:
@@ -199,6 +211,26 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
                     f'{holding.normalized_name},{holding.ticker},{weight * 100},{holding.country},{holding.sector}\n')
 
         return file_path
+
+    def export_to_google_sheets(self, sheet_name='Aggregated'):
+        """
+            sheet_name: the name of your google sheets sheet
+        """
+        self.sort_holdings()
+
+        print('Exporting to google sheets...')
+        data = [['Name', 'Ticker', 'Weight', 'Country', 'Sector']]
+        for holding, weight in tqdm.tqdm(self.get_values()):
+            data.append([
+                holding.normalized_name,
+                holding.ticker,
+                weight * 100,
+                holding.country,
+                holding.sector
+            ])
+
+        google_sheets_manager = GoogleSheetsManager(SPREAD_SHEET_ID)
+        google_sheets_manager.write(data=data, sheet_name=sheet_name)
 
     def statistics_country(self):
         self.statistics('country')

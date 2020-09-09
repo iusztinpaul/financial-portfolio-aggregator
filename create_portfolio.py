@@ -1,9 +1,11 @@
 from src.factories import create_etf_from_vanguard
-from src.factories.download import get_etf_ishares, get_etf_spdr
+from src.network.ops import get_etf_ishares, get_etf_spdr, get_stocks_google_sheets
 from src.models import MultipleItemsFinancialInstrument
 
-# TODO: Hook etf calculation with google sheets ( read portfolio, write aggregated data)
-# TODO: Download etfs files dinamically.
+# TODO: Check why get_holding_weight for only ticker equality is not working.
+# TODO: Create a new google sheet, sheet programatically.
+# TODO: Download VANGUARD etfs files dinamically.
+# TODO: Add NYSEMarket support.
 # TODO: Add docs.cn
 # TODO: Add args for more generic purposes.
 # TODO: Add env support for settings
@@ -13,6 +15,10 @@ from src.models import MultipleItemsFinancialInstrument
 
 
 if __name__ == '__main__':
+    stocks = get_stocks_google_sheets('Stocks')
+    overview = get_stocks_google_sheets('Portfolio')
+    etfs = get_stocks_google_sheets('ETFS')
+
     cndx_etf = get_etf_ishares('CNDX')
     cspx_etf = get_etf_ishares('CSPX')
     iuit_etf = get_etf_ishares('IUIT')
@@ -26,19 +32,20 @@ if __name__ == '__main__':
         'files/Holding_detailsHolding_details_FTSE_Emerging_Markets_UCITS_ETF_(USD)___Distributing_(VFEM).csv'
     )
 
-    etf_portfolio = MultipleItemsFinancialInstrument.aggregate(
-        [
-            (0.45, cspx_etf),
-            (0.1, cndx_etf),
-            (0.1, iuit_etf),
-            (0.1, wcos_etf),
-            (0.15, vhyl_etf),
-            (0.1, vfem_etf)
+    etf_portfolio_distribution = [
+            (etfs.get_holding_weight('CSPX', 'CSPX'), cspx_etf),
+            (etfs.get_holding_weight('CNDX', 'CNDX'), cndx_etf),
+            (etfs.get_holding_weight('IUIT', 'IUIT'), iuit_etf),
+            (etfs.get_holding_weight('WCOS', 'WCOS'), wcos_etf),
+            (etfs.get_holding_weight('VHYL', 'VHYL'), vhyl_etf),
+            (etfs.get_holding_weight('VFEM', 'VFEM'), vfem_etf)
         ]
-    )
-    etf_portfolio.export_to_csv()
+    etf_portfolio = MultipleItemsFinancialInstrument.aggregate(etf_portfolio_distribution)
+
+    etf_portfolio.export_to_google_sheets()
     etf_portfolio.statistics_sector()
     etf_portfolio.statistics_country()
+
     # stocks_portfolio = create_etf_from_custom_csv(
     #     'Stocks',
     #     'files/Portfolio - Stocks.csv'
