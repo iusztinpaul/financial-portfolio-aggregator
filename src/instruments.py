@@ -55,18 +55,8 @@ class Holding:
 
         return iou >= name_words_iou_threshold
 
-        # other_name_set_len = len(other_name_set)
-        # self_name_set_len = len(self_name_set)
-        #
-        # name_words_iou = len(intersections_name_words) / len(self_name_set)
-        # assert name_words_iou <= 1
-        #
-        # threshold = \
-        #     name_words_iou_threshold * \
-        #     max(other_name_set_len, self_name_set_len) / \
-        #     min(other_name_set_len, self_name_set_len)
-        #
-        # return name_words_iou > threshold
+    def __hash__(self):
+        return self.normalized_name.split(' ')[0].__hash__()
 
     def first_normalized_name_word(self):
         return self.normalized_name.split(' ')[0]
@@ -93,7 +83,7 @@ class Holding:
 
     @classmethod
     def aggregate_with_hub(cls, holding_1, holding_2):
-        from src.market import MarketHub
+        from src.markets import MarketHub
 
         market_hub = MarketHub.get()
         holding_from_hub = market_hub.query(holding_1 or holding_2)
@@ -102,9 +92,6 @@ class Holding:
         holding = Holding.aggregate(holding, holding_from_hub)
 
         return holding
-
-    def __hash__(self):
-        return self.normalized_name.split(' ')[0].__hash__()
 
 
 class FinancialInstrument:
@@ -158,16 +145,18 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
         assert weight <= 1
 
         old_weight = self.get_holding_weight(holding)
+
         old_holding = self.get_holding(holding.name, holding.ticker)
+        holding = Holding.aggregate_with_hub(old_holding, holding)
 
         self.holdings[holding] = {
             'weight': old_weight + weight,
-            'holding': Holding.aggregate_with_hub(old_holding, holding)
+            'holding': holding
         }
 
-    def get_holding_weight(self, holding: Union[Holding, str], ticker=None) -> float:
+    def get_holding_weight(self, holding: Union[Holding, str]) -> float:
         if isinstance(holding, str):
-            holding = Holding(name=holding, ticker=ticker)
+            holding = Holding(name=holding)
 
         return self.holdings.get(holding, {'weight': 0.})['weight']
 
@@ -212,7 +201,7 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
 
         return file_path
 
-    def export_to_google_sheets(self, sheet_name='Aggregated'):
+    def export_to_google_sheets(self, workspace_name='Aggregated'):
         """
             sheet_name: the name of your google sheets sheet
         """
@@ -230,7 +219,7 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
             ])
 
         google_sheets_manager = GoogleSheetsManager(SPREAD_SHEET_ID)
-        google_sheets_manager.write(data=data, sheet_name=sheet_name)
+        google_sheets_manager.write(data=data, workspace_name=workspace_name)
 
     def statistics_country(self):
         self.statistics('country')

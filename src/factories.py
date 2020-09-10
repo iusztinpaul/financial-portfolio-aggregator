@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 from typing import List
 
-from src.models import Holding, ETF, MultipleItemsFinancialInstrument
+from src.instruments import Holding, ETF, MultipleItemsFinancialInstrument
 from src.normalizers.file import normalize_ishares_csv_file, normalize_spdr_excel_file, normalize_vanguard_csv_file
 import pandas as pd
 

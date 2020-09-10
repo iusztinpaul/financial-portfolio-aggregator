@@ -1,6 +1,8 @@
 import datetime
 import json
 import concurrent.futures
+import os
+import re
 
 from collections import OrderedDict
 from pathlib import Path
@@ -13,17 +15,17 @@ import yfinance
 from pandas_datareader.nasdaq_trader import get_nasdaq_symbols
 
 from src import settings
-from src.models import Holding
+from src.instruments import Holding
+from src.settings import MARKET_CACHE_EXPIRATION_DAYS, DATA_DIR
 
 
 class Market:
-    market: 'Market' = None
+    MARKET_META_FILE = Path(settings.STORAGE_PATH) / 'market_metadata.json'
 
     def __init__(self, market_name: str, expire_after_days: datetime.timedelta):
         self.market_name = market_name
         self.expire_after_days = expire_after_days
 
-        self.market_meta_file = Path(settings.STORAGE_PATH) / 'market_metadata.json'
         self.holdings_file = Path(settings.STORAGE_PATH) / f'{self.market_name}_holdings.csv'
         self.missed_holdings = -1  # Parameter to describe the number of faulty requests for a holding.
 
@@ -37,7 +39,58 @@ class Market:
         self.holdings = self.populate(holdings)
 
     def get_data_from_cloud(self) -> List[Holding]:
+        tickers = self.get_tickers_from_cloud()
+
+        holdings = []
+        self.missed_holdings = 0
+
+        print(f'Getting data from cloud for: {self.market_name}')
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = []
+            for ticker in tickers:
+                futures.append(
+                    executor.submit(
+                        self.get_holding_from_cloud, ticker=ticker
+                    )
+                )
+
+            for future in concurrent.futures.as_completed(futures):
+
+                try:
+                    holding = future.result()
+
+                    if holding is not None:
+                        holdings.append(holding)
+                except (ConnectionError, TimeoutError):
+                    self.missed_holdings += 1
+
+        return holdings
+
+    def get_tickers_from_cloud(self) -> List[str]:
         raise NotImplementedError()
+
+    def get_holding_from_cloud(self, ticker: str) -> Optional[Holding]:
+        print(f'Get holding from cloud: {ticker}')
+
+        company = yfinance.Ticker(ticker)
+        name = \
+            company.info.get('shortName') or \
+            company.info.get('longName') or \
+            company.info.get('displayName') or \
+            company.info.get('fullExchangeName')
+
+        if name is None:
+            return None
+
+        holding = Holding(
+            name=name,
+            ticker=ticker,
+            country=company.info.get('region'),
+            currency=company.info.get('financialCurrency'),
+            exchange=company.info.get('fullExchangeName')
+        )
+
+        return holding
 
     def save_data_to_disk(self, holdings: List[Holding]):
         print(f'Saving data to disk for: {self.market_name}')
@@ -86,10 +139,10 @@ class Market:
         return now - self.expire_after_days > last_update_date_time
 
     def get_last_update_datetime(self) -> Optional[datetime.datetime]:
-        if not self.market_meta_file.exists():
+        if not self.MARKET_META_FILE.exists():
             return None
 
-        with open(str(self.market_meta_file), 'r') as f:
+        with open(str(self.MARKET_META_FILE), 'r') as f:
             market_metadata = json.load(f)
 
         specific_market_metadata = market_metadata.get(self.market_name, dict())
@@ -103,8 +156,8 @@ class Market:
         update_datetime = datetime.datetime.utcnow()
         update_timestamp = update_datetime.timestamp()
 
-        if self.market_meta_file.exists():
-            with open(str(self.market_meta_file), 'r') as f:
+        if self.MARKET_META_FILE.exists():
+            with open(str(self.MARKET_META_FILE), 'r') as f:
                 market_metadata = json.load(f)
 
             specific_market_metadata = market_metadata.get(self.market_name, dict())
@@ -119,7 +172,7 @@ class Market:
                 }
             }
 
-        with open(str(self.market_meta_file), 'w') as f:
+        with open(str(self.MARKET_META_FILE), 'w') as f:
             json.dump(market_metadata, f)
 
     def query(self, holding: Holding) -> Optional[Holding]:
@@ -127,70 +180,53 @@ class Market:
 
 
 class NasdaqMarket(Market):
-    def __init__(self, expire_after_days: datetime.timedelta):
-        super().__init__('Nasdaq', expire_after_days)
+    def __init__(self):
+        super().__init__('Nasdaq', MARKET_CACHE_EXPIRATION_DAYS)
 
-    def get_data_from_cloud(self) -> List[Holding]:
+    def get_tickers_from_cloud(self) -> List[str]:
         symbols = get_nasdaq_symbols()
         tickers = [ticker for ticker in symbols['NASDAQ Symbol']]
 
-        holdings = []
-        self.missed_holdings = 0
+        return tickers
 
-        print(f'Getting data from cloud for: {self.market_name}')
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            futures = []
-            for ticker in tickers:
-                futures.append(
-                    executor.submit(
-                        self._get_holding_from_cloud, ticker=ticker
-                    )
-                )
 
-            for future in concurrent.futures.as_completed(futures):
+class NYSEMarket(Market):
+    def __init__(self):
+        super().__init__('NYSE', MARKET_CACHE_EXPIRATION_DAYS)
 
-                try:
-                    holding = future.result()
+    def get_tickers_from_cloud(self) -> List[str]:
+        # TODO: Try to see why it cannot be downloaded like this.
+        # urls = network.get_urls()
+        # nyse_url = urls['markets']['NYSE'][0]
+        #
+        # with DownloadManager(nyse_url, 'NYSE.txt') as d:
+        #     file_path = d.download()
+        #     tickers = self._parse_tickers_file(file_path)
 
-                    if holding is not None:
-                        holdings.append(holding)
-                except (ConnectionError, TimeoutError):
-                    self.missed_holdings += 1
+        return self._parse_tickers_file(os.path.join(DATA_DIR, 'NYSE.txt'))
 
-        return holdings
+    def _parse_tickers_file(self, file_path: str) -> List[str]:
+        tickers = []
 
-    def _get_holding_from_cloud(self, ticker: str) -> Optional[Holding]:
-        print(f'Get holding from cloud: {ticker}')
+        pattern = re.compile(r'(.+?)\t(.*?)\n')
 
-        company = yfinance.Ticker(ticker)
-        name = \
-            company.info.get('shortName') or \
-            company.info.get('longName') or \
-            company.info.get('displayName') or \
-            company.info.get('fullExchangeName')
+        with open(file_path, 'r') as f:
+            lines = f.readlines()
+            for line in lines[1:]:
+                ticker = re.match(pattern, line).group(1)
+                tickers.append(ticker)
 
-        if name is None:
-            return None
-
-        holding = Holding(
-            name=name,
-            ticker=ticker,
-            country=company.info.get('region'),
-            currency=company.info.get('financialCurrency'),
-            exchange=company.info.get('fullExchangeName')
-        )
-
-        return holding
+        return tickers
 
 
 class MarketHub:
-    EXPIRE_AFTER_DAYS = datetime.timedelta(days=31)
     market_hub: 'MarketHub' = None
 
     # TODO: Make this class truly singletone
     def __init__(self):
         self.markets = [
-            NasdaqMarket(self.EXPIRE_AFTER_DAYS)
+            NasdaqMarket(),
+            NYSEMarket()
         ]
 
     @classmethod

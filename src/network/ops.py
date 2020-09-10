@@ -1,19 +1,14 @@
-import json
-import os
-from pathlib import Path
 from typing import Optional
 
+from src import network
 from src.factories import get_factory, create_stocks_portfolio_google_sheets
-from src.models import ETF, MultipleItemsFinancialInstrument
-from src.settings import STORAGE_PATH, SPREAD_SHEET_ID
+from src.instruments import ETF, MultipleItemsFinancialInstrument
+from src.settings import SPREAD_SHEET_ID
 from src.network.managers import DownloadManager, GoogleSheetsManager
-
-CURRENT_DIR = str(Path(os.path.dirname(os.path.realpath(__file__))))
-URLS_FILE = os.path.abspath(os.path.join(CURRENT_DIR, 'urls.json'))
 
 
 def get_etf_vanguard(name: str) -> Optional[ETF]:
-    return None
+    raise NotImplementedError()
 
 
 def get_etf_ishares(name: str) -> Optional[ETF]:
@@ -28,17 +23,15 @@ def _get_etf(name: str, source: str) -> Optional[ETF]:
     factory = get_factory(source)
 
     name = name.upper()
-
-    with open(URLS_FILE, 'r') as f:
-        urls = json.load(f)
+    urls = network.get_urls()
 
     etf_url = urls['funds'][source].get(name, None)
     if etf_url is None:
         return None
 
-    etf_file_path = f'{STORAGE_PATH}/{name}.csv'
-    with DownloadManager(etf_url, etf_file_path) as d:
-        d.download()
+    etf_file_name = f'{name}.csv'
+    with DownloadManager(etf_url, etf_file_name) as d:
+        etf_file_path = d.download()
         etf = factory(name, etf_file_path)
 
         return etf
