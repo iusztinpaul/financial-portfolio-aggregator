@@ -14,9 +14,9 @@ import yfinance
 
 from pandas_datareader.nasdaq_trader import get_nasdaq_symbols
 
-from src import settings
+from src import settings, disk
 from src.instruments import Holding
-from src.settings import MARKET_CACHE_EXPIRATION_DAYS, DATA_DIR
+from src.settings import MARKET_CACHE_EXPIRATION_DAYS, FILES_DIR
 
 
 class Market:
@@ -202,8 +202,11 @@ class NYSEMarket(Market):
         # with DownloadManager(nyse_url, 'NYSE.txt') as d:
         #     file_path = d.download()
         #     tickers = self._parse_tickers_file(file_path)
+        paths = disk.get_paths()
+        nyse_tickers_path = paths['markets']['NYSE']
+        nyse_tickers_path = os.path.abspath(os.path.join(FILES_DIR, nyse_tickers_path))
 
-        return self._parse_tickers_file(os.path.join(DATA_DIR, 'NYSE.txt'))
+        return self._parse_tickers_file(nyse_tickers_path)
 
     def _parse_tickers_file(self, file_path: str) -> List[str]:
         tickers = []

@@ -1,14 +1,17 @@
 from collections import OrderedDict
-from typing import List, Tuple, Union
+from typing import List, Tuple, Union, Optional
 
 import tqdm
 
+from src.choices import HoldingTypeChoices
 from src.network.managers import GoogleSheetsManager
-from src.normalizers.attribute import normalize_name, normalize_country
+from src.normalizers.attribute import HoldingAttributesNormalizer
 from src.settings import SPREAD_SHEET_ID
 
 
 class Holding:
+    normalizer = HoldingAttributesNormalizer()
+
     def __init__(
             self,
             name,
@@ -17,16 +20,22 @@ class Holding:
             sector=None,
             industry=None,
             currency=None,
-            exchange=None
+            exchange=None,
+            holding_type: str = None
     ):
         self.name = name
-        self.normalized_name = normalize_name(name)
+        self.normalized_name = self.normalizer.normalize_name(name)
         self.ticker = ticker
-        self.country = normalize_country(country)
+        self.country = self.normalizer.normalize_country(country)
         self.sector = sector
         self.industry = industry
         self.currency = currency
         self.exchange = exchange
+        self.holding_type = self.normalizer.normalize_type(holding_type)
+
+    @property
+    def is_leaf(self) -> bool:
+        return self.holding_type != HoldingTypeChoices.ETF
 
     def __str__(self):
         if self.ticker:
@@ -92,6 +101,29 @@ class Holding:
         holding = Holding.aggregate(holding, holding_from_hub)
 
         return holding
+
+    def to_leaves(self) -> Optional['MultipleItemsFinancialInstrument']:
+        from src import network
+        from src import disk
+
+        assert not self.is_leaf
+
+        instrument = None
+        instrument_source = network.get_source(self.ticker) or disk.get_source(self.ticker)
+
+        instrument_factory = network.get_from_network(instrument_source)
+        if instrument_factory:
+            instrument = instrument_factory(self.ticker)
+
+        instrument_factory = disk.get_from_disk(instrument_source)
+        if instrument_factory:
+            instrument = instrument_factory(self.ticker)
+
+        if instrument is None:
+            return None
+
+        return instrument.to_leaves()
+
 
 
 class FinancialInstrument:
@@ -164,6 +196,25 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
         holding = Holding(name, ticker=ticker)
 
         return self.holdings.get(holding, {'holding': None})['holding']
+
+    def to_leaves(self) -> 'MultipleItemsFinancialInstrument':
+        new_instrument = MultipleItemsFinancialInstrument(self.name)
+
+        for holding, weight in self.get_values():
+            if holding.is_leaf:
+                new_instrument.add_holding_weight(holding, weight)
+            else:
+                reduced_instrument = holding.to_leaves()
+
+                assert reduced_instrument is not None, 'Cannot reduce instrument'
+
+                for reduced_holding, reduced_weight in reduced_instrument.get_values():
+                    new_instrument.add_holding_weight(reduced_holding, weight*reduced_weight)
+
+        new_instrument.sort_holdings()
+        new_instrument.assert_holdings_summed_value()
+
+        return new_instrument
 
     @classmethod
     def aggregate(cls, financial_instruments: List[Tuple[float, FinancialInstrument]]):

@@ -94,7 +94,7 @@ class GoogleSheetsManager(GoogleAPIManager):
 
     def read(self, **kwargs) -> list:
         """
-            sheet_range: This could be only the name of the Sheet ( ex: Stocks), data range ( A1:I15),
+            sheet_range: This could be only the name of the Sheet ( ex: Stocks), files range ( A1:I15),
                 or both ( Stocks!A1:I15)
         """
 

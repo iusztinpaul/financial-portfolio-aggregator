@@ -14,7 +14,7 @@ def normalize_google_sheets_list(data: List[list]) -> List[list]:
         line_len = len(line)
         if line_len > standard_len:
             new_data.append(line[:standard_len])
-        elif line_len == standard_len:
+        elif line_len > 0:
             new_data.append(line)
 
     return new_data

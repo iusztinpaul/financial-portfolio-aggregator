@@ -2,7 +2,7 @@ import datetime
 from pathlib import Path
 
 PROJECT_DIR = Path().absolute()
-DATA_DIR = str(PROJECT_DIR / 'data')
+FILES_DIR = str(PROJECT_DIR / 'files')
 
 STORAGE_PATH = str(Path.home() / '.financial-portfolio-aggregator')
 Path(STORAGE_PATH).mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,25 @@
+{
+  "funds": {
+    "vanguard": {
+      "VFEA": "HoldingDetails_FTSE_Emerging_Markets_UCITS_ETF_-_(USD)_Accumulating_(VFEA).csv",
+      "VFEM": "Holding_detailsHolding_details_FTSE_Emerging_Markets_UCITS_ETF_(USD)___Distributing_(VFEM).csv",
+      "VHYL": "Holding_detailsHolding_details_FTSE_All-World_High_Dividend_Yield_UCITS_ETF_(USD)___Distributing_(VHYL).csv"
+    },
+    "ishares": {
+      "CNDX": "",
+      "CSPX": "",
+      "IUIT": ""
+    },
+    "spdr": {
+      "WCOS": ""
+    },
+    "hsbc": {
+      "HMCD": ""
+    }
+  },
+  "markets": {
+    "NYSE": [
+      "NYSE.txt"
+    ]
+  }
+}

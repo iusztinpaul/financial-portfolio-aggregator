@@ -14,7 +14,8 @@ def get_factory(source: str):
         'vanguard': create_etf_from_vanguard,
         'ishares': create_etf_from_ishares_csv,
         'spdr': create_etf_from_spdr_excel,
-        'custom': create_etf_from_custom_csv
+        'custom': create_etf_from_custom_csv,
+        'hsbc': None
     }[source]
 
 
@@ -65,7 +66,7 @@ def create_etf_from_ishares_csv(etf_name: str, path_to_file: str) -> ETF:
         if valid_holding:
             holding = Holding(
                 name=pandas_holding['Name'],
-                ticker=pandas_holding['Issuer Ticker'],
+                ticker=pandas_holding.get('Issuer Ticker') or pandas_holding.get('Ticker'),
                 country=pandas_holding['Location'],
                 exchange=pandas_holding['Exchange'],
                 sector=pandas_holding['Sector'],
@@ -116,6 +117,7 @@ def create_etf_from_spdr_excel(etf_name: str, path_to_file: str) -> ETF:
 
 def create_etf_from_custom_csv(etf_name: str, path_to_file: str) -> ETF:
     etf = ETF(etf_name)
+
     data_frame = pd.read_csv(path_to_file)
     for index, pandas_holding in data_frame.iterrows():
         try:
@@ -140,7 +142,7 @@ def create_etf_from_custom_csv(etf_name: str, path_to_file: str) -> ETF:
     return etf
 
 
-def create_stocks_portfolio_google_sheets(name: str, data: List[list]) -> MultipleItemsFinancialInstrument:
+def create_portfolio_google_sheets(name: str, data: List[list]) -> MultipleItemsFinancialInstrument:
     data = normalize_google_sheets_list(data)
 
     financial_instrument = MultipleItemsFinancialInstrument(name)
@@ -159,10 +161,10 @@ def create_stocks_portfolio_google_sheets(name: str, data: List[list]) -> Multip
         if is_valid:
             holding = Holding(
                 name=pandas_holding['Name'],
-                ticker=pandas_holding.get('Ticker'),
+                ticker=pandas_holding['Ticker'],
+                holding_type=pandas_holding['Type']
             )
 
             financial_instrument.add_holding_weight(holding, weight)
 
     return financial_instrument
-

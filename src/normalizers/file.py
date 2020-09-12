@@ -4,6 +4,8 @@ import pandas as pd
 
 from collections import Counter
 
+from src.utils import has_digits
+
 """
     A normalized file has to check the following criterias:
         - be a csv file
@@ -13,11 +15,13 @@ from collections import Counter
 
 
 def normalize_vanguard_csv_file(path_to_file: str) -> str:
-    return normalize_file_by_cutting_lines(path_to_file, 6, 'csv')
+    # return normalize_file_by_cutting_lines(path_to_file, 2)
+    return normalize_csv_file(path_to_file)
 
 
 def normalize_ishares_csv_file(path_to_file: str) -> str:
-    return normalize_file_by_cutting_lines(path_to_file, 2, 'csv')
+    # return normalize_file_by_cutting_lines(path_to_file, 2)
+    return normalize_csv_file(path_to_file)
 
 
 def normalize_spdr_excel_file(path_to_file: str) -> str:
@@ -27,10 +31,11 @@ def normalize_spdr_excel_file(path_to_file: str) -> str:
     new_path_to_file = f'{path_without_extension}.csv'
     data_frame.to_csv(new_path_to_file, encoding='utf-8', index=False)
 
-    return normalize_file_by_cutting_lines(new_path_to_file, 5, 'csv')
+    # return normalize_file_by_cutting_lines(new_path_to_file, 5)
+    return normalize_csv_file(path_to_file)
 
 
-def normalize_file_by_cutting_lines(path_to_file: str, lines_to_cut: int, extension: str) -> str:
+def normalize_file_by_cutting_lines(path_to_file: str, lines_to_cut: int) -> str:
     with open(path_to_file, 'r') as f:
         lines = f.readlines()
         normalized_lines = lines[lines_to_cut:]
@@ -47,21 +52,30 @@ def normalize_file_by_cutting_lines(path_to_file: str, lines_to_cut: int, extens
 
 # TODO: Try to create a generic csv normalizing function.
 def normalize_csv_file(path_to_file: str) -> str:
+    def valid_line_rule(line, num_items):
+        if num_items <= 3:
+            return False
+
+        if has_digits(line) and num_items <= 5:
+            return False
+
+        return True
+
     with open(path_to_file, 'r') as f:
         lines = f.readlines()
 
         items_per_line = [len(line.split(',')) for line in lines]
 
-        items_counter = Counter(items_per_line)
-        most_common_num_items_per_line = max(items_counter.values())
-
         normalized_lines = [
             line for line, num_items in zip(lines, items_per_line)
-            if num_items != most_common_num_items_per_line
+            if valid_line_rule(line, num_items)
         ]
 
-    normalized_file_name = f'{path_to_file.split(".")[0]}_normalized.csv'
-    with open(normalized_file_name, 'w') as f:
+    # TODO: Delete this line after downloading VANGUARD dinamically from site.
+    if '(' in path_to_file and ')' in path_to_file:
+        path_to_file = f'{path_to_file.split(".csv")[0]}_normalized.csv'
+
+    with open(path_to_file, 'w') as f:
         f.writelines(normalized_lines)
 
-    return normalized_file_name
+    return path_to_file
