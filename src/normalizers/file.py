@@ -50,7 +50,7 @@ def normalize_file_by_cutting_lines(path_to_file: str, lines_to_cut: int) -> str
     return path_to_file
 
 
-# TODO: Try to create a generic csv normalizing function.
+# TODO: Try to improve this generic normalization function.
 def normalize_csv_file(path_to_file: str) -> str:
     def valid_line_rule(line, num_items):
         if num_items <= 3:
