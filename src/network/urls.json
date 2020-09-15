@@ -10,7 +10,8 @@
       "MCHI": "https://www.ishares.com/us/products/239619/ishares-msci-china-etf/1467271812596.ajax?fileType=csv&fileName=MCHI_holdings&dataType=fund"
     },
     "spdr": {
-      "WCOS": "https://www.ssga.com/de/en_gb/intermediary/etfs/library-content/products/fund-data/etfs/emea/holdings-daily-emea-en-wcos-na.xlsx"
+      "WCOS": "https://www.ssga.com/de/en_gb/intermediary/etfs/library-content/products/fund-data/etfs/emea/holdings-daily-emea-en-wcos-na.xlsx",
+      "SPYM": "https://www.ssga.com/de/en_gb/intermediary/etfs/library-content/products/fund-data/etfs/emea/holdings-daily-emea-en-spym-gy.xlsx"
     },
     "hsbc": {
       "HMCD": ""

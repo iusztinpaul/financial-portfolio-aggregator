@@ -152,6 +152,7 @@ def create_portfolio_google_sheets(name: str, data: List[list]) -> MultipleItems
             weight = float(pandas_holding['Percentage']) / 100
         except ValueError:
             try:
+                # Try to remove '%'.
                 weight = float(pandas_holding['Percentage'][:-1]) / 100
             except ValueError:
                 weight = 0

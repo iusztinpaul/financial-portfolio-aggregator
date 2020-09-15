@@ -10,7 +10,7 @@ def get_from_disk(source: str):
     return {
         'vanguard': get_etf_vanguard,
         'ishares': None,
-        'sprd': None,
+        'spdr': None,
         'sheets': None,
         'hsbc': None
     }.get(source)

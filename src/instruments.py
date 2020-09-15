@@ -125,7 +125,6 @@ class Holding:
         return instrument.to_leaves()
 
 
-
 class FinancialInstrument:
     def __init__(self, name):
         self.name = name
@@ -167,11 +166,11 @@ class OneItemFinancialInstrument(FinancialInstrument):
 
 
 class MultipleItemsFinancialInstrument(FinancialInstrument):
-    SUMMED_WEIGHTS_THRESHOLD = 0.985
+    SUMMED_WEIGHTS_THRESHOLD = 0.978
 
     def __init__(self, name):
         super().__init__(name)
-        self.holdings = OrderedDict()
+        self.holdings = dict()
 
     def add_holding_weight(self, holding: Holding, weight: float):
         assert weight <= 1
@@ -200,6 +199,7 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
     def to_leaves(self) -> 'MultipleItemsFinancialInstrument':
         new_instrument = MultipleItemsFinancialInstrument(self.name)
 
+        print(f'Normalizing financial instrument: {self.name}')
         for holding, weight in self.get_values():
             if holding.is_leaf:
                 new_instrument.add_holding_weight(holding, weight)
@@ -211,7 +211,6 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
                 for reduced_holding, reduced_weight in reduced_instrument.get_values():
                     new_instrument.add_holding_weight(reduced_holding, weight*reduced_weight)
 
-        new_instrument.sort_holdings()
         new_instrument.assert_holdings_summed_value()
 
         return new_instrument
@@ -229,24 +228,21 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
                 new_weight = financial_instrument_weight * weight
                 aggregated_etfs.add_holding_weight(holding, new_weight)
 
-        aggregated_etfs.sort_holdings()
         aggregated_etfs.assert_holdings_summed_value()
 
         return aggregated_etfs
-
-    def sort_holdings(self):
-        self.holdings = OrderedDict(sorted(self.holdings.items(), key=lambda item: -item[1]['weight']))
 
     def assert_holdings_summed_value(self):
         assert sum(self.get_weights()) > self.SUMMED_WEIGHTS_THRESHOLD, 'Your holdings should sum up to around ~1.'
 
     def export_to_csv(self, file_path='portfolio.csv') -> str:
-        self.sort_holdings()
-
         print('Exporting CSV file...')
+
+        sorted_values = self.sort_holdings()
+
         with open(file_path, 'w') as f:
             f.write(f'Name,Ticker,Weight,Country,Sector\n')
-            for holding, weight in tqdm.tqdm(self.get_values()):
+            for holding, weight in tqdm.tqdm(sorted_values):
                 f.write(
                     f'{holding.normalized_name},{holding.ticker},{weight * 100},{holding.country},{holding.sector}\n')
 
@@ -256,11 +252,12 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
         """
             sheet_name: the name of your google sheets sheet
         """
-        self.sort_holdings()
+        print(f'Exporting {self.name} to google sheets...')
 
-        print('Exporting to google sheets...')
+        sorted_values = self.sort_holdings()
+
         data = [['Name', 'Ticker', 'Weight', 'Country', 'Sector']]
-        for holding, weight in tqdm.tqdm(self.get_values()):
+        for holding, weight in tqdm.tqdm(sorted_values):
             data.append([
                 holding.normalized_name,
                 holding.ticker,
@@ -271,6 +268,9 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
 
         google_sheets_manager = GoogleSheetsManager(SPREAD_SHEET_ID)
         google_sheets_manager.write(data=data, workspace_name=workspace_name)
+
+    def sort_holdings(self) -> List[tuple]:
+        return sorted(self.get_values(), key=lambda item: -item[1])
 
     def statistics_country(self):
         self.statistics('country')
@@ -292,7 +292,7 @@ class MultipleItemsFinancialInstrument(FinancialInstrument):
         counter = {k: v for k, v in sorted(counter.items(), key=lambda item: -item[1])}
 
         total = sum(counter.values())
-        assert total > 0.98
+        assert total > self.SUMMED_WEIGHTS_THRESHOLD
 
         print(f'Statistics {attribute_key}')
         for item, value in counter.items():

@@ -1,8 +1,4 @@
-import os
-
 import pandas as pd
-
-from collections import Counter
 
 from src.utils import has_digits
 
@@ -15,23 +11,17 @@ from src.utils import has_digits
 
 
 def normalize_vanguard_csv_file(path_to_file: str) -> str:
-    # return normalize_file_by_cutting_lines(path_to_file, 2)
     return normalize_csv_file(path_to_file)
 
 
 def normalize_ishares_csv_file(path_to_file: str) -> str:
-    # return normalize_file_by_cutting_lines(path_to_file, 2)
     return normalize_csv_file(path_to_file)
 
 
 def normalize_spdr_excel_file(path_to_file: str) -> str:
     data_frame = pd.read_excel(path_to_file)
+    data_frame.to_csv(path_to_file, encoding='utf-8', index=False)
 
-    path_without_extension = path_to_file.split('.xlsx')[0]
-    new_path_to_file = f'{path_without_extension}.csv'
-    data_frame.to_csv(new_path_to_file, encoding='utf-8', index=False)
-
-    # return normalize_file_by_cutting_lines(new_path_to_file, 5)
     return normalize_csv_file(path_to_file)
 
 
@@ -53,6 +43,12 @@ def normalize_file_by_cutting_lines(path_to_file: str, lines_to_cut: int) -> str
 # TODO: Try to improve this generic normalization function.
 def normalize_csv_file(path_to_file: str) -> str:
     def valid_line_rule(line, num_items):
+        if 'Unnamed' in line:
+            return False
+
+        if ',,' in line:
+            return False
+
         if num_items <= 3:
             return False
 

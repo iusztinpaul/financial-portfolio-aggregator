@@ -11,7 +11,7 @@ def get_from_network(source: str):
     return {
         'vanguard': None,
         'ishares': get_etf_ishares,
-        'sprd': get_etf_spdr,
+        'spdr': get_etf_spdr,
         'sheets': get_google_sheets,
         'hsbc': None
     }.get(source)
@@ -39,7 +39,7 @@ def _get_etf(ticker: str, source: str) -> Optional[ETF]:
     if etf_url is None:
         return None
 
-    etf_file_name = f'{ticker}.csv'
+    etf_file_name = f'{ticker}'
     with DownloadManager(etf_url, etf_file_name) as d:
         etf_file_path = d.download()
         etf = factory(ticker, etf_file_path)

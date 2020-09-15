@@ -202,6 +202,7 @@ class NYSEMarket(Market):
         # with DownloadManager(nyse_url, 'NYSE.txt') as d:
         #     file_path = d.download()
         #     tickers = self._parse_tickers_file(file_path)
+
         paths = disk.get_paths()
         nyse_tickers_path = paths['markets']['NYSE']
         nyse_tickers_path = os.path.abspath(os.path.join(FILES_DIR, nyse_tickers_path))
@@ -222,6 +223,60 @@ class NYSEMarket(Market):
         return tickers
 
 
+class CustomDataMarket:
+    def __init__(self):
+        self.holdings = [
+            Holding(
+                name='Savings Cash',
+                ticker='Cash',
+                country='Global',
+                sector='Cash',
+                currency='USD',
+                holding_type='Cash',
+            ),
+            Holding(
+                name='Investing Cash',
+                ticker='Cash',
+                country='Global',
+                sector='Cash',
+                currency='USD',
+                holding_type='Cash',
+            ),
+            Holding(
+                name='Gold',
+                country='Global',
+                sector='Commodity',
+                holding_type='Commodity',
+            ),
+            Holding(
+                name='Bitcoin',
+                ticker='BTC',
+                country='Global',
+                sector='Commodity',
+                holding_type='Commodity',
+            ),
+            Holding(
+                name='Mutual Fund',
+                country='Global',
+                sector='Aggregate',
+                holding_type='Mutual Fund',
+            ),
+            Holding(
+                name='Bond',
+                country='Global',
+                sector='Aggregate',
+                holding_type='Bond',
+            )
+        ]
+
+    def query(self, holding: Holding) -> Optional[Holding]:
+        for h in self.holdings:
+            if h == holding:
+                return h
+
+        return None
+
+
 class MarketHub:
     market_hub: 'MarketHub' = None
 
@@ -229,7 +284,8 @@ class MarketHub:
     def __init__(self):
         self.markets = [
             NasdaqMarket(),
-            NYSEMarket()
+            NYSEMarket(),
+            CustomDataMarket()
         ]
 
     @classmethod
@@ -241,7 +297,7 @@ class MarketHub:
 
     def query(self, holding: Holding) -> Optional[Holding]:
         for market in self.markets:
-            queried_holding = holding = market.query(holding)
+            queried_holding = market.query(holding)
             if queried_holding:
                 return queried_holding
 
