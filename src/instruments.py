@@ -166,7 +166,7 @@ class OneItemFinancialInstrument(FinancialInstrument):
 
 
 class MultipleItemsFinancialInstrument(FinancialInstrument):
-    SUMMED_WEIGHTS_THRESHOLD = 0.978
+    SUMMED_WEIGHTS_THRESHOLD = 0.97
 
     def __init__(self, name):
         super().__init__(name)

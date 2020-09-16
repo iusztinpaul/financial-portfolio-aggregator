@@ -149,11 +149,11 @@ def create_portfolio_google_sheets(name: str, data: List[list]) -> MultipleItems
     data_frame = pd.DataFrame(data[1:], columns=data[0])
     for _, pandas_holding in data_frame.iterrows():
         try:
-            weight = float(pandas_holding['Percentage']) / 100
+            weight = float(pandas_holding['Ideal Percentage']) / 100
         except ValueError:
             try:
                 # Try to remove '%'.
-                weight = float(pandas_holding['Percentage'][:-1]) / 100
+                weight = float(pandas_holding['Ideal Percentage'][:-1]) / 100
             except ValueError:
                 weight = 0
 

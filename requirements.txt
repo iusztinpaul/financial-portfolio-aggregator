@@ -6,3 +6,5 @@ yfinance==0.1.37
 requests==2.24.0
 google-spreadsheet==0.0.6
 google-auth-oauthlib==0.4.1
+marshmallow==3.8.0
+python-dotenv==0.14.0

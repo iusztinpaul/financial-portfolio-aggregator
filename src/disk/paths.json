@@ -4,7 +4,8 @@
       "VFEA": "HoldingDetails_FTSE_Emerging_Markets_UCITS_ETF_-_(USD)_Accumulating_(VFEA).csv",
       "VFEM": "Holding_detailsHolding_details_FTSE_Emerging_Markets_UCITS_ETF_(USD)___Distributing_(VFEM).csv",
       "VHYL": "Holding_detailsHolding_details_FTSE_All-World_High_Dividend_Yield_UCITS_ETF_(USD)___Distributing_(VHYL).csv",
-      "VWRD": "HoldingDetails_FTSE_All-World_UCITS_ETF_-_(USD)_Distributing_(VWRD).csv"
+      "VWRD": "HoldingDetails_FTSE_All-World_UCITS_ETF_-_(USD)_Distributing_(VWRD).csv",
+      "VDEV": "HoldingDetails_FTSE_Developed_World_UCITS_ETF_-_(USD)_Distributing_(VDEV).csv"
     },
     "ishares": {
       "CNDX": "",
