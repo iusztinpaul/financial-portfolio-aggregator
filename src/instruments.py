@@ -35,6 +35,7 @@ class Holding:
 
     @property
     def is_leaf(self) -> bool:
+        # TODO: Add more reduction logic for different Holding type ( ex. Mutual Funds, Bonds etc.)
         return self.holding_type != HoldingTypeChoices.ETF
 
     def __str__(self):
@@ -166,7 +167,7 @@ class OneItemFinancialInstrument(FinancialInstrument):
 
 
 class MultipleItemsFinancialInstrument(FinancialInstrument):
-    SUMMED_WEIGHTS_THRESHOLD = 0.97
+    SUMMED_WEIGHTS_THRESHOLD = 0.94
 
     def __init__(self, name):
         super().__init__(name)

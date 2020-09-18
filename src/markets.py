@@ -6,7 +6,7 @@ import re
 
 from collections import OrderedDict
 from pathlib import Path
-from typing import Optional, List
+from typing import Optional, List, Union, Dict
 
 import pandas
 import tqdm
@@ -20,23 +20,32 @@ from src.settings import MARKET_CACHE_EXPIRATION_DAYS, FILES_DIR
 
 
 class Market:
+    def __init__(self, market_name: str):
+        self.market_name = market_name
+
+    def query(self, holding: Union[Holding, str]) -> Holding:
+        raise NotImplementedError()
+
+
+class TickerMarket(Market):
     MARKET_META_FILE = Path(settings.STORAGE_PATH) / 'market_metadata.json'
 
     def __init__(self, market_name: str, expire_after_days: datetime.timedelta):
-        self.market_name = market_name
+        super().__init__(market_name)
+
         self.expire_after_days = expire_after_days
 
         self.holdings_file = Path(settings.STORAGE_PATH) / f'{self.market_name}_holdings.csv'
         self.missed_holdings = -1  # Parameter to describe the number of faulty requests for a holding.
 
         if self.should_refresh_data():
-            holdings = self.get_data_from_cloud()
+            holdings: List[Holding] = self.get_data_from_cloud()
             self.save_data_to_disk(holdings)
             self.save_update_datetime()
         else:
-            holdings = self.get_data_from_disk()
+            holdings: List[Holding] = self.get_data_from_disk()
 
-        self.holdings = self.populate(holdings)
+        self.holdings: Dict[Holding, Holding] = self.to_dictionary(holdings)
 
     def get_data_from_cloud(self) -> List[Holding]:
         tickers = self.get_tickers_from_cloud()
@@ -70,6 +79,7 @@ class Market:
         raise NotImplementedError()
 
     def get_holding_from_cloud(self, ticker: str) -> Optional[Holding]:
+        # TODO: Extract this code to a YahooManager
         print(f'Get holding from cloud: {ticker}')
 
         company = yfinance.Ticker(ticker)
@@ -124,7 +134,8 @@ class Market:
 
         return holdings
 
-    def populate(self, holdings: List[Holding]) -> OrderedDict:
+    @classmethod
+    def to_dictionary(cls, holdings: List[Holding]) -> OrderedDict:
         return OrderedDict({
             h: h for h in holdings
         })
@@ -179,7 +190,7 @@ class Market:
         return self.holdings.get(holding)
 
 
-class NasdaqMarket(Market):
+class NasdaqTickerMarket(TickerMarket):
     def __init__(self):
         super().__init__('Nasdaq', MARKET_CACHE_EXPIRATION_DAYS)
 
@@ -190,7 +201,7 @@ class NasdaqMarket(Market):
         return tickers
 
 
-class NYSEMarket(Market):
+class NYSETickerMarket(TickerMarket):
     def __init__(self):
         super().__init__('NYSE', MARKET_CACHE_EXPIRATION_DAYS)
 
@@ -223,51 +234,14 @@ class NYSEMarket(Market):
         return tickers
 
 
-class CustomDataMarket:
-    def __init__(self):
-        self.holdings = [
-            Holding(
-                name='Savings Cash',
-                ticker='Cash',
-                country='Global',
-                sector='Cash',
-                currency='USD',
-                holding_type='Cash',
-            ),
-            Holding(
-                name='Investing Cash',
-                ticker='Cash',
-                country='Global',
-                sector='Cash',
-                currency='USD',
-                holding_type='Cash',
-            ),
-            Holding(
-                name='Gold',
-                country='Global',
-                sector='Commodity',
-                holding_type='Commodity',
-            ),
-            Holding(
-                name='Bitcoin',
-                ticker='BTC',
-                country='Global',
-                sector='Commodity',
-                holding_type='Commodity',
-            ),
-            Holding(
-                name='Mutual Fund',
-                country='Global',
-                sector='Aggregate',
-                holding_type='Mutual Fund',
-            ),
-            Holding(
-                name='Bond',
-                country='Global',
-                sector='Aggregate',
-                holding_type='Bond',
-            )
-        ]
+class CustomMarket(Market):
+    def __init__(self, market_name):
+        super().__init__(market_name)
+
+        self.holdings: List[Holding] = []
+
+    def add_holding(self, holding: Holding):
+        self.holdings.append(holding)
 
     def query(self, holding: Holding) -> Optional[Holding]:
         for h in self.holdings:
@@ -277,15 +251,93 @@ class CustomDataMarket:
         return None
 
 
+class CashMarket(CustomMarket):
+    def __init__(self):
+        super().__init__('CashMarket')
+
+        self.add_holding(
+            Holding(
+                name='Savings Cash',
+                ticker='Cash',
+                country='Global',
+                sector='Cash',
+                currency='USD',
+                holding_type='Cash',
+            )
+        )
+        self.add_holding(
+            Holding(
+                name='Investing Cash',
+                ticker='Cash',
+                country='Global',
+                sector='Cash',
+                currency='USD',
+                holding_type='Cash',
+            )
+        )
+
+
+class CommodityMarket(CustomMarket):
+    def __init__(self):
+        super().__init__('CommodityMarket')
+        self.add_holding(
+            Holding(
+                name='Gold',
+                country='Global',
+                sector='Commodity',
+                holding_type='Commodity',
+            )
+        )
+        self.add_holding(
+            Holding(
+                name='Bitcoin',
+                ticker='BTC',
+                country='Global',
+                sector='Commodity',
+                holding_type='Commodity',
+            )
+        )
+
+
+class MutualFundMarket(CustomMarket):
+    def __init__(self):
+        super().__init__('MutualFundMarket')
+        self.add_holding(
+            Holding(
+                name='Mutual Fund',
+                country='Global',
+                sector='Mutual Fund',
+                holding_type='Mutual Fund',
+            )
+        )
+
+
+class BondMarket(CustomMarket):
+    def __init__(self):
+        super().__init__('BondMarket')
+
+        self.add_holding(
+            Holding(
+                name='Bond',
+                country='Global',
+                sector='Bonds',
+                holding_type='Bond',
+            )
+        )
+
+
 class MarketHub:
     market_hub: 'MarketHub' = None
 
     # TODO: Make this class truly singletone
     def __init__(self):
         self.markets = [
-            NasdaqMarket(),
-            NYSEMarket(),
-            CustomDataMarket()
+            NasdaqTickerMarket(),
+            NYSETickerMarket(),
+            CashMarket(),
+            CommodityMarket(),
+            MutualFundMarket(),
+            BondMarket()
         ]
 
     @classmethod

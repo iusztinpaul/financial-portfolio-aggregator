@@ -1,11 +1,9 @@
 from src.network.ops import get_google_sheets
 
-# TODO: Refactor CustomDataMarket.
 # TODO: Add docs.cn
 # TODO: Add default env var.
 # TODO: Check where credentials.json are automatically generated.
 # TODO: Make a better sector & industry normalization: BUGS
-# TODO: Improve your model __eq__ method && name_normalize() function
 
 # TODO: Change Yahoo source for better region & sector information.
 # TODO: Download VANGUARD etfs files dinamically.

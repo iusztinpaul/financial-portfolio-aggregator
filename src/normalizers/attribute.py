@@ -8,13 +8,21 @@ class HoldingAttributesNormalizer:
 
     @classmethod
     def normalize_name(cls, name) -> str:
-        name = name.split(',')[0]
+        assert name is not None
 
-        name_items = name.upper().strip('\n ').split(' ')
-        name_items = [item.strip(' ').split('.') for item in name_items]
-        name_items = flatten(name_items)
+        name = name.split(',')[0].strip('\n ')
+        name = name.replace('.', ' ')
+        name = name.replace('-', ' ')
+        name = name.replace('&', ' ')
 
-        name_items = [item.strip('. ').capitalize() for item in name_items]
+        name = name.replace('(', '')
+        name = name.replace(')', '')
+
+        name_items = name.upper().split(' ')
+
+        # Some names have more than one space --> strip & remove it.
+        name_items = [name.strip(' ') for name in name_items if len(name) > 0]
+        name_items = [item.capitalize() for item in name_items]
 
         return ' '.join(name_items)
 

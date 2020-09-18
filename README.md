@@ -6,4 +6,12 @@ have a clearer vision in what you invest & how much you invest. Also you will ha
 
 # Main Features
 
+### Aggregation
+
+### Google sheets
+
+### Market
+
 # Run
+### Examples
+### Env support
