@@ -1,12 +1,8 @@
 from src.network.ops import get_google_sheets
 
-# TODO: Add docs.cn
-# TODO: Add default env var.
-# TODO: Check where credentials.json are automatically generated.
-
 # TODO: Change Yahoo source for better region & sector information.
-# TODO: Download VANGUARD etfs files dinamically.
-# TODO: Add financial files support.
+# TODO: Download VANGUARD, HSBC etfs files dinamically.
+# TODO: Add more financial data to the markets & aggregate data with them.
 
 
 if __name__ == '__main__':
