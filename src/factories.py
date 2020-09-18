@@ -100,7 +100,6 @@ def create_etf_from_spdr_excel(etf_name: str, path_to_file: str) -> ETF:
                 name=pandas_holding['Security Name'],
                 country=pandas_holding['Trade Country Name'],
                 sector=pandas_holding['Sector Classification'],
-                industry=pandas_holding['Industry Classification'],
                 currency=pandas_holding['Currency']
             )
 

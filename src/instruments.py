@@ -18,7 +18,6 @@ class Holding:
             ticker=None,
             country=None,
             sector=None,
-            industry=None,
             currency=None,
             exchange=None,
             holding_type: str = None
@@ -27,8 +26,7 @@ class Holding:
         self.normalized_name = self.normalizer.normalize_name(name)
         self.ticker = ticker
         self.country = self.normalizer.normalize_country(country)
-        self.sector = sector
-        self.industry = industry
+        self.sector = self.normalizer.normalize_sector(sector)
         self.currency = currency
         self.exchange = exchange
         self.holding_type = self.normalizer.normalize_type(holding_type)
@@ -85,7 +83,6 @@ class Holding:
         holding_1.ticker = aggregate_attribute(holding_1, holding_2, 'ticker')
         holding_1.country = aggregate_attribute(holding_1, holding_2, 'country')
         holding_1.sector = aggregate_attribute(holding_1, holding_2, 'sector')
-        holding_1.industry = aggregate_attribute(holding_1, holding_2, 'industry')
         holding_1.currency = aggregate_attribute(holding_1, holding_2, 'currency')
         holding_1.exchange = aggregate_attribute(holding_1, holding_2, 'exchange')
 
@@ -98,6 +95,7 @@ class Holding:
         market_hub = MarketHub.get()
         holding_from_hub = market_hub.query(holding_1 or holding_2)
 
+        # TODO: After adding more reliable data in the market, put `holding_from_hub` as the first choice.
         holding = Holding.aggregate(holding_1, holding_2)
         holding = Holding.aggregate(holding, holding_from_hub)
 

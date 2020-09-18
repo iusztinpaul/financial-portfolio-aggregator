@@ -1,7 +1,6 @@
 from typing import Optional
 
 from src.choices import HoldingTypeChoices
-from src.utils import flatten
 
 
 class HoldingAttributesNormalizer:
@@ -27,9 +26,37 @@ class HoldingAttributesNormalizer:
         return ' '.join(name_items)
 
     @classmethod
+    def normalize_sector(cls, sector: str) -> str:
+        """
+            Normalize sector by Vanguard standards.
+        """
+        # TODO: Not 100% sure if the mappings are correct.
+
+        if sector in ['Information Technology']:
+            return 'Technology'
+
+        if sector in ['Communication']:
+            return 'Telecommunications'
+
+        if sector in ['Consumer Discretionary']:
+            return 'Consumer Services'
+
+        if sector in ['Consumer Staples']:
+            return 'Consumer Goods'
+
+        if sector in ['Materials']:
+            return 'Basic Materials'
+
+        return sector
+
+    @classmethod
     def normalize_country(cls, country: str) -> str:
-        if country in ['United States', 'U.S.']:
-            country = 'US'
+        """
+            Normalize country by Vanguard standards.
+        """
+
+        if country in ['US', 'U.S.']:
+            country = 'United States'
 
         return country
 
