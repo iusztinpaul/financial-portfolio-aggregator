@@ -135,6 +135,7 @@ dmypy.json
 # Database
 *.sqlite
 *_normalized.csv
+portfolio.csv
 
 # Credentials
 **/credentials/*
